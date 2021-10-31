@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RemotingUtil.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">rocketmq-remoting 4.9.2</a> &gt; <a href="index.source.html" class="el_package">org.apache.rocketmq.remoting.common</a> &gt; <span class="el_source">RemotingUtil.java</span></div><h1>RemotingUtil.java</h1><pre class="source lang-java linenums">/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.apache.rocketmq.remoting.common;
+
+import io.netty.channel.Channel;
+import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelFutureListener;
+import java.io.File;
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.net.Inet6Address;
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
+import java.net.NetworkInterface;
+import java.net.SocketAddress;
+import java.nio.channels.Selector;
+import java.nio.channels.SocketChannel;
+import java.nio.channels.spi.SelectorProvider;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import org.apache.rocketmq.logging.InternalLogger;
+import org.apache.rocketmq.logging.InternalLoggerFactory;
+
+<span class="nc" id="L38">public class RemotingUtil {</span>
+<span class="fc" id="L39">    public static final String OS_NAME = System.getProperty(&quot;os.name&quot;);</span>
+
+<span class="fc" id="L41">    private static final InternalLogger log = InternalLoggerFactory.getLogger(RemotingHelper.ROCKETMQ_REMOTING);</span>
+<span class="fc" id="L42">    private static boolean isLinuxPlatform = false;</span>
+<span class="fc" id="L43">    private static boolean isWindowsPlatform = false;</span>
+
+    static {
+<span class="pc bpc" id="L46" title="2 of 4 branches missed.">        if (OS_NAME != null &amp;&amp; OS_NAME.toLowerCase().contains(&quot;linux&quot;)) {</span>
+<span class="nc" id="L47">            isLinuxPlatform = true;</span>
+        }
+
+<span class="pc bpc" id="L50" title="2 of 4 branches missed.">        if (OS_NAME != null &amp;&amp; OS_NAME.toLowerCase().contains(&quot;windows&quot;)) {</span>
+<span class="fc" id="L51">            isWindowsPlatform = true;</span>
+        }
+<span class="fc" id="L53">    }</span>
+
+    public static boolean isWindowsPlatform() {
+<span class="nc" id="L56">        return isWindowsPlatform;</span>
+    }
+
+    public static Selector openSelector() throws IOException {
+<span class="nc" id="L60">        Selector result = null;</span>
+
+<span class="nc bnc" id="L62" title="All 2 branches missed.">        if (isLinuxPlatform()) {</span>
+            try {
+<span class="nc" id="L64">                final Class&lt;?&gt; providerClazz = Class.forName(&quot;sun.nio.ch.EPollSelectorProvider&quot;);</span>
+<span class="nc bnc" id="L65" title="All 2 branches missed.">                if (providerClazz != null) {</span>
+                    try {
+<span class="nc" id="L67">                        final Method method = providerClazz.getMethod(&quot;provider&quot;);</span>
+<span class="nc bnc" id="L68" title="All 2 branches missed.">                        if (method != null) {</span>
+<span class="nc" id="L69">                            final SelectorProvider selectorProvider = (SelectorProvider) method.invoke(null);</span>
+<span class="nc bnc" id="L70" title="All 2 branches missed.">                            if (selectorProvider != null) {</span>
+<span class="nc" id="L71">                                result = selectorProvider.openSelector();</span>
+                            }
+                        }
+<span class="nc" id="L74">                    } catch (final Exception e) {</span>
+<span class="nc" id="L75">                        log.warn(&quot;Open ePoll Selector for linux platform exception&quot;, e);</span>
+<span class="nc" id="L76">                    }</span>
+                }
+<span class="nc" id="L78">            } catch (final Exception e) {</span>
+                // ignore
+<span class="nc" id="L80">            }</span>
+        }
+
+<span class="nc bnc" id="L83" title="All 2 branches missed.">        if (result == null) {</span>
+<span class="nc" id="L84">            result = Selector.open();</span>
+        }
+
+<span class="nc" id="L87">        return result;</span>
+    }
+
+    public static boolean isLinuxPlatform() {
+<span class="fc" id="L91">        return isLinuxPlatform;</span>
+    }
+
+    public static String getLocalAddress() {
+        try {
+            // Traversal Network interface to get the first non-loopback and non-private address
+<span class="nc" id="L97">            Enumeration&lt;NetworkInterface&gt; enumeration = NetworkInterface.getNetworkInterfaces();</span>
+<span class="nc" id="L98">            ArrayList&lt;String&gt; ipv4Result = new ArrayList&lt;String&gt;();</span>
+<span class="nc" id="L99">            ArrayList&lt;String&gt; ipv6Result = new ArrayList&lt;String&gt;();</span>
+<span class="nc bnc" id="L100" title="All 2 branches missed.">            while (enumeration.hasMoreElements()) {</span>
+<span class="nc" id="L101">                final NetworkInterface networkInterface = enumeration.nextElement();</span>
+<span class="nc bnc" id="L102" title="All 2 branches missed.">                if (isBridge(networkInterface)) {</span>
+<span class="nc" id="L103">                    continue;</span>
+                }
+
+<span class="nc" id="L106">                final Enumeration&lt;InetAddress&gt; en = networkInterface.getInetAddresses();</span>
+<span class="nc bnc" id="L107" title="All 2 branches missed.">                while (en.hasMoreElements()) {</span>
+<span class="nc" id="L108">                    final InetAddress address = en.nextElement();</span>
+<span class="nc bnc" id="L109" title="All 2 branches missed.">                    if (!address.isLoopbackAddress()) {</span>
+<span class="nc bnc" id="L110" title="All 2 branches missed.">                        if (address instanceof Inet6Address) {</span>
+<span class="nc" id="L111">                            ipv6Result.add(normalizeHostAddress(address));</span>
+                        } else {
+<span class="nc" id="L113">                            ipv4Result.add(normalizeHostAddress(address));</span>
+                        }
+                    }
+<span class="nc" id="L116">                }</span>
+<span class="nc" id="L117">            }</span>
+
+            // prefer ipv4
+<span class="nc bnc" id="L120" title="All 2 branches missed.">            if (!ipv4Result.isEmpty()) {</span>
+<span class="nc bnc" id="L121" title="All 2 branches missed.">                for (String ip : ipv4Result) {</span>
+<span class="nc bnc" id="L122" title="All 4 branches missed.">                    if (ip.startsWith(&quot;127.0&quot;) || ip.startsWith(&quot;192.168&quot;)) {</span>
+<span class="nc" id="L123">                        continue;</span>
+                    }
+
+<span class="nc" id="L126">                    return ip;</span>
+                }
+
+<span class="nc" id="L129">                return ipv4Result.get(ipv4Result.size() - 1);</span>
+<span class="nc bnc" id="L130" title="All 2 branches missed.">            } else if (!ipv6Result.isEmpty()) {</span>
+<span class="nc" id="L131">                return ipv6Result.get(0);</span>
+            }
+            //If failed to find,fall back to localhost
+<span class="nc" id="L134">            final InetAddress localHost = InetAddress.getLocalHost();</span>
+<span class="nc" id="L135">            return normalizeHostAddress(localHost);</span>
+<span class="nc" id="L136">        } catch (Exception e) {</span>
+<span class="nc" id="L137">            log.error(&quot;Failed to obtain local address&quot;, e);</span>
+        }
+
+<span class="nc" id="L140">        return null;</span>
+    }
+
+    public static String normalizeHostAddress(final InetAddress localHost) {
+<span class="nc bnc" id="L144" title="All 2 branches missed.">        if (localHost instanceof Inet6Address) {</span>
+<span class="nc" id="L145">            return &quot;[&quot; + localHost.getHostAddress() + &quot;]&quot;;</span>
+        } else {
+<span class="nc" id="L147">            return localHost.getHostAddress();</span>
+        }
+    }
+
+    public static SocketAddress string2SocketAddress(final String addr) {
+<span class="nc" id="L152">        int split = addr.lastIndexOf(&quot;:&quot;);</span>
+<span class="nc" id="L153">        String host = addr.substring(0, split);</span>
+<span class="nc" id="L154">        String port = addr.substring(split + 1);</span>
+<span class="nc" id="L155">        InetSocketAddress isa = new InetSocketAddress(host, Integer.parseInt(port));</span>
+<span class="nc" id="L156">        return isa;</span>
+    }
+
+    public static String socketAddress2String(final SocketAddress addr) {
+<span class="nc" id="L160">        StringBuilder sb = new StringBuilder();</span>
+<span class="nc" id="L161">        InetSocketAddress inetSocketAddress = (InetSocketAddress) addr;</span>
+<span class="nc" id="L162">        sb.append(inetSocketAddress.getAddress().getHostAddress());</span>
+<span class="nc" id="L163">        sb.append(&quot;:&quot;);</span>
+<span class="nc" id="L164">        sb.append(inetSocketAddress.getPort());</span>
+<span class="nc" id="L165">        return sb.toString();</span>
+    }
+
+    public static String convert2IpString(final String addr) {
+<span class="nc" id="L169">        return socketAddress2String(string2SocketAddress(addr));</span>
+    }
+
+    private static boolean isBridge(NetworkInterface networkInterface) {
+        try {
+<span class="nc bnc" id="L174" title="All 2 branches missed.">            if (isLinuxPlatform()) {</span>
+<span class="nc" id="L175">                String interfaceName = networkInterface.getName();</span>
+<span class="nc" id="L176">                File file = new File(&quot;/sys/class/net/&quot; + interfaceName + &quot;/bridge&quot;);</span>
+<span class="nc" id="L177">                return file.exists();</span>
+            }
+<span class="nc" id="L179">        } catch (SecurityException e) {</span>
+            //Ignore
+<span class="nc" id="L181">        }</span>
+<span class="nc" id="L182">        return false;</span>
+    }
+
+    public static SocketChannel connect(SocketAddress remote) {
+<span class="nc" id="L186">        return connect(remote, 1000 * 5);</span>
+    }
+
+    public static SocketChannel connect(SocketAddress remote, final int timeoutMillis) {
+<span class="nc" id="L190">        SocketChannel sc = null;</span>
+        try {
+<span class="nc" id="L192">            sc = SocketChannel.open();</span>
+<span class="nc" id="L193">            sc.configureBlocking(true);</span>
+<span class="nc" id="L194">            sc.socket().setSoLinger(false, -1);</span>
+<span class="nc" id="L195">            sc.socket().setTcpNoDelay(true);</span>
+<span class="nc" id="L196">            sc.socket().setReceiveBufferSize(1024 * 64);</span>
+<span class="nc" id="L197">            sc.socket().setSendBufferSize(1024 * 64);</span>
+<span class="nc" id="L198">            sc.socket().connect(remote, timeoutMillis);</span>
+<span class="nc" id="L199">            sc.configureBlocking(false);</span>
+<span class="nc" id="L200">            return sc;</span>
+<span class="nc" id="L201">        } catch (Exception e) {</span>
+<span class="nc bnc" id="L202" title="All 2 branches missed.">            if (sc != null) {</span>
+                try {
+<span class="nc" id="L204">                    sc.close();</span>
+<span class="nc" id="L205">                } catch (IOException e1) {</span>
+<span class="nc" id="L206">                    e1.printStackTrace();</span>
+<span class="nc" id="L207">                }</span>
+            }
+        }
+
+<span class="nc" id="L211">        return null;</span>
+    }
+
+    public static void closeChannel(Channel channel) {
+<span class="fc" id="L215">        final String addrRemote = RemotingHelper.parseChannelRemoteAddr(channel);</span>
+<span class="fc" id="L216">        channel.close().addListener(new ChannelFutureListener() {</span>
+            @Override
+            public void operationComplete(ChannelFuture future) throws Exception {
+<span class="fc" id="L219">                log.info(&quot;closeChannel: close the connection to remote address[{}] result: {}&quot;, addrRemote,</span>
+<span class="fc" id="L220">                    future.isSuccess());</span>
+<span class="fc" id="L221">            }</span>
+        });
+<span class="fc" id="L223">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

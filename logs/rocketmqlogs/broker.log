@@ -1,0 +1,1229 @@
+2021-10-31 15:05:52 INFO main - rocketmqHome=D:\workspace\rocketmq-all-4.9.2
+2021-10-31 15:05:52 INFO main - namesrvAddr=
+2021-10-31 15:05:52 INFO main - brokerIP1=192.168.18.123
+2021-10-31 15:05:52 INFO main - brokerIP2=192.168.18.123
+2021-10-31 15:05:52 INFO main - brokerName=broker-a
+2021-10-31 15:05:52 INFO main - brokerClusterName=DefaultCluster
+2021-10-31 15:05:52 INFO main - brokerId=0
+2021-10-31 15:05:52 INFO main - brokerPermission=6
+2021-10-31 15:05:52 INFO main - defaultTopicQueueNums=8
+2021-10-31 15:05:52 INFO main - autoCreateTopicEnable=true
+2021-10-31 15:05:52 INFO main - clusterTopicEnable=true
+2021-10-31 15:05:52 INFO main - brokerTopicEnable=true
+2021-10-31 15:05:52 INFO main - autoCreateSubscriptionGroup=true
+2021-10-31 15:05:52 INFO main - messageStorePlugIn=
+2021-10-31 15:05:52 INFO main - msgTraceTopicName=RMQ_SYS_TRACE_TOPIC
+2021-10-31 15:05:52 INFO main - traceTopicEnable=false
+2021-10-31 15:05:52 INFO main - sendMessageThreadPoolNums=4
+2021-10-31 15:05:52 INFO main - pullMessageThreadPoolNums=48
+2021-10-31 15:05:52 INFO main - processReplyMessageThreadPoolNums=48
+2021-10-31 15:05:52 INFO main - queryMessageThreadPoolNums=24
+2021-10-31 15:05:52 INFO main - adminBrokerThreadPoolNums=16
+2021-10-31 15:05:52 INFO main - clientManageThreadPoolNums=32
+2021-10-31 15:05:52 INFO main - consumerManageThreadPoolNums=32
+2021-10-31 15:05:52 INFO main - heartbeatThreadPoolNums=16
+2021-10-31 15:05:52 INFO main - endTransactionThreadPoolNums=40
+2021-10-31 15:05:52 INFO main - flushConsumerOffsetInterval=5000
+2021-10-31 15:05:52 INFO main - flushConsumerOffsetHistoryInterval=60000
+2021-10-31 15:05:52 INFO main - rejectTransactionMessage=false
+2021-10-31 15:05:52 INFO main - fetchNamesrvAddrByAddressServer=false
+2021-10-31 15:05:52 INFO main - sendThreadPoolQueueCapacity=10000
+2021-10-31 15:05:52 INFO main - pullThreadPoolQueueCapacity=100000
+2021-10-31 15:05:52 INFO main - replyThreadPoolQueueCapacity=10000
+2021-10-31 15:05:52 INFO main - queryThreadPoolQueueCapacity=20000
+2021-10-31 15:05:52 INFO main - clientManagerThreadPoolQueueCapacity=1000000
+2021-10-31 15:05:52 INFO main - consumerManagerThreadPoolQueueCapacity=1000000
+2021-10-31 15:05:52 INFO main - heartbeatThreadPoolQueueCapacity=50000
+2021-10-31 15:05:52 INFO main - endTransactionPoolQueueCapacity=100000
+2021-10-31 15:05:52 INFO main - filterServerNums=0
+2021-10-31 15:05:52 INFO main - longPollingEnable=true
+2021-10-31 15:05:52 INFO main - shortPollingTimeMills=1000
+2021-10-31 15:05:52 INFO main - notifyConsumerIdsChangedEnable=true
+2021-10-31 15:05:52 INFO main - highSpeedMode=false
+2021-10-31 15:05:52 INFO main - commercialEnable=true
+2021-10-31 15:05:52 INFO main - commercialTimerCount=1
+2021-10-31 15:05:52 INFO main - commercialTransCount=1
+2021-10-31 15:05:52 INFO main - commercialBigCount=1
+2021-10-31 15:05:52 INFO main - commercialBaseCount=1
+2021-10-31 15:05:52 INFO main - transferMsgByHeap=true
+2021-10-31 15:05:52 INFO main - maxDelayTime=40
+2021-10-31 15:05:52 INFO main - regionId=DefaultRegion
+2021-10-31 15:05:52 INFO main - registerBrokerTimeoutMills=6000
+2021-10-31 15:05:52 INFO main - slaveReadEnable=false
+2021-10-31 15:05:52 INFO main - disableConsumeIfConsumerReadSlowly=false
+2021-10-31 15:05:52 INFO main - consumerFallbehindThreshold=17179869184
+2021-10-31 15:05:52 INFO main - brokerFastFailureEnable=true
+2021-10-31 15:05:52 INFO main - waitTimeMillsInSendQueue=200
+2021-10-31 15:05:52 INFO main - waitTimeMillsInPullQueue=5000
+2021-10-31 15:05:52 INFO main - waitTimeMillsInHeartbeatQueue=31000
+2021-10-31 15:05:52 INFO main - waitTimeMillsInTransactionQueue=3000
+2021-10-31 15:05:52 INFO main - startAcceptSendRequestTimeStamp=0
+2021-10-31 15:05:52 INFO main - traceOn=true
+2021-10-31 15:05:52 INFO main - enableCalcFilterBitMap=false
+2021-10-31 15:05:52 INFO main - expectConsumerNumUseFilter=32
+2021-10-31 15:05:52 INFO main - maxErrorRateOfBloomFilter=20
+2021-10-31 15:05:52 INFO main - filterDataCleanTimeSpan=86400000
+2021-10-31 15:05:52 INFO main - filterSupportRetry=false
+2021-10-31 15:05:52 INFO main - enablePropertyFilter=false
+2021-10-31 15:05:52 INFO main - compressedRegister=false
+2021-10-31 15:05:52 INFO main - forceRegister=true
+2021-10-31 15:05:52 INFO main - registerNameServerPeriod=30000
+2021-10-31 15:05:52 INFO main - transactionTimeOut=6000
+2021-10-31 15:05:52 INFO main - transactionCheckMax=15
+2021-10-31 15:05:52 INFO main - transactionCheckInterval=60000
+2021-10-31 15:05:52 INFO main - aclEnable=false
+2021-10-31 15:05:52 INFO main - storeReplyMessageEnable=true
+2021-10-31 15:05:52 INFO main - autoDeleteUnusedStats=false
+2021-10-31 15:05:52 INFO main - listenPort=10911
+2021-10-31 15:05:52 INFO main - serverWorkerThreads=8
+2021-10-31 15:05:52 INFO main - serverCallbackExecutorThreads=0
+2021-10-31 15:05:52 INFO main - serverSelectorThreads=3
+2021-10-31 15:05:52 INFO main - serverOnewaySemaphoreValue=256
+2021-10-31 15:05:52 INFO main - serverAsyncSemaphoreValue=64
+2021-10-31 15:05:52 INFO main - serverChannelMaxIdleTimeSeconds=120
+2021-10-31 15:05:52 INFO main - serverSocketSndBufSize=131072
+2021-10-31 15:05:52 INFO main - serverSocketRcvBufSize=131072
+2021-10-31 15:05:52 INFO main - serverPooledByteBufAllocatorEnable=true
+2021-10-31 15:05:52 INFO main - useEpollNativeSelector=false
+2021-10-31 15:05:52 INFO main - clientWorkerThreads=4
+2021-10-31 15:05:52 INFO main - clientCallbackExecutorThreads=16
+2021-10-31 15:05:52 INFO main - clientOnewaySemaphoreValue=65535
+2021-10-31 15:05:52 INFO main - clientAsyncSemaphoreValue=65535
+2021-10-31 15:05:52 INFO main - connectTimeoutMillis=3000
+2021-10-31 15:05:52 INFO main - channelNotActiveInterval=60000
+2021-10-31 15:05:52 INFO main - clientChannelMaxIdleTimeSeconds=120
+2021-10-31 15:05:52 INFO main - clientSocketSndBufSize=131072
+2021-10-31 15:05:52 INFO main - clientSocketRcvBufSize=131072
+2021-10-31 15:05:52 INFO main - clientPooledByteBufAllocatorEnable=false
+2021-10-31 15:05:52 INFO main - clientCloseSocketIfTimeout=true
+2021-10-31 15:05:52 INFO main - useTLS=false
+2021-10-31 15:05:52 INFO main - storePathRootDir=C:\Users\PC\store
+2021-10-31 15:05:52 INFO main - storePathCommitLog=C:\Users\PC\store\commitlog
+2021-10-31 15:05:52 INFO main - readOnlyCommitLogStorePaths=
+2021-10-31 15:05:52 INFO main - mappedFileSizeCommitLog=1073741824
+2021-10-31 15:05:52 INFO main - mappedFileSizeConsumeQueue=6000000
+2021-10-31 15:05:52 INFO main - enableConsumeQueueExt=false
+2021-10-31 15:05:52 INFO main - mappedFileSizeConsumeQueueExt=50331648
+2021-10-31 15:05:52 INFO main - bitMapLengthConsumeQueueExt=64
+2021-10-31 15:05:52 INFO main - flushIntervalCommitLog=500
+2021-10-31 15:05:52 INFO main - commitIntervalCommitLog=200
+2021-10-31 15:05:52 INFO main - useReentrantLockWhenPutMessage=true
+2021-10-31 15:05:52 INFO main - flushCommitLogTimed=true
+2021-10-31 15:05:52 INFO main - flushIntervalConsumeQueue=1000
+2021-10-31 15:05:52 INFO main - cleanResourceInterval=10000
+2021-10-31 15:05:52 INFO main - deleteCommitLogFilesInterval=100
+2021-10-31 15:05:52 INFO main - deleteConsumeQueueFilesInterval=100
+2021-10-31 15:05:52 INFO main - destroyMapedFileIntervalForcibly=120000
+2021-10-31 15:05:52 INFO main - redeleteHangedFileInterval=120000
+2021-10-31 15:05:52 INFO main - deleteWhen=04
+2021-10-31 15:05:52 INFO main - diskMaxUsedSpaceRatio=75
+2021-10-31 15:05:52 INFO main - fileReservedTime=48
+2021-10-31 15:05:52 INFO main - putMsgIndexHightWater=600000
+2021-10-31 15:05:52 INFO main - maxMessageSize=4194304
+2021-10-31 15:05:52 INFO main - checkCRCOnRecover=true
+2021-10-31 15:05:52 INFO main - flushCommitLogLeastPages=4
+2021-10-31 15:05:52 INFO main - commitCommitLogLeastPages=4
+2021-10-31 15:05:52 INFO main - flushLeastPagesWhenWarmMapedFile=4096
+2021-10-31 15:05:52 INFO main - flushConsumeQueueLeastPages=2
+2021-10-31 15:05:52 INFO main - flushCommitLogThoroughInterval=10000
+2021-10-31 15:05:52 INFO main - commitCommitLogThoroughInterval=200
+2021-10-31 15:05:52 INFO main - flushConsumeQueueThoroughInterval=60000
+2021-10-31 15:05:52 INFO main - maxTransferBytesOnMessageInMemory=262144
+2021-10-31 15:05:52 INFO main - maxTransferCountOnMessageInMemory=32
+2021-10-31 15:05:52 INFO main - maxTransferBytesOnMessageInDisk=65536
+2021-10-31 15:05:52 INFO main - maxTransferCountOnMessageInDisk=8
+2021-10-31 15:05:52 INFO main - accessMessageInMemoryMaxRatio=40
+2021-10-31 15:05:52 INFO main - messageIndexEnable=true
+2021-10-31 15:05:52 INFO main - maxHashSlotNum=5000000
+2021-10-31 15:05:52 INFO main - maxIndexNum=20000000
+2021-10-31 15:05:52 INFO main - maxMsgsNumBatch=64
+2021-10-31 15:05:52 INFO main - messageIndexSafe=false
+2021-10-31 15:05:52 INFO main - haListenPort=10912
+2021-10-31 15:05:52 INFO main - haSendHeartbeatInterval=5000
+2021-10-31 15:05:52 INFO main - haHousekeepingInterval=20000
+2021-10-31 15:05:52 INFO main - haTransferBatchSize=32768
+2021-10-31 15:05:52 INFO main - haMasterAddress=
+2021-10-31 15:05:52 INFO main - haSlaveFallbehindMax=268435456
+2021-10-31 15:05:52 INFO main - brokerRole=ASYNC_MASTER
+2021-10-31 15:05:52 INFO main - flushDiskType=ASYNC_FLUSH
+2021-10-31 15:05:52 INFO main - syncFlushTimeout=5000
+2021-10-31 15:05:52 INFO main - messageDelayLevel=1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 8m 9m 10m 20m 30m 1h 2h
+2021-10-31 15:05:52 INFO main - flushDelayOffsetInterval=10000
+2021-10-31 15:05:52 INFO main - cleanFileForciblyEnable=true
+2021-10-31 15:05:52 INFO main - warmMapedFileEnable=false
+2021-10-31 15:05:52 INFO main - offsetCheckInSlave=false
+2021-10-31 15:05:52 INFO main - debugLockEnable=false
+2021-10-31 15:05:52 INFO main - duplicationEnable=false
+2021-10-31 15:05:52 INFO main - diskFallRecorded=true
+2021-10-31 15:05:52 INFO main - osPageCacheBusyTimeOutMills=1000
+2021-10-31 15:05:52 INFO main - defaultQueryMaxNum=32
+2021-10-31 15:05:52 INFO main - transientStorePoolEnable=false
+2021-10-31 15:05:52 INFO main - transientStorePoolSize=5
+2021-10-31 15:05:52 INFO main - fastFailIfNoBufferInStorePool=false
+2021-10-31 15:05:52 INFO main - enableDLegerCommitLog=false
+2021-10-31 15:05:52 INFO main - dLegerGroup=
+2021-10-31 15:05:52 INFO main - dLegerPeers=
+2021-10-31 15:05:52 INFO main - dLegerSelfId=
+2021-10-31 15:05:52 INFO main - preferredLeaderId=
+2021-10-31 15:05:52 INFO main - isEnableBatchPush=false
+2021-10-31 15:05:52 INFO main - enableScheduleMessageStats=true
+2021-10-31 15:05:52 INFO main - Try to start service thread:AllocateMappedFileService started:false lastThread:null
+2021-10-31 15:05:53 WARN main - Load default transaction message hook service: TransactionalMessageServiceImpl
+2021-10-31 15:05:53 WARN main - Load default discard message hook service: DefaultTransactionalMessageCheckListener
+2021-10-31 15:05:53 INFO main - The broker dose not enable acl
+2021-10-31 15:05:53 INFO main - Try to start service thread:ReputMessageService started:false lastThread:null
+2021-10-31 15:05:53 INFO main - Try to start service thread:AcceptSocketService started:false lastThread:null
+2021-10-31 15:05:53 INFO main - Try to start service thread:GroupTransferService started:false lastThread:null
+2021-10-31 15:05:53 INFO main - Try to start service thread:HAClient started:false lastThread:null
+2021-10-31 15:05:53 INFO main - Try to start service thread:FlushConsumeQueueService started:false lastThread:null
+2021-10-31 15:05:53 INFO main - Try to start service thread:FlushRealTimeService started:false lastThread:null
+2021-10-31 15:05:53 INFO main - Try to start service thread:StoreStatsService started:false lastThread:null
+2021-10-31 15:05:54 INFO main - Try to start service thread:FileWatchService started:false lastThread:null
+2021-10-31 15:05:54 INFO FileWatchService - FileWatchService service started
+2021-10-31 15:05:54 INFO main - Try to start service thread:PullRequestHoldService started:false lastThread:null
+2021-10-31 15:05:54 INFO PullRequestHoldService - PullRequestHoldService service started
+2021-10-31 15:05:54 INFO main - Try to start service thread:TransactionalMessageCheckService started:false lastThread:null
+2021-10-31 15:05:54 INFO main - The broker[broker-a, 192.168.18.123:10911] boot success. serializeType=JSON
+2021-10-31 15:06:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:06:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:06:54 INFO TransactionalMessageCheckService - create new topic TopicConfig [topicName=RMQ_SYS_TRANS_HALF_TOPIC, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:07:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:07:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:08:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:08:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:09:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:09:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:10:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:10:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:11:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:11:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:12:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:12:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:13:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:13:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:14:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:14:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:15:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:15:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:16:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:16:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:17:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:17:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:18:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:18:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:18:08 INFO ShutdownHook - Shutdown hook was invoked, 1
+2021-10-31 15:18:08 INFO ShutdownHook - Try to shutdown service thread:PullRequestHoldService started:true lastThread:Thread[PullRequestHoldService,5,main]
+2021-10-31 15:18:08 INFO ShutdownHook - shutdown thread PullRequestHoldService interrupt false
+2021-10-31 15:18:08 INFO PullRequestHoldService - PullRequestHoldService service end
+2021-10-31 15:18:08 INFO ShutdownHook - join thread PullRequestHoldService elapsed time(ms) 0 90000
+2021-10-31 15:18:09 INFO ShutdownHook - Try to shutdown service thread:FileWatchService started:true lastThread:Thread[FileWatchService,5,main]
+2021-10-31 15:18:09 INFO ShutdownHook - shutdown thread FileWatchService interrupt false
+2021-10-31 15:18:09 INFO FileWatchService - FileWatchService service end
+2021-10-31 15:18:09 INFO ShutdownHook - join thread FileWatchService elapsed time(ms) 0 90000
+2021-10-31 15:18:10 INFO ShutdownHook - Try to shutdown service thread:HAClient started:true lastThread:Thread[HAClient,5,main]
+2021-10-31 15:18:10 INFO ShutdownHook - shutdown thread HAClient interrupt false
+2021-10-31 15:18:10 INFO ShutdownHook - join thread HAClient elapsed time(ms) 0 90000
+2021-10-31 15:18:10 INFO ShutdownHook - Try to shutdown service thread:AcceptSocketService started:true lastThread:Thread[AcceptSocketService,5,main]
+2021-10-31 15:18:10 INFO ShutdownHook - shutdown thread AcceptSocketService interrupt true
+2021-10-31 15:18:10 INFO ShutdownHook - join thread AcceptSocketService elapsed time(ms) 0 90000
+2021-10-31 15:18:10 INFO ShutdownHook - Try to shutdown service thread:GroupTransferService started:true lastThread:Thread[GroupTransferService,5,main]
+2021-10-31 15:18:10 INFO ShutdownHook - shutdown thread GroupTransferService interrupt false
+2021-10-31 15:18:10 INFO ShutdownHook - join thread GroupTransferService elapsed time(ms) 0 90000
+2021-10-31 15:18:10 INFO ShutdownHook - Try to shutdown service thread:StoreStatsService started:true lastThread:Thread[StoreStatsService,5,main]
+2021-10-31 15:18:10 INFO ShutdownHook - shutdown thread StoreStatsService interrupt false
+2021-10-31 15:18:10 INFO ShutdownHook - join thread StoreStatsService elapsed time(ms) 0 90000
+2021-10-31 15:18:10 INFO ShutdownHook - Try to shutdown service thread:FlushRealTimeService started:true lastThread:Thread[FlushRealTimeService,5,main]
+2021-10-31 15:18:10 INFO ShutdownHook - shutdown thread FlushRealTimeService interrupt false
+2021-10-31 15:18:10 INFO ShutdownHook - join thread FlushRealTimeService elapsed time(ms) 387 300000
+2021-10-31 15:18:10 INFO ShutdownHook - Try to shutdown service thread:ReputMessageService started:true lastThread:Thread[ReputMessageService,5,main]
+2021-10-31 15:18:10 INFO ShutdownHook - shutdown thread ReputMessageService interrupt false
+2021-10-31 15:18:10 INFO ShutdownHook - join thread ReputMessageService elapsed time(ms) 1 90000
+2021-10-31 15:18:10 INFO ShutdownHook - Try to shutdown service thread:FlushConsumeQueueService started:true lastThread:Thread[FlushConsumeQueueService,5,main]
+2021-10-31 15:18:10 INFO ShutdownHook - shutdown thread FlushConsumeQueueService interrupt false
+2021-10-31 15:18:10 INFO ShutdownHook - join thread FlushConsumeQueueService elapsed time(ms) 0 60000
+2021-10-31 15:18:10 INFO ShutdownHook - Try to shutdown service thread:AllocateMappedFileService started:true lastThread:Thread[AllocateMappedFileService,5,main]
+2021-10-31 15:18:10 INFO ShutdownHook - shutdown thread AllocateMappedFileService interrupt true
+2021-10-31 15:18:10 INFO ShutdownHook - join thread AllocateMappedFileService elapsed time(ms) 0 90000
+2021-10-31 15:18:10 INFO ShutdownHook - Try to shutdown service thread:FileWatchService started:false lastThread:Thread[FileWatchService,5,]
+2021-10-31 15:18:10 INFO ShutdownHook - Try to shutdown service thread:TransactionalMessageCheckService started:true lastThread:Thread[TransactionalMessageCheckService,5,main]
+2021-10-31 15:18:10 INFO ShutdownHook - shutdown thread TransactionalMessageCheckService interrupt false
+2021-10-31 15:18:10 INFO ShutdownHook - join thread TransactionalMessageCheckService elapsed time(ms) 0 90000
+2021-10-31 15:18:10 INFO ShutdownHook - Shutdown hook over, consuming total time(ms): 2253
+2021-10-31 15:18:15 INFO main - rocketmqHome=D:\workspace\rocketmq-all-4.9.2
+2021-10-31 15:18:15 INFO main - namesrvAddr=
+2021-10-31 15:18:15 INFO main - brokerIP1=192.168.18.123
+2021-10-31 15:18:15 INFO main - brokerIP2=192.168.18.123
+2021-10-31 15:18:15 INFO main - brokerName=broker-a
+2021-10-31 15:18:15 INFO main - brokerClusterName=DefaultCluster
+2021-10-31 15:18:15 INFO main - brokerId=0
+2021-10-31 15:18:15 INFO main - brokerPermission=6
+2021-10-31 15:18:15 INFO main - defaultTopicQueueNums=8
+2021-10-31 15:18:15 INFO main - autoCreateTopicEnable=true
+2021-10-31 15:18:15 INFO main - clusterTopicEnable=true
+2021-10-31 15:18:15 INFO main - brokerTopicEnable=true
+2021-10-31 15:18:15 INFO main - autoCreateSubscriptionGroup=true
+2021-10-31 15:18:15 INFO main - messageStorePlugIn=
+2021-10-31 15:18:15 INFO main - msgTraceTopicName=RMQ_SYS_TRACE_TOPIC
+2021-10-31 15:18:15 INFO main - traceTopicEnable=false
+2021-10-31 15:18:15 INFO main - sendMessageThreadPoolNums=4
+2021-10-31 15:18:15 INFO main - pullMessageThreadPoolNums=48
+2021-10-31 15:18:15 INFO main - processReplyMessageThreadPoolNums=48
+2021-10-31 15:18:15 INFO main - queryMessageThreadPoolNums=24
+2021-10-31 15:18:15 INFO main - adminBrokerThreadPoolNums=16
+2021-10-31 15:18:15 INFO main - clientManageThreadPoolNums=32
+2021-10-31 15:18:15 INFO main - consumerManageThreadPoolNums=32
+2021-10-31 15:18:15 INFO main - heartbeatThreadPoolNums=16
+2021-10-31 15:18:15 INFO main - endTransactionThreadPoolNums=40
+2021-10-31 15:18:15 INFO main - flushConsumerOffsetInterval=5000
+2021-10-31 15:18:15 INFO main - flushConsumerOffsetHistoryInterval=60000
+2021-10-31 15:18:15 INFO main - rejectTransactionMessage=false
+2021-10-31 15:18:15 INFO main - fetchNamesrvAddrByAddressServer=false
+2021-10-31 15:18:15 INFO main - sendThreadPoolQueueCapacity=10000
+2021-10-31 15:18:15 INFO main - pullThreadPoolQueueCapacity=100000
+2021-10-31 15:18:15 INFO main - replyThreadPoolQueueCapacity=10000
+2021-10-31 15:18:15 INFO main - queryThreadPoolQueueCapacity=20000
+2021-10-31 15:18:15 INFO main - clientManagerThreadPoolQueueCapacity=1000000
+2021-10-31 15:18:15 INFO main - consumerManagerThreadPoolQueueCapacity=1000000
+2021-10-31 15:18:15 INFO main - heartbeatThreadPoolQueueCapacity=50000
+2021-10-31 15:18:15 INFO main - endTransactionPoolQueueCapacity=100000
+2021-10-31 15:18:15 INFO main - filterServerNums=0
+2021-10-31 15:18:15 INFO main - longPollingEnable=true
+2021-10-31 15:18:15 INFO main - shortPollingTimeMills=1000
+2021-10-31 15:18:15 INFO main - notifyConsumerIdsChangedEnable=true
+2021-10-31 15:18:15 INFO main - highSpeedMode=false
+2021-10-31 15:18:15 INFO main - commercialEnable=true
+2021-10-31 15:18:15 INFO main - commercialTimerCount=1
+2021-10-31 15:18:15 INFO main - commercialTransCount=1
+2021-10-31 15:18:15 INFO main - commercialBigCount=1
+2021-10-31 15:18:15 INFO main - commercialBaseCount=1
+2021-10-31 15:18:15 INFO main - transferMsgByHeap=true
+2021-10-31 15:18:15 INFO main - maxDelayTime=40
+2021-10-31 15:18:15 INFO main - regionId=DefaultRegion
+2021-10-31 15:18:15 INFO main - registerBrokerTimeoutMills=6000
+2021-10-31 15:18:15 INFO main - slaveReadEnable=false
+2021-10-31 15:18:15 INFO main - disableConsumeIfConsumerReadSlowly=false
+2021-10-31 15:18:15 INFO main - consumerFallbehindThreshold=17179869184
+2021-10-31 15:18:15 INFO main - brokerFastFailureEnable=true
+2021-10-31 15:18:15 INFO main - waitTimeMillsInSendQueue=200
+2021-10-31 15:18:15 INFO main - waitTimeMillsInPullQueue=5000
+2021-10-31 15:18:15 INFO main - waitTimeMillsInHeartbeatQueue=31000
+2021-10-31 15:18:15 INFO main - waitTimeMillsInTransactionQueue=3000
+2021-10-31 15:18:15 INFO main - startAcceptSendRequestTimeStamp=0
+2021-10-31 15:18:15 INFO main - traceOn=true
+2021-10-31 15:18:15 INFO main - enableCalcFilterBitMap=false
+2021-10-31 15:18:15 INFO main - expectConsumerNumUseFilter=32
+2021-10-31 15:18:15 INFO main - maxErrorRateOfBloomFilter=20
+2021-10-31 15:18:15 INFO main - filterDataCleanTimeSpan=86400000
+2021-10-31 15:18:15 INFO main - filterSupportRetry=false
+2021-10-31 15:18:15 INFO main - enablePropertyFilter=false
+2021-10-31 15:18:15 INFO main - compressedRegister=false
+2021-10-31 15:18:15 INFO main - forceRegister=true
+2021-10-31 15:18:15 INFO main - registerNameServerPeriod=30000
+2021-10-31 15:18:15 INFO main - transactionTimeOut=6000
+2021-10-31 15:18:15 INFO main - transactionCheckMax=15
+2021-10-31 15:18:15 INFO main - transactionCheckInterval=60000
+2021-10-31 15:18:15 INFO main - aclEnable=false
+2021-10-31 15:18:15 INFO main - storeReplyMessageEnable=true
+2021-10-31 15:18:15 INFO main - autoDeleteUnusedStats=false
+2021-10-31 15:18:15 INFO main - listenPort=10911
+2021-10-31 15:18:15 INFO main - serverWorkerThreads=8
+2021-10-31 15:18:15 INFO main - serverCallbackExecutorThreads=0
+2021-10-31 15:18:15 INFO main - serverSelectorThreads=3
+2021-10-31 15:18:15 INFO main - serverOnewaySemaphoreValue=256
+2021-10-31 15:18:15 INFO main - serverAsyncSemaphoreValue=64
+2021-10-31 15:18:15 INFO main - serverChannelMaxIdleTimeSeconds=120
+2021-10-31 15:18:15 INFO main - serverSocketSndBufSize=131072
+2021-10-31 15:18:15 INFO main - serverSocketRcvBufSize=131072
+2021-10-31 15:18:15 INFO main - serverPooledByteBufAllocatorEnable=true
+2021-10-31 15:18:15 INFO main - useEpollNativeSelector=false
+2021-10-31 15:18:15 INFO main - clientWorkerThreads=4
+2021-10-31 15:18:15 INFO main - clientCallbackExecutorThreads=16
+2021-10-31 15:18:15 INFO main - clientOnewaySemaphoreValue=65535
+2021-10-31 15:18:15 INFO main - clientAsyncSemaphoreValue=65535
+2021-10-31 15:18:15 INFO main - connectTimeoutMillis=3000
+2021-10-31 15:18:15 INFO main - channelNotActiveInterval=60000
+2021-10-31 15:18:15 INFO main - clientChannelMaxIdleTimeSeconds=120
+2021-10-31 15:18:15 INFO main - clientSocketSndBufSize=131072
+2021-10-31 15:18:15 INFO main - clientSocketRcvBufSize=131072
+2021-10-31 15:18:15 INFO main - clientPooledByteBufAllocatorEnable=false
+2021-10-31 15:18:15 INFO main - clientCloseSocketIfTimeout=true
+2021-10-31 15:18:15 INFO main - useTLS=false
+2021-10-31 15:18:15 INFO main - storePathRootDir=C:\Users\PC\store
+2021-10-31 15:18:15 INFO main - storePathCommitLog=C:\Users\PC\store\commitlog
+2021-10-31 15:18:15 INFO main - readOnlyCommitLogStorePaths=
+2021-10-31 15:18:15 INFO main - mappedFileSizeCommitLog=1073741824
+2021-10-31 15:18:15 INFO main - mappedFileSizeConsumeQueue=6000000
+2021-10-31 15:18:15 INFO main - enableConsumeQueueExt=false
+2021-10-31 15:18:15 INFO main - mappedFileSizeConsumeQueueExt=50331648
+2021-10-31 15:18:15 INFO main - bitMapLengthConsumeQueueExt=64
+2021-10-31 15:18:15 INFO main - flushIntervalCommitLog=500
+2021-10-31 15:18:15 INFO main - commitIntervalCommitLog=200
+2021-10-31 15:18:15 INFO main - useReentrantLockWhenPutMessage=true
+2021-10-31 15:18:15 INFO main - flushCommitLogTimed=true
+2021-10-31 15:18:15 INFO main - flushIntervalConsumeQueue=1000
+2021-10-31 15:18:15 INFO main - cleanResourceInterval=10000
+2021-10-31 15:18:15 INFO main - deleteCommitLogFilesInterval=100
+2021-10-31 15:18:15 INFO main - deleteConsumeQueueFilesInterval=100
+2021-10-31 15:18:15 INFO main - destroyMapedFileIntervalForcibly=120000
+2021-10-31 15:18:15 INFO main - redeleteHangedFileInterval=120000
+2021-10-31 15:18:15 INFO main - deleteWhen=04
+2021-10-31 15:18:15 INFO main - diskMaxUsedSpaceRatio=75
+2021-10-31 15:18:15 INFO main - fileReservedTime=48
+2021-10-31 15:18:15 INFO main - putMsgIndexHightWater=600000
+2021-10-31 15:18:15 INFO main - maxMessageSize=4194304
+2021-10-31 15:18:15 INFO main - checkCRCOnRecover=true
+2021-10-31 15:18:15 INFO main - flushCommitLogLeastPages=4
+2021-10-31 15:18:15 INFO main - commitCommitLogLeastPages=4
+2021-10-31 15:18:15 INFO main - flushLeastPagesWhenWarmMapedFile=4096
+2021-10-31 15:18:15 INFO main - flushConsumeQueueLeastPages=2
+2021-10-31 15:18:15 INFO main - flushCommitLogThoroughInterval=10000
+2021-10-31 15:18:15 INFO main - commitCommitLogThoroughInterval=200
+2021-10-31 15:18:15 INFO main - flushConsumeQueueThoroughInterval=60000
+2021-10-31 15:18:15 INFO main - maxTransferBytesOnMessageInMemory=262144
+2021-10-31 15:18:15 INFO main - maxTransferCountOnMessageInMemory=32
+2021-10-31 15:18:15 INFO main - maxTransferBytesOnMessageInDisk=65536
+2021-10-31 15:18:15 INFO main - maxTransferCountOnMessageInDisk=8
+2021-10-31 15:18:15 INFO main - accessMessageInMemoryMaxRatio=40
+2021-10-31 15:18:15 INFO main - messageIndexEnable=true
+2021-10-31 15:18:15 INFO main - maxHashSlotNum=5000000
+2021-10-31 15:18:15 INFO main - maxIndexNum=20000000
+2021-10-31 15:18:15 INFO main - maxMsgsNumBatch=64
+2021-10-31 15:18:15 INFO main - messageIndexSafe=false
+2021-10-31 15:18:15 INFO main - haListenPort=10912
+2021-10-31 15:18:15 INFO main - haSendHeartbeatInterval=5000
+2021-10-31 15:18:15 INFO main - haHousekeepingInterval=20000
+2021-10-31 15:18:15 INFO main - haTransferBatchSize=32768
+2021-10-31 15:18:15 INFO main - haMasterAddress=
+2021-10-31 15:18:15 INFO main - haSlaveFallbehindMax=268435456
+2021-10-31 15:18:15 INFO main - brokerRole=ASYNC_MASTER
+2021-10-31 15:18:15 INFO main - flushDiskType=ASYNC_FLUSH
+2021-10-31 15:18:15 INFO main - syncFlushTimeout=5000
+2021-10-31 15:18:15 INFO main - messageDelayLevel=1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 8m 9m 10m 20m 30m 1h 2h
+2021-10-31 15:18:15 INFO main - flushDelayOffsetInterval=10000
+2021-10-31 15:18:15 INFO main - cleanFileForciblyEnable=true
+2021-10-31 15:18:15 INFO main - warmMapedFileEnable=false
+2021-10-31 15:18:15 INFO main - offsetCheckInSlave=false
+2021-10-31 15:18:15 INFO main - debugLockEnable=false
+2021-10-31 15:18:15 INFO main - duplicationEnable=false
+2021-10-31 15:18:15 INFO main - diskFallRecorded=true
+2021-10-31 15:18:15 INFO main - osPageCacheBusyTimeOutMills=1000
+2021-10-31 15:18:15 INFO main - defaultQueryMaxNum=32
+2021-10-31 15:18:15 INFO main - transientStorePoolEnable=false
+2021-10-31 15:18:15 INFO main - transientStorePoolSize=5
+2021-10-31 15:18:15 INFO main - fastFailIfNoBufferInStorePool=false
+2021-10-31 15:18:15 INFO main - enableDLegerCommitLog=false
+2021-10-31 15:18:15 INFO main - dLegerGroup=
+2021-10-31 15:18:15 INFO main - dLegerPeers=
+2021-10-31 15:18:15 INFO main - dLegerSelfId=
+2021-10-31 15:18:15 INFO main - preferredLeaderId=
+2021-10-31 15:18:15 INFO main - isEnableBatchPush=false
+2021-10-31 15:18:15 INFO main - enableScheduleMessageStats=true
+2021-10-31 15:18:15 INFO main - load exist local topic, TopicConfig [topicName=SCHEDULE_TOPIC_XXXX, readQueueNums=18, writeQueueNums=18, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:18:15 INFO main - load exist local topic, TopicConfig [topicName=RMQ_SYS_TRANS_HALF_TOPIC, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:18:15 INFO main - load exist local topic, TopicConfig [topicName=DefaultCluster_REPLY_TOPIC, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:18:15 INFO main - load exist local topic, TopicConfig [topicName=BenchmarkTest, readQueueNums=1024, writeQueueNums=1024, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:18:15 INFO main - load exist local topic, TopicConfig [topicName=OFFSET_MOVED_EVENT, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:18:15 INFO main - load exist local topic, TopicConfig [topicName=broker-a, readQueueNums=1, writeQueueNums=1, perm=RWX, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:18:15 INFO main - load exist local topic, TopicConfig [topicName=TBW102, readQueueNums=8, writeQueueNums=8, perm=RWX, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:18:15 INFO main - load exist local topic, TopicConfig [topicName=SELF_TEST_TOPIC, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:18:15 INFO main - load exist local topic, TopicConfig [topicName=DefaultCluster, readQueueNums=16, writeQueueNums=16, perm=RWX, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:18:15 INFO main - load C:\Users\PC\store\config\topics.json OK
+2021-10-31 15:18:15 INFO main - load C:\Users\PC\store\config\consumerOffset.json OK
+2021-10-31 15:18:15 INFO main - load C:\Users\PC\store\config\consumerFilter.json OK
+2021-10-31 15:18:15 INFO main - Try to start service thread:AllocateMappedFileService started:false lastThread:null
+2021-10-31 15:18:15 INFO main - load C:\Users\PC\store\config\delayOffset.json OK
+2021-10-31 15:18:16 WARN main - Load default transaction message hook service: TransactionalMessageServiceImpl
+2021-10-31 15:18:16 WARN main - Load default discard message hook service: DefaultTransactionalMessageCheckListener
+2021-10-31 15:18:16 INFO main - The broker dose not enable acl
+2021-10-31 15:18:16 INFO main - Try to start service thread:ReputMessageService started:false lastThread:null
+2021-10-31 15:18:16 INFO main - Try to start service thread:AcceptSocketService started:false lastThread:null
+2021-10-31 15:18:16 INFO main - Try to start service thread:GroupTransferService started:false lastThread:null
+2021-10-31 15:18:16 INFO main - Try to start service thread:HAClient started:false lastThread:null
+2021-10-31 15:18:16 INFO main - load C:\Users\PC\store\config\delayOffset.json OK
+2021-10-31 15:18:16 INFO main - Try to start service thread:FlushConsumeQueueService started:false lastThread:null
+2021-10-31 15:18:16 INFO main - Try to start service thread:FlushRealTimeService started:false lastThread:null
+2021-10-31 15:18:16 INFO main - Try to start service thread:StoreStatsService started:false lastThread:null
+2021-10-31 15:18:17 INFO main - Try to start service thread:FileWatchService started:false lastThread:null
+2021-10-31 15:18:17 INFO FileWatchService - FileWatchService service started
+2021-10-31 15:18:17 INFO main - Try to start service thread:PullRequestHoldService started:false lastThread:null
+2021-10-31 15:18:17 INFO PullRequestHoldService - PullRequestHoldService service started
+2021-10-31 15:18:17 INFO main - Try to start service thread:TransactionalMessageCheckService started:false lastThread:null
+2021-10-31 15:18:17 INFO main - The broker[broker-a, 192.168.18.123:10911] boot success. serializeType=JSON
+2021-10-31 15:18:26 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:18:26 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:19:26 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:19:26 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:19:51 INFO ShutdownHook - Shutdown hook was invoked, 1
+2021-10-31 15:19:51 INFO ShutdownHook - Try to shutdown service thread:PullRequestHoldService started:true lastThread:Thread[PullRequestHoldService,5,main]
+2021-10-31 15:19:51 INFO ShutdownHook - shutdown thread PullRequestHoldService interrupt false
+2021-10-31 15:19:51 INFO PullRequestHoldService - PullRequestHoldService service end
+2021-10-31 15:19:51 INFO ShutdownHook - join thread PullRequestHoldService elapsed time(ms) 0 90000
+2021-10-31 15:19:53 INFO ShutdownHook - Try to shutdown service thread:FileWatchService started:true lastThread:Thread[FileWatchService,5,main]
+2021-10-31 15:19:53 INFO ShutdownHook - shutdown thread FileWatchService interrupt false
+2021-10-31 15:19:53 INFO FileWatchService - FileWatchService service end
+2021-10-31 15:19:53 INFO ShutdownHook - join thread FileWatchService elapsed time(ms) 0 90000
+2021-10-31 15:19:54 INFO ShutdownHook - Try to shutdown service thread:HAClient started:true lastThread:Thread[HAClient,5,main]
+2021-10-31 15:19:54 INFO ShutdownHook - shutdown thread HAClient interrupt false
+2021-10-31 15:19:54 INFO ShutdownHook - join thread HAClient elapsed time(ms) 0 90000
+2021-10-31 15:19:54 INFO ShutdownHook - Try to shutdown service thread:AcceptSocketService started:true lastThread:Thread[AcceptSocketService,5,main]
+2021-10-31 15:19:54 INFO ShutdownHook - shutdown thread AcceptSocketService interrupt true
+2021-10-31 15:19:54 INFO ShutdownHook - join thread AcceptSocketService elapsed time(ms) 0 90000
+2021-10-31 15:19:54 INFO ShutdownHook - Try to shutdown service thread:GroupTransferService started:true lastThread:Thread[GroupTransferService,5,main]
+2021-10-31 15:19:54 INFO ShutdownHook - shutdown thread GroupTransferService interrupt false
+2021-10-31 15:19:54 INFO ShutdownHook - join thread GroupTransferService elapsed time(ms) 0 90000
+2021-10-31 15:19:54 INFO ShutdownHook - Try to shutdown service thread:StoreStatsService started:true lastThread:Thread[StoreStatsService,5,main]
+2021-10-31 15:19:54 INFO ShutdownHook - shutdown thread StoreStatsService interrupt false
+2021-10-31 15:19:54 INFO ShutdownHook - join thread StoreStatsService elapsed time(ms) 0 90000
+2021-10-31 15:19:54 INFO ShutdownHook - Try to shutdown service thread:FlushRealTimeService started:true lastThread:Thread[FlushRealTimeService,5,main]
+2021-10-31 15:19:54 INFO ShutdownHook - shutdown thread FlushRealTimeService interrupt false
+2021-10-31 15:19:54 INFO ShutdownHook - join thread FlushRealTimeService elapsed time(ms) 499 300000
+2021-10-31 15:19:54 INFO ShutdownHook - Try to shutdown service thread:ReputMessageService started:true lastThread:Thread[ReputMessageService,5,main]
+2021-10-31 15:19:54 INFO ShutdownHook - shutdown thread ReputMessageService interrupt false
+2021-10-31 15:19:54 INFO ShutdownHook - join thread ReputMessageService elapsed time(ms) 2 90000
+2021-10-31 15:19:54 INFO ShutdownHook - Try to shutdown service thread:FlushConsumeQueueService started:true lastThread:Thread[FlushConsumeQueueService,5,main]
+2021-10-31 15:19:54 INFO ShutdownHook - shutdown thread FlushConsumeQueueService interrupt false
+2021-10-31 15:19:54 INFO ShutdownHook - join thread FlushConsumeQueueService elapsed time(ms) 0 60000
+2021-10-31 15:19:54 INFO ShutdownHook - Try to shutdown service thread:AllocateMappedFileService started:true lastThread:Thread[AllocateMappedFileService,5,main]
+2021-10-31 15:19:54 INFO ShutdownHook - shutdown thread AllocateMappedFileService interrupt true
+2021-10-31 15:19:54 INFO ShutdownHook - join thread AllocateMappedFileService elapsed time(ms) 1 90000
+2021-10-31 15:19:54 INFO ShutdownHook - Try to shutdown service thread:FileWatchService started:false lastThread:Thread[FileWatchService,5,]
+2021-10-31 15:19:54 INFO ShutdownHook - Try to shutdown service thread:TransactionalMessageCheckService started:true lastThread:Thread[TransactionalMessageCheckService,5,main]
+2021-10-31 15:19:54 INFO ShutdownHook - shutdown thread TransactionalMessageCheckService interrupt false
+2021-10-31 15:19:54 INFO ShutdownHook - join thread TransactionalMessageCheckService elapsed time(ms) 0 90000
+2021-10-31 15:19:54 INFO ShutdownHook - Shutdown hook over, consuming total time(ms): 2838
+2021-10-31 15:20:59 INFO main - rocketmqHome=D:\workspace\rocketmq-all-4.9.2
+2021-10-31 15:20:59 INFO main - namesrvAddr=127.0.0.1:9876
+2021-10-31 15:20:59 INFO main - brokerIP1=192.168.18.123
+2021-10-31 15:20:59 INFO main - brokerIP2=192.168.18.123
+2021-10-31 15:20:59 INFO main - brokerName=broker-a
+2021-10-31 15:20:59 INFO main - brokerClusterName=DefaultCluster
+2021-10-31 15:20:59 INFO main - brokerId=0
+2021-10-31 15:20:59 INFO main - brokerPermission=6
+2021-10-31 15:20:59 INFO main - defaultTopicQueueNums=8
+2021-10-31 15:20:59 INFO main - autoCreateTopicEnable=true
+2021-10-31 15:20:59 INFO main - clusterTopicEnable=true
+2021-10-31 15:20:59 INFO main - brokerTopicEnable=true
+2021-10-31 15:20:59 INFO main - autoCreateSubscriptionGroup=true
+2021-10-31 15:20:59 INFO main - messageStorePlugIn=
+2021-10-31 15:20:59 INFO main - msgTraceTopicName=RMQ_SYS_TRACE_TOPIC
+2021-10-31 15:20:59 INFO main - traceTopicEnable=false
+2021-10-31 15:20:59 INFO main - sendMessageThreadPoolNums=4
+2021-10-31 15:20:59 INFO main - pullMessageThreadPoolNums=48
+2021-10-31 15:20:59 INFO main - processReplyMessageThreadPoolNums=48
+2021-10-31 15:20:59 INFO main - queryMessageThreadPoolNums=24
+2021-10-31 15:20:59 INFO main - adminBrokerThreadPoolNums=16
+2021-10-31 15:20:59 INFO main - clientManageThreadPoolNums=32
+2021-10-31 15:20:59 INFO main - consumerManageThreadPoolNums=32
+2021-10-31 15:20:59 INFO main - heartbeatThreadPoolNums=16
+2021-10-31 15:20:59 INFO main - endTransactionThreadPoolNums=40
+2021-10-31 15:20:59 INFO main - flushConsumerOffsetInterval=5000
+2021-10-31 15:20:59 INFO main - flushConsumerOffsetHistoryInterval=60000
+2021-10-31 15:20:59 INFO main - rejectTransactionMessage=false
+2021-10-31 15:20:59 INFO main - fetchNamesrvAddrByAddressServer=false
+2021-10-31 15:20:59 INFO main - sendThreadPoolQueueCapacity=10000
+2021-10-31 15:20:59 INFO main - pullThreadPoolQueueCapacity=100000
+2021-10-31 15:20:59 INFO main - replyThreadPoolQueueCapacity=10000
+2021-10-31 15:20:59 INFO main - queryThreadPoolQueueCapacity=20000
+2021-10-31 15:20:59 INFO main - clientManagerThreadPoolQueueCapacity=1000000
+2021-10-31 15:20:59 INFO main - consumerManagerThreadPoolQueueCapacity=1000000
+2021-10-31 15:20:59 INFO main - heartbeatThreadPoolQueueCapacity=50000
+2021-10-31 15:20:59 INFO main - endTransactionPoolQueueCapacity=100000
+2021-10-31 15:20:59 INFO main - filterServerNums=0
+2021-10-31 15:20:59 INFO main - longPollingEnable=true
+2021-10-31 15:20:59 INFO main - shortPollingTimeMills=1000
+2021-10-31 15:20:59 INFO main - notifyConsumerIdsChangedEnable=true
+2021-10-31 15:20:59 INFO main - highSpeedMode=false
+2021-10-31 15:20:59 INFO main - commercialEnable=true
+2021-10-31 15:20:59 INFO main - commercialTimerCount=1
+2021-10-31 15:20:59 INFO main - commercialTransCount=1
+2021-10-31 15:20:59 INFO main - commercialBigCount=1
+2021-10-31 15:20:59 INFO main - commercialBaseCount=1
+2021-10-31 15:20:59 INFO main - transferMsgByHeap=true
+2021-10-31 15:20:59 INFO main - maxDelayTime=40
+2021-10-31 15:20:59 INFO main - regionId=DefaultRegion
+2021-10-31 15:20:59 INFO main - registerBrokerTimeoutMills=6000
+2021-10-31 15:20:59 INFO main - slaveReadEnable=false
+2021-10-31 15:20:59 INFO main - disableConsumeIfConsumerReadSlowly=false
+2021-10-31 15:20:59 INFO main - consumerFallbehindThreshold=17179869184
+2021-10-31 15:20:59 INFO main - brokerFastFailureEnable=true
+2021-10-31 15:20:59 INFO main - waitTimeMillsInSendQueue=200
+2021-10-31 15:20:59 INFO main - waitTimeMillsInPullQueue=5000
+2021-10-31 15:20:59 INFO main - waitTimeMillsInHeartbeatQueue=31000
+2021-10-31 15:20:59 INFO main - waitTimeMillsInTransactionQueue=3000
+2021-10-31 15:20:59 INFO main - startAcceptSendRequestTimeStamp=0
+2021-10-31 15:20:59 INFO main - traceOn=true
+2021-10-31 15:20:59 INFO main - enableCalcFilterBitMap=false
+2021-10-31 15:20:59 INFO main - expectConsumerNumUseFilter=32
+2021-10-31 15:20:59 INFO main - maxErrorRateOfBloomFilter=20
+2021-10-31 15:20:59 INFO main - filterDataCleanTimeSpan=86400000
+2021-10-31 15:20:59 INFO main - filterSupportRetry=false
+2021-10-31 15:20:59 INFO main - enablePropertyFilter=false
+2021-10-31 15:20:59 INFO main - compressedRegister=false
+2021-10-31 15:20:59 INFO main - forceRegister=true
+2021-10-31 15:20:59 INFO main - registerNameServerPeriod=30000
+2021-10-31 15:20:59 INFO main - transactionTimeOut=6000
+2021-10-31 15:20:59 INFO main - transactionCheckMax=15
+2021-10-31 15:20:59 INFO main - transactionCheckInterval=60000
+2021-10-31 15:20:59 INFO main - aclEnable=false
+2021-10-31 15:20:59 INFO main - storeReplyMessageEnable=true
+2021-10-31 15:20:59 INFO main - autoDeleteUnusedStats=false
+2021-10-31 15:20:59 INFO main - listenPort=10911
+2021-10-31 15:20:59 INFO main - serverWorkerThreads=8
+2021-10-31 15:20:59 INFO main - serverCallbackExecutorThreads=0
+2021-10-31 15:20:59 INFO main - serverSelectorThreads=3
+2021-10-31 15:20:59 INFO main - serverOnewaySemaphoreValue=256
+2021-10-31 15:20:59 INFO main - serverAsyncSemaphoreValue=64
+2021-10-31 15:20:59 INFO main - serverChannelMaxIdleTimeSeconds=120
+2021-10-31 15:20:59 INFO main - serverSocketSndBufSize=131072
+2021-10-31 15:20:59 INFO main - serverSocketRcvBufSize=131072
+2021-10-31 15:20:59 INFO main - serverPooledByteBufAllocatorEnable=true
+2021-10-31 15:20:59 INFO main - useEpollNativeSelector=false
+2021-10-31 15:20:59 INFO main - clientWorkerThreads=4
+2021-10-31 15:20:59 INFO main - clientCallbackExecutorThreads=16
+2021-10-31 15:20:59 INFO main - clientOnewaySemaphoreValue=65535
+2021-10-31 15:20:59 INFO main - clientAsyncSemaphoreValue=65535
+2021-10-31 15:20:59 INFO main - connectTimeoutMillis=3000
+2021-10-31 15:20:59 INFO main - channelNotActiveInterval=60000
+2021-10-31 15:20:59 INFO main - clientChannelMaxIdleTimeSeconds=120
+2021-10-31 15:20:59 INFO main - clientSocketSndBufSize=131072
+2021-10-31 15:20:59 INFO main - clientSocketRcvBufSize=131072
+2021-10-31 15:20:59 INFO main - clientPooledByteBufAllocatorEnable=false
+2021-10-31 15:20:59 INFO main - clientCloseSocketIfTimeout=true
+2021-10-31 15:20:59 INFO main - useTLS=false
+2021-10-31 15:20:59 INFO main - storePathRootDir=C:\Users\PC\store
+2021-10-31 15:20:59 INFO main - storePathCommitLog=C:\Users\PC\store\commitlog
+2021-10-31 15:20:59 INFO main - readOnlyCommitLogStorePaths=
+2021-10-31 15:20:59 INFO main - mappedFileSizeCommitLog=1073741824
+2021-10-31 15:20:59 INFO main - mappedFileSizeConsumeQueue=6000000
+2021-10-31 15:20:59 INFO main - enableConsumeQueueExt=false
+2021-10-31 15:20:59 INFO main - mappedFileSizeConsumeQueueExt=50331648
+2021-10-31 15:20:59 INFO main - bitMapLengthConsumeQueueExt=64
+2021-10-31 15:20:59 INFO main - flushIntervalCommitLog=500
+2021-10-31 15:20:59 INFO main - commitIntervalCommitLog=200
+2021-10-31 15:20:59 INFO main - useReentrantLockWhenPutMessage=true
+2021-10-31 15:20:59 INFO main - flushCommitLogTimed=true
+2021-10-31 15:20:59 INFO main - flushIntervalConsumeQueue=1000
+2021-10-31 15:20:59 INFO main - cleanResourceInterval=10000
+2021-10-31 15:20:59 INFO main - deleteCommitLogFilesInterval=100
+2021-10-31 15:20:59 INFO main - deleteConsumeQueueFilesInterval=100
+2021-10-31 15:20:59 INFO main - destroyMapedFileIntervalForcibly=120000
+2021-10-31 15:20:59 INFO main - redeleteHangedFileInterval=120000
+2021-10-31 15:20:59 INFO main - deleteWhen=04
+2021-10-31 15:20:59 INFO main - diskMaxUsedSpaceRatio=75
+2021-10-31 15:20:59 INFO main - fileReservedTime=48
+2021-10-31 15:20:59 INFO main - putMsgIndexHightWater=600000
+2021-10-31 15:20:59 INFO main - maxMessageSize=4194304
+2021-10-31 15:20:59 INFO main - checkCRCOnRecover=true
+2021-10-31 15:20:59 INFO main - flushCommitLogLeastPages=4
+2021-10-31 15:20:59 INFO main - commitCommitLogLeastPages=4
+2021-10-31 15:20:59 INFO main - flushLeastPagesWhenWarmMapedFile=4096
+2021-10-31 15:20:59 INFO main - flushConsumeQueueLeastPages=2
+2021-10-31 15:20:59 INFO main - flushCommitLogThoroughInterval=10000
+2021-10-31 15:20:59 INFO main - commitCommitLogThoroughInterval=200
+2021-10-31 15:20:59 INFO main - flushConsumeQueueThoroughInterval=60000
+2021-10-31 15:20:59 INFO main - maxTransferBytesOnMessageInMemory=262144
+2021-10-31 15:20:59 INFO main - maxTransferCountOnMessageInMemory=32
+2021-10-31 15:20:59 INFO main - maxTransferBytesOnMessageInDisk=65536
+2021-10-31 15:20:59 INFO main - maxTransferCountOnMessageInDisk=8
+2021-10-31 15:20:59 INFO main - accessMessageInMemoryMaxRatio=40
+2021-10-31 15:20:59 INFO main - messageIndexEnable=true
+2021-10-31 15:20:59 INFO main - maxHashSlotNum=5000000
+2021-10-31 15:20:59 INFO main - maxIndexNum=20000000
+2021-10-31 15:20:59 INFO main - maxMsgsNumBatch=64
+2021-10-31 15:20:59 INFO main - messageIndexSafe=false
+2021-10-31 15:20:59 INFO main - haListenPort=10912
+2021-10-31 15:20:59 INFO main - haSendHeartbeatInterval=5000
+2021-10-31 15:20:59 INFO main - haHousekeepingInterval=20000
+2021-10-31 15:20:59 INFO main - haTransferBatchSize=32768
+2021-10-31 15:20:59 INFO main - haMasterAddress=
+2021-10-31 15:20:59 INFO main - haSlaveFallbehindMax=268435456
+2021-10-31 15:20:59 INFO main - brokerRole=ASYNC_MASTER
+2021-10-31 15:20:59 INFO main - flushDiskType=ASYNC_FLUSH
+2021-10-31 15:20:59 INFO main - syncFlushTimeout=5000
+2021-10-31 15:20:59 INFO main - messageDelayLevel=1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 8m 9m 10m 20m 30m 1h 2h
+2021-10-31 15:20:59 INFO main - flushDelayOffsetInterval=10000
+2021-10-31 15:20:59 INFO main - cleanFileForciblyEnable=true
+2021-10-31 15:20:59 INFO main - warmMapedFileEnable=false
+2021-10-31 15:20:59 INFO main - offsetCheckInSlave=false
+2021-10-31 15:20:59 INFO main - debugLockEnable=false
+2021-10-31 15:20:59 INFO main - duplicationEnable=false
+2021-10-31 15:20:59 INFO main - diskFallRecorded=true
+2021-10-31 15:20:59 INFO main - osPageCacheBusyTimeOutMills=1000
+2021-10-31 15:20:59 INFO main - defaultQueryMaxNum=32
+2021-10-31 15:20:59 INFO main - transientStorePoolEnable=false
+2021-10-31 15:20:59 INFO main - transientStorePoolSize=5
+2021-10-31 15:20:59 INFO main - fastFailIfNoBufferInStorePool=false
+2021-10-31 15:20:59 INFO main - enableDLegerCommitLog=false
+2021-10-31 15:20:59 INFO main - dLegerGroup=
+2021-10-31 15:20:59 INFO main - dLegerPeers=
+2021-10-31 15:20:59 INFO main - dLegerSelfId=
+2021-10-31 15:20:59 INFO main - preferredLeaderId=
+2021-10-31 15:20:59 INFO main - isEnableBatchPush=false
+2021-10-31 15:20:59 INFO main - enableScheduleMessageStats=true
+2021-10-31 15:20:59 INFO main - load exist local topic, TopicConfig [topicName=SCHEDULE_TOPIC_XXXX, readQueueNums=18, writeQueueNums=18, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:20:59 INFO main - load exist local topic, TopicConfig [topicName=RMQ_SYS_TRANS_HALF_TOPIC, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:20:59 INFO main - load exist local topic, TopicConfig [topicName=DefaultCluster_REPLY_TOPIC, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:20:59 INFO main - load exist local topic, TopicConfig [topicName=BenchmarkTest, readQueueNums=1024, writeQueueNums=1024, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:20:59 INFO main - load exist local topic, TopicConfig [topicName=OFFSET_MOVED_EVENT, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:20:59 INFO main - load exist local topic, TopicConfig [topicName=broker-a, readQueueNums=1, writeQueueNums=1, perm=RWX, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:20:59 INFO main - load exist local topic, TopicConfig [topicName=TBW102, readQueueNums=8, writeQueueNums=8, perm=RWX, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:20:59 INFO main - load exist local topic, TopicConfig [topicName=SELF_TEST_TOPIC, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:20:59 INFO main - load exist local topic, TopicConfig [topicName=DefaultCluster, readQueueNums=16, writeQueueNums=16, perm=RWX, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:20:59 INFO main - load C:\Users\PC\store\config\topics.json OK
+2021-10-31 15:20:59 INFO main - load C:\Users\PC\store\config\consumerOffset.json OK
+2021-10-31 15:20:59 INFO main - load C:\Users\PC\store\config\consumerFilter.json OK
+2021-10-31 15:20:59 INFO main - Try to start service thread:AllocateMappedFileService started:false lastThread:null
+2021-10-31 15:20:59 INFO main - load C:\Users\PC\store\config\delayOffset.json OK
+2021-10-31 15:21:01 INFO main - Set user specified name server address: 127.0.0.1:9876
+2021-10-31 15:21:01 WARN main - Load default transaction message hook service: TransactionalMessageServiceImpl
+2021-10-31 15:21:01 WARN main - Load default discard message hook service: DefaultTransactionalMessageCheckListener
+2021-10-31 15:21:01 INFO main - The broker dose not enable acl
+2021-10-31 15:21:01 INFO main - Try to start service thread:ReputMessageService started:false lastThread:null
+2021-10-31 15:21:01 INFO main - Try to start service thread:AcceptSocketService started:false lastThread:null
+2021-10-31 15:21:01 INFO main - Try to start service thread:GroupTransferService started:false lastThread:null
+2021-10-31 15:21:01 INFO main - Try to start service thread:HAClient started:false lastThread:null
+2021-10-31 15:21:01 INFO main - load C:\Users\PC\store\config\delayOffset.json OK
+2021-10-31 15:21:01 INFO main - Try to start service thread:FlushConsumeQueueService started:false lastThread:null
+2021-10-31 15:21:01 INFO main - Try to start service thread:FlushRealTimeService started:false lastThread:null
+2021-10-31 15:21:01 INFO main - Try to start service thread:StoreStatsService started:false lastThread:null
+2021-10-31 15:21:01 INFO main - Try to start service thread:FileWatchService started:false lastThread:null
+2021-10-31 15:21:01 INFO FileWatchService - FileWatchService service started
+2021-10-31 15:21:01 INFO main - Try to start service thread:PullRequestHoldService started:false lastThread:null
+2021-10-31 15:21:01 INFO PullRequestHoldService - PullRequestHoldService service started
+2021-10-31 15:21:01 INFO main - Try to start service thread:TransactionalMessageCheckService started:false lastThread:null
+2021-10-31 15:21:01 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:21:01 INFO main - The broker[broker-a, 192.168.18.123:10911] boot success. serializeType=JSON and name server is 127.0.0.1:9876
+2021-10-31 15:21:11 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:21:11 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:21:11 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:21:13 INFO HeartbeatThread_1 - new producer connected, group: CLIENT_INNER_PRODUCER channel: ClientChannelInfo [channel=[id: 0xbbc86945, L:/192.168.18.123:10911 - R:/192.168.18.123:58223], clientId=192.168.18.123@41104#952524697696000, language=JAVA, version=397, lastUpdateTimestamp=1635664873508]
+2021-10-31 15:21:13 INFO HeartbeatThread_1 - new producer connected, group: please_rename_unique_group_name channel: ClientChannelInfo [channel=[id: 0xbbc86945, L:/192.168.18.123:10911 - R:/192.168.18.123:58223], clientId=192.168.18.123@41104#952524697696000, language=JAVA, version=397, lastUpdateTimestamp=1635664873508]
+2021-10-31 15:21:13 WARN SendMessageThread_1 - the topic TopicTest not exist, producer: /192.168.18.123:58223
+2021-10-31 15:21:13 INFO SendMessageThread_1 - Create new topic by default topic:[TBW102] config:[TopicConfig [topicName=TopicTest, readQueueNums=4, writeQueueNums=4, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]] producer:[192.168.18.123:58223]
+2021-10-31 15:21:13 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:21:14 INFO ClientManageThread_1 - unregister a producer[please_rename_unique_group_name] from groupChannelTable ClientChannelInfo [channel=[id: 0xbbc86945, L:/192.168.18.123:10911 - R:/192.168.18.123:58223], clientId=192.168.18.123@41104#952524697696000, language=JAVA, version=397, lastUpdateTimestamp=1635664874913]
+2021-10-31 15:21:14 INFO ClientManageThread_1 - unregister a producer group[please_rename_unique_group_name] from groupChannelTable
+2021-10-31 15:21:14 INFO ClientManageThread_2 - unregister a producer[CLIENT_INNER_PRODUCER] from groupChannelTable ClientChannelInfo [channel=[id: 0xbbc86945, L:/192.168.18.123:10911 - R:/192.168.18.123:58223], clientId=192.168.18.123@41104#952524697696000, language=JAVA, version=397, lastUpdateTimestamp=1635664874915]
+2021-10-31 15:21:14 INFO ClientManageThread_2 - unregister a producer group[CLIENT_INNER_PRODUCER] from groupChannelTable
+2021-10-31 15:21:41 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:22:11 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:22:11 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 191890 bytes
+2021-10-31 15:22:11 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:22:25 INFO HeartbeatThread_2 - auto create a subscription group, SubscriptionGroupConfig [groupName=please_rename_unique_group_name_4, consumeEnable=true, consumeFromMinEnable=true, consumeBroadcastEnable=true, retryQueueNums=1, retryMaxTimes=16, brokerId=0, whichBrokerWhenConsumeSlowly=1, notifyConsumerIdsChangedEnable=true]
+2021-10-31 15:22:25 INFO HeartbeatThread_2 - create new topic TopicConfig [topicName=%RETRY%please_rename_unique_group_name_4, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:22:25 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:22:25 INFO HeartbeatThread_2 - new consumer connected, group: please_rename_unique_group_name_4 CONSUME_PASSIVELY CLUSTERING channel: ClientChannelInfo [channel=[id: 0x49868871, L:/192.168.18.123:10911 - R:/192.168.18.123:58241], clientId=192.168.18.123@21216#952597844927100, language=JAVA, version=397, lastUpdateTimestamp=1635664945963]
+2021-10-31 15:22:25 INFO HeartbeatThread_2 - subscription changed, add new topic, group: please_rename_unique_group_name_4 SubscriptionData [classFilterMode=false, topic=TopicTest, subString=*, tagsSet=[], codeSet=[], subVersion=1635664944183, expressionType=TAG]
+2021-10-31 15:22:25 INFO HeartbeatThread_2 - subscription changed, add new topic, group: please_rename_unique_group_name_4 SubscriptionData [classFilterMode=false, topic=%RETRY%please_rename_unique_group_name_4, subString=*, tagsSet=[], codeSet=[], subVersion=1635664944472, expressionType=TAG]
+2021-10-31 15:22:25 INFO HeartbeatThread_2 - registerConsumer info changed ConsumerData [groupName=please_rename_unique_group_name_4, consumeType=CONSUME_PASSIVELY, messageModel=CLUSTERING, consumeFromWhere=CONSUME_FROM_FIRST_OFFSET, unitMode=false, subscriptionDataSet=[SubscriptionData [classFilterMode=false, topic=TopicTest, subString=*, tagsSet=[], codeSet=[], subVersion=1635664944183, expressionType=TAG], SubscriptionData [classFilterMode=false, topic=%RETRY%please_rename_unique_group_name_4, subString=*, tagsSet=[], codeSet=[], subVersion=1635664944472, expressionType=TAG]]] 192.168.18.123:58241
+2021-10-31 15:22:25 INFO HeartbeatThread_2 - new producer connected, group: CLIENT_INNER_PRODUCER channel: ClientChannelInfo [channel=[id: 0x49868871, L:/192.168.18.123:10911 - R:/192.168.18.123:58241], clientId=192.168.18.123@21216#952597844927100, language=JAVA, version=397, lastUpdateTimestamp=1635664945974]
+2021-10-31 15:22:26 INFO HeartbeatThread_3 - subscription changed, group: please_rename_unique_group_name_4 OLD: SubscriptionData [classFilterMode=false, topic=TopicTest, subString=*, tagsSet=[], codeSet=[], subVersion=1635664944183, expressionType=TAG] NEW: SubscriptionData [classFilterMode=false, topic=TopicTest, subString=*, tagsSet=[], codeSet=[], subVersion=1635664946013, expressionType=TAG]
+2021-10-31 15:22:26 INFO HeartbeatThread_4 - subscription changed, group: please_rename_unique_group_name_4 OLD: SubscriptionData [classFilterMode=false, topic=%RETRY%please_rename_unique_group_name_4, subString=*, tagsSet=[], codeSet=[], subVersion=1635664944472, expressionType=TAG] NEW: SubscriptionData [classFilterMode=false, topic=%RETRY%please_rename_unique_group_name_4, subString=*, tagsSet=[], codeSet=[], subVersion=1635664946021, expressionType=TAG]
+2021-10-31 15:22:41 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:23:11 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:23:11 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 191890 bytes
+2021-10-31 15:23:11 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:23:41 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:24:08 INFO NettyEventExecutor - NETTY EVENT: remove channel[ClientChannelInfo [channel=[id: 0x49868871, L:/192.168.18.123:10911 ! R:/192.168.18.123:58241], clientId=192.168.18.123@21216#952597844927100, language=JAVA, version=397, lastUpdateTimestamp=1635665036199]][192.168.18.123:58241] from ProducerManager groupChannelTable, producer group: CLIENT_INNER_PRODUCER
+2021-10-31 15:24:08 WARN NettyEventExecutor - NETTY EVENT: remove not active channel[ClientChannelInfo [channel=[id: 0x49868871, L:/192.168.18.123:10911 ! R:/192.168.18.123:58241], clientId=192.168.18.123@21216#952597844927100, language=JAVA, version=397, lastUpdateTimestamp=1635665036199]] from ConsumerGroupInfo groupChannelTable, consumer group: please_rename_unique_group_name_4
+2021-10-31 15:24:08 INFO NettyEventExecutor - unregister consumer ok, no any connection, and remove consumer group, please_rename_unique_group_name_4
+2021-10-31 15:24:11 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:24:11 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 191890 bytes
+2021-10-31 15:24:11 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:24:11 WARN PullMessageThread_48 - the consumer's group info not exist, group: please_rename_unique_group_name_4
+2021-10-31 15:24:11 WARN PullMessageThread_2 - the consumer's group info not exist, group: please_rename_unique_group_name_4
+2021-10-31 15:24:11 WARN PullMessageThread_7 - the consumer's group info not exist, group: please_rename_unique_group_name_4
+2021-10-31 15:24:11 WARN PullMessageThread_5 - the consumer's group info not exist, group: please_rename_unique_group_name_4
+2021-10-31 15:24:11 WARN PullMessageThread_4 - the consumer's group info not exist, group: please_rename_unique_group_name_4
+2021-10-31 15:24:11 ERROR NettyServerNIOSelector_3_2 - processRequestWrapper response to /192.168.18.123:58241 failed
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-all-4.1.65.Final.jar:4.1.65.Final]
+2021-10-31 15:24:11 ERROR NettyServerNIOSelector_3_2 - RemotingCommand [code=11, language=JAVA, version=397, opaque=287, flag(B)=0, remark=null, extFields={queueId=2, maxMsgNums=32, sysFlag=3, suspendTimeoutMillis=15000, commitOffset=250, topic=TopicTest, queueOffset=250, expressionType=TAG, subVersion=1635664946013, consumerGroup=please_rename_unique_group_name_4}, serializeTypeCurrentRPC=JSON]
+2021-10-31 15:24:11 ERROR NettyServerNIOSelector_3_2 - RemotingCommand [code=24, language=JAVA, version=397, opaque=287, flag(B)=1, remark=the consumer's group info not exist
+See http://rocketmq.apache.org/docs/faq/ for further details., extFields=null, serializeTypeCurrentRPC=JSON]
+2021-10-31 15:24:11 ERROR NettyServerNIOSelector_3_2 - processRequestWrapper response to /192.168.18.123:58241 failed
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-all-4.1.65.Final.jar:4.1.65.Final]
+2021-10-31 15:24:11 ERROR NettyServerNIOSelector_3_2 - RemotingCommand [code=11, language=JAVA, version=397, opaque=290, flag(B)=0, remark=null, extFields={queueId=1, maxMsgNums=32, sysFlag=3, suspendTimeoutMillis=15000, commitOffset=250, topic=TopicTest, queueOffset=250, expressionType=TAG, subVersion=1635664946013, consumerGroup=please_rename_unique_group_name_4}, serializeTypeCurrentRPC=JSON]
+2021-10-31 15:24:11 ERROR NettyServerNIOSelector_3_2 - RemotingCommand [code=24, language=JAVA, version=397, opaque=290, flag(B)=1, remark=the consumer's group info not exist
+See http://rocketmq.apache.org/docs/faq/ for further details., extFields=null, serializeTypeCurrentRPC=JSON]
+2021-10-31 15:24:11 ERROR NettyServerNIOSelector_3_2 - processRequestWrapper response to /192.168.18.123:58241 failed
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-all-4.1.65.Final.jar:4.1.65.Final]
+2021-10-31 15:24:11 ERROR NettyServerNIOSelector_3_2 - RemotingCommand [code=11, language=JAVA, version=397, opaque=291, flag(B)=0, remark=null, extFields={queueId=0, maxMsgNums=32, sysFlag=3, suspendTimeoutMillis=15000, commitOffset=250, topic=TopicTest, queueOffset=250, expressionType=TAG, subVersion=1635664946013, consumerGroup=please_rename_unique_group_name_4}, serializeTypeCurrentRPC=JSON]
+2021-10-31 15:24:11 ERROR NettyServerNIOSelector_3_2 - RemotingCommand [code=24, language=JAVA, version=397, opaque=291, flag(B)=1, remark=the consumer's group info not exist
+See http://rocketmq.apache.org/docs/faq/ for further details., extFields=null, serializeTypeCurrentRPC=JSON]
+2021-10-31 15:24:11 ERROR NettyServerNIOSelector_3_2 - processRequestWrapper response to /192.168.18.123:58241 failed
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-all-4.1.65.Final.jar:4.1.65.Final]
+2021-10-31 15:24:11 ERROR NettyServerNIOSelector_3_2 - RemotingCommand [code=11, language=JAVA, version=397, opaque=289, flag(B)=0, remark=null, extFields={queueId=0, maxMsgNums=32, sysFlag=2, suspendTimeoutMillis=15000, commitOffset=0, topic=%RETRY%please_rename_unique_group_name_4, queueOffset=0, expressionType=TAG, subVersion=1635664946021, consumerGroup=please_rename_unique_group_name_4}, serializeTypeCurrentRPC=JSON]
+2021-10-31 15:24:11 ERROR NettyServerNIOSelector_3_2 - RemotingCommand [code=24, language=JAVA, version=397, opaque=289, flag(B)=1, remark=the consumer's group info not exist
+See http://rocketmq.apache.org/docs/faq/ for further details., extFields=null, serializeTypeCurrentRPC=JSON]
+2021-10-31 15:24:11 ERROR NettyServerNIOSelector_3_2 - processRequestWrapper response to /192.168.18.123:58241 failed
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-all-4.1.65.Final.jar:4.1.65.Final]
+2021-10-31 15:24:11 ERROR NettyServerNIOSelector_3_2 - RemotingCommand [code=11, language=JAVA, version=397, opaque=292, flag(B)=0, remark=null, extFields={queueId=3, maxMsgNums=32, sysFlag=3, suspendTimeoutMillis=15000, commitOffset=250, topic=TopicTest, queueOffset=250, expressionType=TAG, subVersion=1635664946013, consumerGroup=please_rename_unique_group_name_4}, serializeTypeCurrentRPC=JSON]
+2021-10-31 15:24:11 ERROR NettyServerNIOSelector_3_2 - RemotingCommand [code=24, language=JAVA, version=397, opaque=292, flag(B)=1, remark=the consumer's group info not exist
+See http://rocketmq.apache.org/docs/faq/ for further details., extFields=null, serializeTypeCurrentRPC=JSON]
+2021-10-31 15:24:25 INFO HeartbeatThread_9 - new producer connected, group: please_rename_unique_group_name channel: ClientChannelInfo [channel=[id: 0x050e2191, L:/192.168.18.123:10911 - R:/192.168.18.123:58257], clientId=192.168.18.123@39596#952716549784400, language=JAVA, version=397, lastUpdateTimestamp=1635665065335]
+2021-10-31 15:24:25 INFO HeartbeatThread_9 - new producer connected, group: CLIENT_INNER_PRODUCER channel: ClientChannelInfo [channel=[id: 0x050e2191, L:/192.168.18.123:10911 - R:/192.168.18.123:58257], clientId=192.168.18.123@39596#952716549784400, language=JAVA, version=397, lastUpdateTimestamp=1635665065335]
+2021-10-31 15:24:26 INFO ClientManageThread_3 - unregister a producer[please_rename_unique_group_name] from groupChannelTable ClientChannelInfo [channel=[id: 0x050e2191, L:/192.168.18.123:10911 - R:/192.168.18.123:58257], clientId=192.168.18.123@39596#952716549784400, language=JAVA, version=397, lastUpdateTimestamp=1635665066541]
+2021-10-31 15:24:26 INFO ClientManageThread_3 - unregister a producer group[please_rename_unique_group_name] from groupChannelTable
+2021-10-31 15:24:26 INFO ClientManageThread_4 - unregister a producer[CLIENT_INNER_PRODUCER] from groupChannelTable ClientChannelInfo [channel=[id: 0x050e2191, L:/192.168.18.123:10911 - R:/192.168.18.123:58257], clientId=192.168.18.123@39596#952716549784400, language=JAVA, version=397, lastUpdateTimestamp=1635665066542]
+2021-10-31 15:24:26 INFO ClientManageThread_4 - unregister a producer group[CLIENT_INNER_PRODUCER] from groupChannelTable
+2021-10-31 15:24:35 INFO ShutdownHook - Shutdown hook was invoked, 1
+2021-10-31 15:24:35 INFO ShutdownHook - Try to shutdown service thread:PullRequestHoldService started:true lastThread:Thread[PullRequestHoldService,5,main]
+2021-10-31 15:24:35 INFO ShutdownHook - shutdown thread PullRequestHoldService interrupt false
+2021-10-31 15:24:35 INFO PullRequestHoldService - PullRequestHoldService service end
+2021-10-31 15:24:35 INFO ShutdownHook - join thread PullRequestHoldService elapsed time(ms) 1 90000
+2021-10-31 15:24:40 INFO ShutdownHook - Try to shutdown service thread:FileWatchService started:true lastThread:Thread[FileWatchService,5,main]
+2021-10-31 15:24:40 INFO ShutdownHook - shutdown thread FileWatchService interrupt false
+2021-10-31 15:24:40 INFO FileWatchService - FileWatchService service end
+2021-10-31 15:24:40 INFO ShutdownHook - join thread FileWatchService elapsed time(ms) 0 90000
+2021-10-31 15:24:41 INFO ShutdownHook - Try to shutdown service thread:HAClient started:true lastThread:Thread[HAClient,5,main]
+2021-10-31 15:24:41 INFO ShutdownHook - shutdown thread HAClient interrupt false
+2021-10-31 15:24:41 INFO ShutdownHook - join thread HAClient elapsed time(ms) 0 90000
+2021-10-31 15:24:41 INFO ShutdownHook - Try to shutdown service thread:AcceptSocketService started:true lastThread:Thread[AcceptSocketService,5,main]
+2021-10-31 15:24:41 INFO ShutdownHook - shutdown thread AcceptSocketService interrupt true
+2021-10-31 15:24:41 INFO ShutdownHook - join thread AcceptSocketService elapsed time(ms) 0 90000
+2021-10-31 15:24:41 INFO ShutdownHook - Try to shutdown service thread:GroupTransferService started:true lastThread:Thread[GroupTransferService,5,main]
+2021-10-31 15:24:41 INFO ShutdownHook - shutdown thread GroupTransferService interrupt false
+2021-10-31 15:24:41 INFO ShutdownHook - join thread GroupTransferService elapsed time(ms) 0 90000
+2021-10-31 15:24:41 INFO ShutdownHook - Try to shutdown service thread:StoreStatsService started:true lastThread:Thread[StoreStatsService,5,main]
+2021-10-31 15:24:41 INFO ShutdownHook - shutdown thread StoreStatsService interrupt false
+2021-10-31 15:24:41 INFO ShutdownHook - join thread StoreStatsService elapsed time(ms) 0 90000
+2021-10-31 15:24:41 INFO ShutdownHook - Try to shutdown service thread:FlushRealTimeService started:true lastThread:Thread[FlushRealTimeService,5,main]
+2021-10-31 15:24:41 INFO ShutdownHook - shutdown thread FlushRealTimeService interrupt false
+2021-10-31 15:24:41 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:24:41 INFO ShutdownHook - join thread FlushRealTimeService elapsed time(ms) 98 300000
+2021-10-31 15:24:41 INFO ShutdownHook - Try to shutdown service thread:ReputMessageService started:true lastThread:Thread[ReputMessageService,5,main]
+2021-10-31 15:24:41 INFO ShutdownHook - shutdown thread ReputMessageService interrupt false
+2021-10-31 15:24:41 INFO ShutdownHook - join thread ReputMessageService elapsed time(ms) 1 90000
+2021-10-31 15:24:41 INFO ShutdownHook - Try to shutdown service thread:FlushConsumeQueueService started:true lastThread:Thread[FlushConsumeQueueService,5,main]
+2021-10-31 15:24:41 INFO ShutdownHook - shutdown thread FlushConsumeQueueService interrupt false
+2021-10-31 15:24:41 INFO ShutdownHook - join thread FlushConsumeQueueService elapsed time(ms) 2 60000
+2021-10-31 15:24:41 INFO ShutdownHook - Try to shutdown service thread:AllocateMappedFileService started:true lastThread:Thread[AllocateMappedFileService,5,main]
+2021-10-31 15:24:41 INFO ShutdownHook - shutdown thread AllocateMappedFileService interrupt true
+2021-10-31 15:24:41 INFO ShutdownHook - join thread AllocateMappedFileService elapsed time(ms) 0 90000
+2021-10-31 15:24:41 INFO ShutdownHook - unregisterBroker OK, NamesrvAddr: 127.0.0.1:9876
+2021-10-31 15:24:42 INFO ShutdownHook - Try to shutdown service thread:FileWatchService started:false lastThread:Thread[FileWatchService,5,]
+2021-10-31 15:24:42 INFO ShutdownHook - Try to shutdown service thread:TransactionalMessageCheckService started:true lastThread:Thread[TransactionalMessageCheckService,5,main]
+2021-10-31 15:24:42 INFO ShutdownHook - shutdown thread TransactionalMessageCheckService interrupt false
+2021-10-31 15:24:42 INFO ShutdownHook - join thread TransactionalMessageCheckService elapsed time(ms) 0 90000
+2021-10-31 15:24:42 INFO ShutdownHook - Shutdown hook over, consuming total time(ms): 6045
+2021-10-31 15:24:43 INFO main - rocketmqHome=D:\workspace\rocketmq-all-4.9.2
+2021-10-31 15:24:43 INFO main - namesrvAddr=127.0.0.1:9876
+2021-10-31 15:24:43 INFO main - brokerIP1=192.168.18.123
+2021-10-31 15:24:43 INFO main - brokerIP2=192.168.18.123
+2021-10-31 15:24:43 INFO main - brokerName=broker-a
+2021-10-31 15:24:43 INFO main - brokerClusterName=DefaultCluster
+2021-10-31 15:24:43 INFO main - brokerId=0
+2021-10-31 15:24:43 INFO main - brokerPermission=6
+2021-10-31 15:24:43 INFO main - defaultTopicQueueNums=8
+2021-10-31 15:24:43 INFO main - autoCreateTopicEnable=true
+2021-10-31 15:24:43 INFO main - clusterTopicEnable=true
+2021-10-31 15:24:43 INFO main - brokerTopicEnable=true
+2021-10-31 15:24:43 INFO main - autoCreateSubscriptionGroup=true
+2021-10-31 15:24:43 INFO main - messageStorePlugIn=
+2021-10-31 15:24:43 INFO main - msgTraceTopicName=RMQ_SYS_TRACE_TOPIC
+2021-10-31 15:24:43 INFO main - traceTopicEnable=false
+2021-10-31 15:24:43 INFO main - sendMessageThreadPoolNums=4
+2021-10-31 15:24:43 INFO main - pullMessageThreadPoolNums=48
+2021-10-31 15:24:43 INFO main - processReplyMessageThreadPoolNums=48
+2021-10-31 15:24:43 INFO main - queryMessageThreadPoolNums=24
+2021-10-31 15:24:43 INFO main - adminBrokerThreadPoolNums=16
+2021-10-31 15:24:43 INFO main - clientManageThreadPoolNums=32
+2021-10-31 15:24:43 INFO main - consumerManageThreadPoolNums=32
+2021-10-31 15:24:43 INFO main - heartbeatThreadPoolNums=16
+2021-10-31 15:24:43 INFO main - endTransactionThreadPoolNums=40
+2021-10-31 15:24:43 INFO main - flushConsumerOffsetInterval=5000
+2021-10-31 15:24:43 INFO main - flushConsumerOffsetHistoryInterval=60000
+2021-10-31 15:24:43 INFO main - rejectTransactionMessage=false
+2021-10-31 15:24:43 INFO main - fetchNamesrvAddrByAddressServer=false
+2021-10-31 15:24:43 INFO main - sendThreadPoolQueueCapacity=10000
+2021-10-31 15:24:43 INFO main - pullThreadPoolQueueCapacity=100000
+2021-10-31 15:24:43 INFO main - replyThreadPoolQueueCapacity=10000
+2021-10-31 15:24:43 INFO main - queryThreadPoolQueueCapacity=20000
+2021-10-31 15:24:43 INFO main - clientManagerThreadPoolQueueCapacity=1000000
+2021-10-31 15:24:43 INFO main - consumerManagerThreadPoolQueueCapacity=1000000
+2021-10-31 15:24:43 INFO main - heartbeatThreadPoolQueueCapacity=50000
+2021-10-31 15:24:43 INFO main - endTransactionPoolQueueCapacity=100000
+2021-10-31 15:24:43 INFO main - filterServerNums=0
+2021-10-31 15:24:43 INFO main - longPollingEnable=true
+2021-10-31 15:24:43 INFO main - shortPollingTimeMills=1000
+2021-10-31 15:24:43 INFO main - notifyConsumerIdsChangedEnable=true
+2021-10-31 15:24:43 INFO main - highSpeedMode=false
+2021-10-31 15:24:43 INFO main - commercialEnable=true
+2021-10-31 15:24:43 INFO main - commercialTimerCount=1
+2021-10-31 15:24:43 INFO main - commercialTransCount=1
+2021-10-31 15:24:43 INFO main - commercialBigCount=1
+2021-10-31 15:24:43 INFO main - commercialBaseCount=1
+2021-10-31 15:24:43 INFO main - transferMsgByHeap=true
+2021-10-31 15:24:43 INFO main - maxDelayTime=40
+2021-10-31 15:24:43 INFO main - regionId=DefaultRegion
+2021-10-31 15:24:43 INFO main - registerBrokerTimeoutMills=6000
+2021-10-31 15:24:43 INFO main - slaveReadEnable=false
+2021-10-31 15:24:43 INFO main - disableConsumeIfConsumerReadSlowly=false
+2021-10-31 15:24:43 INFO main - consumerFallbehindThreshold=17179869184
+2021-10-31 15:24:43 INFO main - brokerFastFailureEnable=true
+2021-10-31 15:24:43 INFO main - waitTimeMillsInSendQueue=200
+2021-10-31 15:24:43 INFO main - waitTimeMillsInPullQueue=5000
+2021-10-31 15:24:43 INFO main - waitTimeMillsInHeartbeatQueue=31000
+2021-10-31 15:24:43 INFO main - waitTimeMillsInTransactionQueue=3000
+2021-10-31 15:24:43 INFO main - startAcceptSendRequestTimeStamp=0
+2021-10-31 15:24:43 INFO main - traceOn=true
+2021-10-31 15:24:43 INFO main - enableCalcFilterBitMap=false
+2021-10-31 15:24:43 INFO main - expectConsumerNumUseFilter=32
+2021-10-31 15:24:43 INFO main - maxErrorRateOfBloomFilter=20
+2021-10-31 15:24:43 INFO main - filterDataCleanTimeSpan=86400000
+2021-10-31 15:24:43 INFO main - filterSupportRetry=false
+2021-10-31 15:24:43 INFO main - enablePropertyFilter=false
+2021-10-31 15:24:43 INFO main - compressedRegister=false
+2021-10-31 15:24:43 INFO main - forceRegister=true
+2021-10-31 15:24:43 INFO main - registerNameServerPeriod=30000
+2021-10-31 15:24:43 INFO main - transactionTimeOut=6000
+2021-10-31 15:24:43 INFO main - transactionCheckMax=15
+2021-10-31 15:24:43 INFO main - transactionCheckInterval=60000
+2021-10-31 15:24:43 INFO main - aclEnable=false
+2021-10-31 15:24:43 INFO main - storeReplyMessageEnable=true
+2021-10-31 15:24:43 INFO main - autoDeleteUnusedStats=false
+2021-10-31 15:24:43 INFO main - listenPort=10911
+2021-10-31 15:24:43 INFO main - serverWorkerThreads=8
+2021-10-31 15:24:43 INFO main - serverCallbackExecutorThreads=0
+2021-10-31 15:24:43 INFO main - serverSelectorThreads=3
+2021-10-31 15:24:43 INFO main - serverOnewaySemaphoreValue=256
+2021-10-31 15:24:43 INFO main - serverAsyncSemaphoreValue=64
+2021-10-31 15:24:43 INFO main - serverChannelMaxIdleTimeSeconds=120
+2021-10-31 15:24:43 INFO main - serverSocketSndBufSize=131072
+2021-10-31 15:24:43 INFO main - serverSocketRcvBufSize=131072
+2021-10-31 15:24:43 INFO main - serverPooledByteBufAllocatorEnable=true
+2021-10-31 15:24:43 INFO main - useEpollNativeSelector=false
+2021-10-31 15:24:43 INFO main - clientWorkerThreads=4
+2021-10-31 15:24:43 INFO main - clientCallbackExecutorThreads=16
+2021-10-31 15:24:43 INFO main - clientOnewaySemaphoreValue=65535
+2021-10-31 15:24:43 INFO main - clientAsyncSemaphoreValue=65535
+2021-10-31 15:24:43 INFO main - connectTimeoutMillis=3000
+2021-10-31 15:24:43 INFO main - channelNotActiveInterval=60000
+2021-10-31 15:24:43 INFO main - clientChannelMaxIdleTimeSeconds=120
+2021-10-31 15:24:43 INFO main - clientSocketSndBufSize=131072
+2021-10-31 15:24:43 INFO main - clientSocketRcvBufSize=131072
+2021-10-31 15:24:43 INFO main - clientPooledByteBufAllocatorEnable=false
+2021-10-31 15:24:43 INFO main - clientCloseSocketIfTimeout=true
+2021-10-31 15:24:43 INFO main - useTLS=false
+2021-10-31 15:24:43 INFO main - storePathRootDir=E:\RocketMQ\data\rocketmq-all-4.9.2\dataDir
+2021-10-31 15:24:43 INFO main - storePathCommitLog=E:\RocketMQ\data\rocketmq-all-4.9.2\dataDir\commitlog
+2021-10-31 15:24:43 INFO main - readOnlyCommitLogStorePaths=
+2021-10-31 15:24:43 INFO main - mappedFileSizeCommitLog=1073741824
+2021-10-31 15:24:43 INFO main - mappedFileSizeConsumeQueue=6000000
+2021-10-31 15:24:43 INFO main - enableConsumeQueueExt=false
+2021-10-31 15:24:43 INFO main - mappedFileSizeConsumeQueueExt=50331648
+2021-10-31 15:24:43 INFO main - bitMapLengthConsumeQueueExt=64
+2021-10-31 15:24:43 INFO main - flushIntervalCommitLog=500
+2021-10-31 15:24:43 INFO main - commitIntervalCommitLog=200
+2021-10-31 15:24:43 INFO main - useReentrantLockWhenPutMessage=true
+2021-10-31 15:24:43 INFO main - flushCommitLogTimed=true
+2021-10-31 15:24:43 INFO main - flushIntervalConsumeQueue=1000
+2021-10-31 15:24:43 INFO main - cleanResourceInterval=10000
+2021-10-31 15:24:43 INFO main - deleteCommitLogFilesInterval=100
+2021-10-31 15:24:43 INFO main - deleteConsumeQueueFilesInterval=100
+2021-10-31 15:24:43 INFO main - destroyMapedFileIntervalForcibly=120000
+2021-10-31 15:24:43 INFO main - redeleteHangedFileInterval=120000
+2021-10-31 15:24:43 INFO main - deleteWhen=04
+2021-10-31 15:24:43 INFO main - diskMaxUsedSpaceRatio=75
+2021-10-31 15:24:43 INFO main - fileReservedTime=48
+2021-10-31 15:24:43 INFO main - putMsgIndexHightWater=600000
+2021-10-31 15:24:43 INFO main - maxMessageSize=4194304
+2021-10-31 15:24:43 INFO main - checkCRCOnRecover=true
+2021-10-31 15:24:43 INFO main - flushCommitLogLeastPages=4
+2021-10-31 15:24:43 INFO main - commitCommitLogLeastPages=4
+2021-10-31 15:24:43 INFO main - flushLeastPagesWhenWarmMapedFile=4096
+2021-10-31 15:24:43 INFO main - flushConsumeQueueLeastPages=2
+2021-10-31 15:24:43 INFO main - flushCommitLogThoroughInterval=10000
+2021-10-31 15:24:43 INFO main - commitCommitLogThoroughInterval=200
+2021-10-31 15:24:43 INFO main - flushConsumeQueueThoroughInterval=60000
+2021-10-31 15:24:43 INFO main - maxTransferBytesOnMessageInMemory=262144
+2021-10-31 15:24:43 INFO main - maxTransferCountOnMessageInMemory=32
+2021-10-31 15:24:43 INFO main - maxTransferBytesOnMessageInDisk=65536
+2021-10-31 15:24:43 INFO main - maxTransferCountOnMessageInDisk=8
+2021-10-31 15:24:43 INFO main - accessMessageInMemoryMaxRatio=40
+2021-10-31 15:24:43 INFO main - messageIndexEnable=true
+2021-10-31 15:24:43 INFO main - maxHashSlotNum=5000000
+2021-10-31 15:24:43 INFO main - maxIndexNum=20000000
+2021-10-31 15:24:43 INFO main - maxMsgsNumBatch=64
+2021-10-31 15:24:43 INFO main - messageIndexSafe=false
+2021-10-31 15:24:43 INFO main - haListenPort=10912
+2021-10-31 15:24:43 INFO main - haSendHeartbeatInterval=5000
+2021-10-31 15:24:43 INFO main - haHousekeepingInterval=20000
+2021-10-31 15:24:43 INFO main - haTransferBatchSize=32768
+2021-10-31 15:24:43 INFO main - haMasterAddress=
+2021-10-31 15:24:43 INFO main - haSlaveFallbehindMax=268435456
+2021-10-31 15:24:43 INFO main - brokerRole=ASYNC_MASTER
+2021-10-31 15:24:43 INFO main - flushDiskType=ASYNC_FLUSH
+2021-10-31 15:24:43 INFO main - syncFlushTimeout=5000
+2021-10-31 15:24:43 INFO main - messageDelayLevel=1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 8m 9m 10m 20m 30m 1h 2h
+2021-10-31 15:24:43 INFO main - flushDelayOffsetInterval=10000
+2021-10-31 15:24:43 INFO main - cleanFileForciblyEnable=true
+2021-10-31 15:24:43 INFO main - warmMapedFileEnable=false
+2021-10-31 15:24:43 INFO main - offsetCheckInSlave=false
+2021-10-31 15:24:43 INFO main - debugLockEnable=false
+2021-10-31 15:24:43 INFO main - duplicationEnable=false
+2021-10-31 15:24:43 INFO main - diskFallRecorded=true
+2021-10-31 15:24:43 INFO main - osPageCacheBusyTimeOutMills=1000
+2021-10-31 15:24:43 INFO main - defaultQueryMaxNum=32
+2021-10-31 15:24:43 INFO main - transientStorePoolEnable=false
+2021-10-31 15:24:43 INFO main - transientStorePoolSize=5
+2021-10-31 15:24:43 INFO main - fastFailIfNoBufferInStorePool=false
+2021-10-31 15:24:43 INFO main - enableDLegerCommitLog=false
+2021-10-31 15:24:43 INFO main - dLegerGroup=
+2021-10-31 15:24:43 INFO main - dLegerPeers=
+2021-10-31 15:24:43 INFO main - dLegerSelfId=
+2021-10-31 15:24:43 INFO main - preferredLeaderId=
+2021-10-31 15:24:43 INFO main - isEnableBatchPush=false
+2021-10-31 15:24:43 INFO main - enableScheduleMessageStats=true
+2021-10-31 15:24:44 INFO main - Try to start service thread:AllocateMappedFileService started:false lastThread:null
+2021-10-31 15:24:45 INFO main - Set user specified name server address: 127.0.0.1:9876
+2021-10-31 15:24:45 WARN main - Load default transaction message hook service: TransactionalMessageServiceImpl
+2021-10-31 15:24:45 WARN main - Load default discard message hook service: DefaultTransactionalMessageCheckListener
+2021-10-31 15:24:45 INFO main - The broker dose not enable acl
+2021-10-31 15:24:45 INFO main - Try to start service thread:ReputMessageService started:false lastThread:null
+2021-10-31 15:24:45 INFO main - Try to start service thread:AcceptSocketService started:false lastThread:null
+2021-10-31 15:24:45 INFO main - Try to start service thread:GroupTransferService started:false lastThread:null
+2021-10-31 15:24:45 INFO main - Try to start service thread:HAClient started:false lastThread:null
+2021-10-31 15:24:45 INFO main - Try to start service thread:FlushConsumeQueueService started:false lastThread:null
+2021-10-31 15:24:45 INFO main - Try to start service thread:FlushRealTimeService started:false lastThread:null
+2021-10-31 15:24:45 INFO main - Try to start service thread:StoreStatsService started:false lastThread:null
+2021-10-31 15:24:45 INFO main - Try to start service thread:FileWatchService started:false lastThread:null
+2021-10-31 15:24:45 INFO FileWatchService - FileWatchService service started
+2021-10-31 15:24:45 INFO main - Try to start service thread:PullRequestHoldService started:false lastThread:null
+2021-10-31 15:24:45 INFO PullRequestHoldService - PullRequestHoldService service started
+2021-10-31 15:24:45 INFO main - Try to start service thread:TransactionalMessageCheckService started:false lastThread:null
+2021-10-31 15:24:45 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:24:45 INFO main - The broker[broker-a, 192.168.18.123:10911] boot success. serializeType=JSON and name server is 127.0.0.1:9876
+2021-10-31 15:24:55 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:24:55 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-10-31 15:24:55 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:25:09 INFO HeartbeatThread_1 - new producer connected, group: please_rename_unique_group_name channel: ClientChannelInfo [channel=[id: 0xd21a2230, L:/192.168.18.123:10911 - R:/192.168.18.123:58294], clientId=192.168.18.123@35400#952760480686600, language=JAVA, version=397, lastUpdateTimestamp=1635665109245]
+2021-10-31 15:25:09 INFO HeartbeatThread_1 - new producer connected, group: CLIENT_INNER_PRODUCER channel: ClientChannelInfo [channel=[id: 0xd21a2230, L:/192.168.18.123:10911 - R:/192.168.18.123:58294], clientId=192.168.18.123@35400#952760480686600, language=JAVA, version=397, lastUpdateTimestamp=1635665109245]
+2021-10-31 15:25:09 WARN SendMessageThread_1 - the topic TopicTest not exist, producer: /192.168.18.123:58294
+2021-10-31 15:25:09 INFO SendMessageThread_1 - Create new topic by default topic:[TBW102] config:[TopicConfig [topicName=TopicTest, readQueueNums=4, writeQueueNums=4, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]] producer:[192.168.18.123:58294]
+2021-10-31 15:25:09 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:25:10 INFO ClientManageThread_1 - unregister a producer[please_rename_unique_group_name] from groupChannelTable ClientChannelInfo [channel=[id: 0xd21a2230, L:/192.168.18.123:10911 - R:/192.168.18.123:58294], clientId=192.168.18.123@35400#952760480686600, language=JAVA, version=397, lastUpdateTimestamp=1635665110730]
+2021-10-31 15:25:10 INFO ClientManageThread_1 - unregister a producer group[please_rename_unique_group_name] from groupChannelTable
+2021-10-31 15:25:10 INFO ClientManageThread_2 - unregister a producer[CLIENT_INNER_PRODUCER] from groupChannelTable ClientChannelInfo [channel=[id: 0xd21a2230, L:/192.168.18.123:10911 - R:/192.168.18.123:58294], clientId=192.168.18.123@35400#952760480686600, language=JAVA, version=397, lastUpdateTimestamp=1635665110731]
+2021-10-31 15:25:10 INFO ClientManageThread_2 - unregister a producer group[CLIENT_INNER_PRODUCER] from groupChannelTable
+2021-10-31 15:25:25 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:25:45 INFO TransactionalMessageCheckService - create new topic TopicConfig [topicName=RMQ_SYS_TRANS_HALF_TOPIC, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2021-10-31 15:25:45 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:25:55 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:25:55 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 191890 bytes
+2021-10-31 15:25:55 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:26:15 INFO ShutdownHook - Shutdown hook was invoked, 1
+2021-10-31 15:26:15 INFO ShutdownHook - Try to shutdown service thread:PullRequestHoldService started:true lastThread:Thread[PullRequestHoldService,5,main]
+2021-10-31 15:26:15 INFO ShutdownHook - shutdown thread PullRequestHoldService interrupt false
+2021-10-31 15:26:15 INFO PullRequestHoldService - PullRequestHoldService service end
+2021-10-31 15:26:15 INFO ShutdownHook - join thread PullRequestHoldService elapsed time(ms) 0 90000
+2021-10-31 15:27:53 INFO main - rocketmqHome=D:\workspace\rocketmq-all-4.9.2
+2021-10-31 15:27:53 INFO main - namesrvAddr=127.0.0.1:9876
+2021-10-31 15:27:53 INFO main - brokerIP1=192.168.18.123
+2021-10-31 15:27:53 INFO main - brokerIP2=192.168.18.123
+2021-10-31 15:27:53 INFO main - brokerName=broker-a
+2021-10-31 15:27:53 INFO main - brokerClusterName=DefaultCluster
+2021-10-31 15:27:53 INFO main - brokerId=0
+2021-10-31 15:27:53 INFO main - brokerPermission=6
+2021-10-31 15:27:53 INFO main - defaultTopicQueueNums=8
+2021-10-31 15:27:53 INFO main - autoCreateTopicEnable=true
+2021-10-31 15:27:53 INFO main - clusterTopicEnable=true
+2021-10-31 15:27:53 INFO main - brokerTopicEnable=true
+2021-10-31 15:27:53 INFO main - autoCreateSubscriptionGroup=true
+2021-10-31 15:27:53 INFO main - messageStorePlugIn=
+2021-10-31 15:27:53 INFO main - msgTraceTopicName=RMQ_SYS_TRACE_TOPIC
+2021-10-31 15:27:53 INFO main - traceTopicEnable=false
+2021-10-31 15:27:53 INFO main - sendMessageThreadPoolNums=4
+2021-10-31 15:27:53 INFO main - pullMessageThreadPoolNums=48
+2021-10-31 15:27:53 INFO main - processReplyMessageThreadPoolNums=48
+2021-10-31 15:27:53 INFO main - queryMessageThreadPoolNums=24
+2021-10-31 15:27:53 INFO main - adminBrokerThreadPoolNums=16
+2021-10-31 15:27:53 INFO main - clientManageThreadPoolNums=32
+2021-10-31 15:27:53 INFO main - consumerManageThreadPoolNums=32
+2021-10-31 15:27:53 INFO main - heartbeatThreadPoolNums=16
+2021-10-31 15:27:53 INFO main - endTransactionThreadPoolNums=40
+2021-10-31 15:27:53 INFO main - flushConsumerOffsetInterval=5000
+2021-10-31 15:27:53 INFO main - flushConsumerOffsetHistoryInterval=60000
+2021-10-31 15:27:53 INFO main - rejectTransactionMessage=false
+2021-10-31 15:27:53 INFO main - fetchNamesrvAddrByAddressServer=false
+2021-10-31 15:27:53 INFO main - sendThreadPoolQueueCapacity=10000
+2021-10-31 15:27:53 INFO main - pullThreadPoolQueueCapacity=100000
+2021-10-31 15:27:53 INFO main - replyThreadPoolQueueCapacity=10000
+2021-10-31 15:27:53 INFO main - queryThreadPoolQueueCapacity=20000
+2021-10-31 15:27:53 INFO main - clientManagerThreadPoolQueueCapacity=1000000
+2021-10-31 15:27:53 INFO main - consumerManagerThreadPoolQueueCapacity=1000000
+2021-10-31 15:27:53 INFO main - heartbeatThreadPoolQueueCapacity=50000
+2021-10-31 15:27:53 INFO main - endTransactionPoolQueueCapacity=100000
+2021-10-31 15:27:53 INFO main - filterServerNums=0
+2021-10-31 15:27:53 INFO main - longPollingEnable=true
+2021-10-31 15:27:53 INFO main - shortPollingTimeMills=1000
+2021-10-31 15:27:53 INFO main - notifyConsumerIdsChangedEnable=true
+2021-10-31 15:27:53 INFO main - highSpeedMode=false
+2021-10-31 15:27:53 INFO main - commercialEnable=true
+2021-10-31 15:27:53 INFO main - commercialTimerCount=1
+2021-10-31 15:27:53 INFO main - commercialTransCount=1
+2021-10-31 15:27:53 INFO main - commercialBigCount=1
+2021-10-31 15:27:53 INFO main - commercialBaseCount=1
+2021-10-31 15:27:53 INFO main - transferMsgByHeap=true
+2021-10-31 15:27:53 INFO main - maxDelayTime=40
+2021-10-31 15:27:53 INFO main - regionId=DefaultRegion
+2021-10-31 15:27:53 INFO main - registerBrokerTimeoutMills=6000
+2021-10-31 15:27:53 INFO main - slaveReadEnable=false
+2021-10-31 15:27:53 INFO main - disableConsumeIfConsumerReadSlowly=false
+2021-10-31 15:27:53 INFO main - consumerFallbehindThreshold=17179869184
+2021-10-31 15:27:53 INFO main - brokerFastFailureEnable=true
+2021-10-31 15:27:53 INFO main - waitTimeMillsInSendQueue=200
+2021-10-31 15:27:53 INFO main - waitTimeMillsInPullQueue=5000
+2021-10-31 15:27:53 INFO main - waitTimeMillsInHeartbeatQueue=31000
+2021-10-31 15:27:53 INFO main - waitTimeMillsInTransactionQueue=3000
+2021-10-31 15:27:53 INFO main - startAcceptSendRequestTimeStamp=0
+2021-10-31 15:27:53 INFO main - traceOn=true
+2021-10-31 15:27:53 INFO main - enableCalcFilterBitMap=false
+2021-10-31 15:27:53 INFO main - expectConsumerNumUseFilter=32
+2021-10-31 15:27:53 INFO main - maxErrorRateOfBloomFilter=20
+2021-10-31 15:27:53 INFO main - filterDataCleanTimeSpan=86400000
+2021-10-31 15:27:53 INFO main - filterSupportRetry=false
+2021-10-31 15:27:53 INFO main - enablePropertyFilter=false
+2021-10-31 15:27:53 INFO main - compressedRegister=false
+2021-10-31 15:27:53 INFO main - forceRegister=true
+2021-10-31 15:27:53 INFO main - registerNameServerPeriod=30000
+2021-10-31 15:27:53 INFO main - transactionTimeOut=6000
+2021-10-31 15:27:53 INFO main - transactionCheckMax=15
+2021-10-31 15:27:53 INFO main - transactionCheckInterval=60000
+2021-10-31 15:27:53 INFO main - aclEnable=false
+2021-10-31 15:27:53 INFO main - storeReplyMessageEnable=true
+2021-10-31 15:27:53 INFO main - autoDeleteUnusedStats=false
+2021-10-31 15:27:53 INFO main - listenPort=10911
+2021-10-31 15:27:53 INFO main - serverWorkerThreads=8
+2021-10-31 15:27:53 INFO main - serverCallbackExecutorThreads=0
+2021-10-31 15:27:53 INFO main - serverSelectorThreads=3
+2021-10-31 15:27:53 INFO main - serverOnewaySemaphoreValue=256
+2021-10-31 15:27:53 INFO main - serverAsyncSemaphoreValue=64
+2021-10-31 15:27:53 INFO main - serverChannelMaxIdleTimeSeconds=120
+2021-10-31 15:27:53 INFO main - serverSocketSndBufSize=131072
+2021-10-31 15:27:53 INFO main - serverSocketRcvBufSize=131072
+2021-10-31 15:27:53 INFO main - serverPooledByteBufAllocatorEnable=true
+2021-10-31 15:27:53 INFO main - useEpollNativeSelector=false
+2021-10-31 15:27:53 INFO main - clientWorkerThreads=4
+2021-10-31 15:27:53 INFO main - clientCallbackExecutorThreads=16
+2021-10-31 15:27:53 INFO main - clientOnewaySemaphoreValue=65535
+2021-10-31 15:27:53 INFO main - clientAsyncSemaphoreValue=65535
+2021-10-31 15:27:53 INFO main - connectTimeoutMillis=3000
+2021-10-31 15:27:53 INFO main - channelNotActiveInterval=60000
+2021-10-31 15:27:53 INFO main - clientChannelMaxIdleTimeSeconds=120
+2021-10-31 15:27:53 INFO main - clientSocketSndBufSize=131072
+2021-10-31 15:27:53 INFO main - clientSocketRcvBufSize=131072
+2021-10-31 15:27:53 INFO main - clientPooledByteBufAllocatorEnable=false
+2021-10-31 15:27:53 INFO main - clientCloseSocketIfTimeout=true
+2021-10-31 15:27:53 INFO main - useTLS=false
+2021-10-31 15:27:53 INFO main - storePathRootDir=D:\workspace\rocketmq-all-4.9.2\dataDir
+2021-10-31 15:27:53 INFO main - storePathCommitLog=D:\workspace\rocketmq-all-4.9.2\dataDir\commitlog
+2021-10-31 15:27:53 INFO main - readOnlyCommitLogStorePaths=
+2021-10-31 15:27:53 INFO main - mappedFileSizeCommitLog=1073741824
+2021-10-31 15:27:53 INFO main - mappedFileSizeConsumeQueue=6000000
+2021-10-31 15:27:53 INFO main - enableConsumeQueueExt=false
+2021-10-31 15:27:53 INFO main - mappedFileSizeConsumeQueueExt=50331648
+2021-10-31 15:27:53 INFO main - bitMapLengthConsumeQueueExt=64
+2021-10-31 15:27:53 INFO main - flushIntervalCommitLog=500
+2021-10-31 15:27:53 INFO main - commitIntervalCommitLog=200
+2021-10-31 15:27:53 INFO main - useReentrantLockWhenPutMessage=true
+2021-10-31 15:27:53 INFO main - flushCommitLogTimed=true
+2021-10-31 15:27:53 INFO main - flushIntervalConsumeQueue=1000
+2021-10-31 15:27:53 INFO main - cleanResourceInterval=10000
+2021-10-31 15:27:53 INFO main - deleteCommitLogFilesInterval=100
+2021-10-31 15:27:53 INFO main - deleteConsumeQueueFilesInterval=100
+2021-10-31 15:27:53 INFO main - destroyMapedFileIntervalForcibly=120000
+2021-10-31 15:27:53 INFO main - redeleteHangedFileInterval=120000
+2021-10-31 15:27:53 INFO main - deleteWhen=04
+2021-10-31 15:27:53 INFO main - diskMaxUsedSpaceRatio=75
+2021-10-31 15:27:53 INFO main - fileReservedTime=48
+2021-10-31 15:27:53 INFO main - putMsgIndexHightWater=600000
+2021-10-31 15:27:53 INFO main - maxMessageSize=4194304
+2021-10-31 15:27:53 INFO main - checkCRCOnRecover=true
+2021-10-31 15:27:53 INFO main - flushCommitLogLeastPages=4
+2021-10-31 15:27:53 INFO main - commitCommitLogLeastPages=4
+2021-10-31 15:27:53 INFO main - flushLeastPagesWhenWarmMapedFile=4096
+2021-10-31 15:27:53 INFO main - flushConsumeQueueLeastPages=2
+2021-10-31 15:27:53 INFO main - flushCommitLogThoroughInterval=10000
+2021-10-31 15:27:53 INFO main - commitCommitLogThoroughInterval=200
+2021-10-31 15:27:53 INFO main - flushConsumeQueueThoroughInterval=60000
+2021-10-31 15:27:53 INFO main - maxTransferBytesOnMessageInMemory=262144
+2021-10-31 15:27:53 INFO main - maxTransferCountOnMessageInMemory=32
+2021-10-31 15:27:53 INFO main - maxTransferBytesOnMessageInDisk=65536
+2021-10-31 15:27:53 INFO main - maxTransferCountOnMessageInDisk=8
+2021-10-31 15:27:53 INFO main - accessMessageInMemoryMaxRatio=40
+2021-10-31 15:27:53 INFO main - messageIndexEnable=true
+2021-10-31 15:27:53 INFO main - maxHashSlotNum=5000000
+2021-10-31 15:27:53 INFO main - maxIndexNum=20000000
+2021-10-31 15:27:53 INFO main - maxMsgsNumBatch=64
+2021-10-31 15:27:53 INFO main - messageIndexSafe=false
+2021-10-31 15:27:53 INFO main - haListenPort=10912
+2021-10-31 15:27:53 INFO main - haSendHeartbeatInterval=5000
+2021-10-31 15:27:53 INFO main - haHousekeepingInterval=20000
+2021-10-31 15:27:53 INFO main - haTransferBatchSize=32768
+2021-10-31 15:27:53 INFO main - haMasterAddress=
+2021-10-31 15:27:53 INFO main - haSlaveFallbehindMax=268435456
+2021-10-31 15:27:53 INFO main - brokerRole=ASYNC_MASTER
+2021-10-31 15:27:53 INFO main - flushDiskType=ASYNC_FLUSH
+2021-10-31 15:27:53 INFO main - syncFlushTimeout=5000
+2021-10-31 15:27:53 INFO main - messageDelayLevel=1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 8m 9m 10m 20m 30m 1h 2h
+2021-10-31 15:27:53 INFO main - flushDelayOffsetInterval=10000
+2021-10-31 15:27:53 INFO main - cleanFileForciblyEnable=true
+2021-10-31 15:27:53 INFO main - warmMapedFileEnable=false
+2021-10-31 15:27:53 INFO main - offsetCheckInSlave=false
+2021-10-31 15:27:53 INFO main - debugLockEnable=false
+2021-10-31 15:27:53 INFO main - duplicationEnable=false
+2021-10-31 15:27:53 INFO main - diskFallRecorded=true
+2021-10-31 15:27:53 INFO main - osPageCacheBusyTimeOutMills=1000
+2021-10-31 15:27:53 INFO main - defaultQueryMaxNum=32
+2021-10-31 15:27:53 INFO main - transientStorePoolEnable=false
+2021-10-31 15:27:53 INFO main - transientStorePoolSize=5
+2021-10-31 15:27:53 INFO main - fastFailIfNoBufferInStorePool=false
+2021-10-31 15:27:53 INFO main - enableDLegerCommitLog=false
+2021-10-31 15:27:53 INFO main - dLegerGroup=
+2021-10-31 15:27:53 INFO main - dLegerPeers=
+2021-10-31 15:27:53 INFO main - dLegerSelfId=
+2021-10-31 15:27:53 INFO main - preferredLeaderId=
+2021-10-31 15:27:53 INFO main - isEnableBatchPush=false
+2021-10-31 15:27:53 INFO main - enableScheduleMessageStats=true
+2021-10-31 15:27:53 INFO main - Try to start service thread:AllocateMappedFileService started:false lastThread:null
+2021-10-31 15:27:54 INFO main - Set user specified name server address: 127.0.0.1:9876
+2021-10-31 15:27:54 WARN main - Load default transaction message hook service: TransactionalMessageServiceImpl
+2021-10-31 15:27:54 WARN main - Load default discard message hook service: DefaultTransactionalMessageCheckListener
+2021-10-31 15:27:54 INFO main - The broker dose not enable acl
+2021-10-31 15:27:54 INFO main - Try to start service thread:ReputMessageService started:false lastThread:null
+2021-10-31 15:27:54 INFO main - Try to start service thread:AcceptSocketService started:false lastThread:null
+2021-10-31 15:27:54 INFO main - Try to start service thread:GroupTransferService started:false lastThread:null
+2021-10-31 15:27:54 INFO main - Try to start service thread:HAClient started:false lastThread:null
+2021-10-31 15:27:54 INFO main - Try to start service thread:FlushConsumeQueueService started:false lastThread:null
+2021-10-31 15:27:54 INFO main - Try to start service thread:FlushRealTimeService started:false lastThread:null
+2021-10-31 15:27:54 INFO main - Try to start service thread:StoreStatsService started:false lastThread:null
+2021-10-31 15:27:55 INFO main - Try to start service thread:FileWatchService started:false lastThread:null
+2021-10-31 15:27:55 INFO FileWatchService - FileWatchService service started
+2021-10-31 15:27:55 INFO main - Try to start service thread:PullRequestHoldService started:false lastThread:null
+2021-10-31 15:27:55 INFO PullRequestHoldService - PullRequestHoldService service started
+2021-10-31 15:27:55 INFO main - Try to start service thread:TransactionalMessageCheckService started:false lastThread:null
+2021-10-31 15:27:55 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:27:55 INFO main - The broker[broker-a, 192.168.18.123:10911] boot success. serializeType=JSON and name server is 127.0.0.1:9876
+2021-10-31 15:28:00 INFO HeartbeatThread_1 - new producer connected, group: CLIENT_INNER_PRODUCER channel: ClientChannelInfo [channel=[id: 0x9f0aed44, L:/192.168.18.123:10911 - R:/192.168.18.123:58356], clientId=192.168.18.123@40152#952931623861900, language=JAVA, version=397, lastUpdateTimestamp=1635665280427]
+2021-10-31 15:28:00 INFO HeartbeatThread_1 - new producer connected, group: please_rename_unique_group_name channel: ClientChannelInfo [channel=[id: 0x9f0aed44, L:/192.168.18.123:10911 - R:/192.168.18.123:58356], clientId=192.168.18.123@40152#952931623861900, language=JAVA, version=397, lastUpdateTimestamp=1635665280427]
+2021-10-31 15:28:00 WARN SendMessageThread_1 - the topic TopicTest not exist, producer: /192.168.18.123:58356
+2021-10-31 15:28:00 INFO SendMessageThread_1 - Create new topic by default topic:[TBW102] config:[TopicConfig [topicName=TopicTest, readQueueNums=4, writeQueueNums=4, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]] producer:[192.168.18.123:58356]
+2021-10-31 15:28:00 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:28:01 INFO ClientManageThread_1 - unregister a producer[please_rename_unique_group_name] from groupChannelTable ClientChannelInfo [channel=[id: 0x9f0aed44, L:/192.168.18.123:10911 - R:/192.168.18.123:58356], clientId=192.168.18.123@40152#952931623861900, language=JAVA, version=397, lastUpdateTimestamp=1635665281907]
+2021-10-31 15:28:01 INFO ClientManageThread_1 - unregister a producer group[please_rename_unique_group_name] from groupChannelTable
+2021-10-31 15:28:01 INFO ClientManageThread_2 - unregister a producer[CLIENT_INNER_PRODUCER] from groupChannelTable ClientChannelInfo [channel=[id: 0x9f0aed44, L:/192.168.18.123:10911 - R:/192.168.18.123:58356], clientId=192.168.18.123@40152#952931623861900, language=JAVA, version=397, lastUpdateTimestamp=1635665281909]
+2021-10-31 15:28:01 INFO ClientManageThread_2 - unregister a producer group[CLIENT_INNER_PRODUCER] from groupChannelTable
+2021-10-31 15:28:04 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-10-31 15:28:04 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 191890 bytes
+2021-10-31 15:28:05 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2021-10-31 15:28:33 INFO ShutdownHook - Shutdown hook was invoked, 1
+2021-10-31 15:28:33 INFO ShutdownHook - Try to shutdown service thread:PullRequestHoldService started:true lastThread:Thread[PullRequestHoldService,5,main]
+2021-10-31 15:28:33 INFO ShutdownHook - shutdown thread PullRequestHoldService interrupt false
+2021-10-31 15:28:33 INFO PullRequestHoldService - PullRequestHoldService service end
+2021-10-31 15:28:33 INFO ShutdownHook - join thread PullRequestHoldService elapsed time(ms) 0 90000

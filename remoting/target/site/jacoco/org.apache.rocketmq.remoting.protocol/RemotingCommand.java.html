@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RemotingCommand.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">rocketmq-remoting 4.9.2</a> &gt; <a href="index.source.html" class="el_package">org.apache.rocketmq.remoting.protocol</a> &gt; <span class="el_source">RemotingCommand.java</span></div><h1>RemotingCommand.java</h1><pre class="source lang-java linenums">/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.apache.rocketmq.remoting.protocol;
+
+import com.alibaba.fastjson.annotation.JSONField;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.nio.ByteBuffer;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
+import org.apache.rocketmq.remoting.CommandCustomHeader;
+import org.apache.rocketmq.remoting.annotation.CFNotNull;
+import org.apache.rocketmq.remoting.common.RemotingHelper;
+import org.apache.rocketmq.remoting.exception.RemotingCommandException;
+import org.apache.rocketmq.logging.InternalLogger;
+import org.apache.rocketmq.logging.InternalLoggerFactory;
+
+public class RemotingCommand {
+    public static final String SERIALIZE_TYPE_PROPERTY = &quot;rocketmq.serialize.type&quot;;
+    public static final String SERIALIZE_TYPE_ENV = &quot;ROCKETMQ_SERIALIZE_TYPE&quot;;
+    public static final String REMOTING_VERSION_KEY = &quot;rocketmq.remoting.version&quot;;
+<span class="fc" id="L38">    private static final InternalLogger log = InternalLoggerFactory.getLogger(RemotingHelper.ROCKETMQ_REMOTING);</span>
+    private static final int RPC_TYPE = 0; // 0, REQUEST_COMMAND
+    private static final int RPC_ONEWAY = 1; // 0, RPC
+<span class="fc" id="L41">    private static final Map&lt;Class&lt;? extends CommandCustomHeader&gt;, Field[]&gt; CLASS_HASH_MAP =</span>
+        new HashMap&lt;Class&lt;? extends CommandCustomHeader&gt;, Field[]&gt;();
+<span class="fc" id="L43">    private static final Map&lt;Class, String&gt; CANONICAL_NAME_CACHE = new HashMap&lt;Class, String&gt;();</span>
+    // 1, Oneway
+    // 1, RESPONSE_COMMAND
+<span class="fc" id="L46">    private static final Map&lt;Field, Boolean&gt; NULLABLE_FIELD_CACHE = new HashMap&lt;Field, Boolean&gt;();</span>
+<span class="fc" id="L47">    private static final String STRING_CANONICAL_NAME = String.class.getCanonicalName();</span>
+<span class="fc" id="L48">    private static final String DOUBLE_CANONICAL_NAME_1 = Double.class.getCanonicalName();</span>
+<span class="fc" id="L49">    private static final String DOUBLE_CANONICAL_NAME_2 = double.class.getCanonicalName();</span>
+<span class="fc" id="L50">    private static final String INTEGER_CANONICAL_NAME_1 = Integer.class.getCanonicalName();</span>
+<span class="fc" id="L51">    private static final String INTEGER_CANONICAL_NAME_2 = int.class.getCanonicalName();</span>
+<span class="fc" id="L52">    private static final String LONG_CANONICAL_NAME_1 = Long.class.getCanonicalName();</span>
+<span class="fc" id="L53">    private static final String LONG_CANONICAL_NAME_2 = long.class.getCanonicalName();</span>
+<span class="fc" id="L54">    private static final String BOOLEAN_CANONICAL_NAME_1 = Boolean.class.getCanonicalName();</span>
+<span class="fc" id="L55">    private static final String BOOLEAN_CANONICAL_NAME_2 = boolean.class.getCanonicalName();</span>
+<span class="fc" id="L56">    private static volatile int configVersion = -1;</span>
+<span class="fc" id="L57">    private static AtomicInteger requestId = new AtomicInteger(0);</span>
+
+<span class="fc" id="L59">    private static SerializeType serializeTypeConfigInThisServer = SerializeType.JSON;</span>
+
+    static {
+<span class="fc" id="L62">        final String protocol = System.getProperty(SERIALIZE_TYPE_PROPERTY, System.getenv(SERIALIZE_TYPE_ENV));</span>
+<span class="pc bpc" id="L63" title="1 of 2 branches missed.">        if (!isBlank(protocol)) {</span>
+            try {
+<span class="nc" id="L65">                serializeTypeConfigInThisServer = SerializeType.valueOf(protocol);</span>
+<span class="nc" id="L66">            } catch (IllegalArgumentException e) {</span>
+<span class="nc" id="L67">                throw new RuntimeException(&quot;parser specified protocol error. protocol=&quot; + protocol, e);</span>
+<span class="nc" id="L68">            }</span>
+        }
+<span class="fc" id="L70">    }</span>
+
+    private int code;
+<span class="fc" id="L73">    private LanguageCode language = LanguageCode.JAVA;</span>
+<span class="fc" id="L74">    private int version = 0;</span>
+<span class="fc" id="L75">    private int opaque = requestId.getAndIncrement();</span>
+<span class="fc" id="L76">    private int flag = 0;</span>
+    private String remark;
+    private HashMap&lt;String, String&gt; extFields;
+    private transient CommandCustomHeader customHeader;
+
+<span class="fc" id="L81">    private SerializeType serializeTypeCurrentRPC = serializeTypeConfigInThisServer;</span>
+
+    private transient byte[] body;
+
+<span class="fc" id="L85">    protected RemotingCommand() {</span>
+<span class="fc" id="L86">    }</span>
+
+    public static RemotingCommand createRequestCommand(int code, CommandCustomHeader customHeader) {
+<span class="fc" id="L89">        RemotingCommand cmd = new RemotingCommand();</span>
+<span class="fc" id="L90">        cmd.setCode(code);</span>
+<span class="fc" id="L91">        cmd.customHeader = customHeader;</span>
+<span class="fc" id="L92">        setCmdVersion(cmd);</span>
+<span class="fc" id="L93">        return cmd;</span>
+    }
+
+    private static void setCmdVersion(RemotingCommand cmd) {
+<span class="fc bfc" id="L97" title="All 2 branches covered.">        if (configVersion &gt;= 0) {</span>
+<span class="fc" id="L98">            cmd.setVersion(configVersion);</span>
+        } else {
+<span class="fc" id="L100">            String v = System.getProperty(REMOTING_VERSION_KEY);</span>
+<span class="fc bfc" id="L101" title="All 2 branches covered.">            if (v != null) {</span>
+<span class="fc" id="L102">                int value = Integer.parseInt(v);</span>
+<span class="fc" id="L103">                cmd.setVersion(value);</span>
+<span class="fc" id="L104">                configVersion = value;</span>
+            }
+        }
+<span class="fc" id="L107">    }</span>
+
+    public static RemotingCommand createResponseCommand(Class&lt;? extends CommandCustomHeader&gt; classHeader) {
+<span class="fc" id="L110">        return createResponseCommand(RemotingSysResponseCode.SYSTEM_ERROR, &quot;not set any response code&quot;, classHeader);</span>
+    }
+
+    public static RemotingCommand createResponseCommand(int code, String remark,
+        Class&lt;? extends CommandCustomHeader&gt; classHeader) {
+<span class="fc" id="L115">        RemotingCommand cmd = new RemotingCommand();</span>
+<span class="fc" id="L116">        cmd.markResponseType();</span>
+<span class="fc" id="L117">        cmd.setCode(code);</span>
+<span class="fc" id="L118">        cmd.setRemark(remark);</span>
+<span class="fc" id="L119">        setCmdVersion(cmd);</span>
+
+<span class="fc bfc" id="L121" title="All 2 branches covered.">        if (classHeader != null) {</span>
+            try {
+<span class="fc" id="L123">                CommandCustomHeader objectHeader = classHeader.newInstance();</span>
+<span class="fc" id="L124">                cmd.customHeader = objectHeader;</span>
+<span class="fc" id="L125">            } catch (InstantiationException e) {</span>
+<span class="fc" id="L126">                return null;</span>
+<span class="nc" id="L127">            } catch (IllegalAccessException e) {</span>
+<span class="nc" id="L128">                return null;</span>
+<span class="fc" id="L129">            }</span>
+        }
+
+<span class="fc" id="L132">        return cmd;</span>
+    }
+
+    public static RemotingCommand createResponseCommand(int code, String remark) {
+<span class="fc" id="L136">        return createResponseCommand(code, remark, null);</span>
+    }
+
+    public static RemotingCommand decode(final byte[] array) {
+<span class="nc" id="L140">        ByteBuffer byteBuffer = ByteBuffer.wrap(array);</span>
+<span class="nc" id="L141">        return decode(byteBuffer);</span>
+    }
+
+    public static RemotingCommand decode(final ByteBuffer byteBuffer) {
+<span class="fc" id="L145">        int length = byteBuffer.limit();</span>
+<span class="fc" id="L146">        int oriHeaderLen = byteBuffer.getInt();</span>
+<span class="fc" id="L147">        int headerLength = getHeaderLength(oriHeaderLen);</span>
+
+<span class="fc" id="L149">        byte[] headerData = new byte[headerLength];</span>
+<span class="fc" id="L150">        byteBuffer.get(headerData);</span>
+
+<span class="fc" id="L152">        RemotingCommand cmd = headerDecode(headerData, getProtocolType(oriHeaderLen));</span>
+
+<span class="fc" id="L154">        int bodyLength = length - 4 - headerLength;</span>
+<span class="fc" id="L155">        byte[] bodyData = null;</span>
+<span class="fc bfc" id="L156" title="All 2 branches covered.">        if (bodyLength &gt; 0) {</span>
+<span class="fc" id="L157">            bodyData = new byte[bodyLength];</span>
+<span class="fc" id="L158">            byteBuffer.get(bodyData);</span>
+        }
+<span class="fc" id="L160">        cmd.body = bodyData;</span>
+
+<span class="fc" id="L162">        return cmd;</span>
+    }
+
+    public static int getHeaderLength(int length) {
+<span class="fc" id="L166">        return length &amp; 0xFFFFFF;</span>
+    }
+
+    private static RemotingCommand headerDecode(byte[] headerData, SerializeType type) {
+<span class="pc bpc" id="L170" title="2 of 3 branches missed.">        switch (type) {</span>
+            case JSON:
+<span class="fc" id="L172">                RemotingCommand resultJson = RemotingSerializable.decode(headerData, RemotingCommand.class);</span>
+<span class="fc" id="L173">                resultJson.setSerializeTypeCurrentRPC(type);</span>
+<span class="fc" id="L174">                return resultJson;</span>
+            case ROCKETMQ:
+<span class="nc" id="L176">                RemotingCommand resultRMQ = RocketMQSerializable.rocketMQProtocolDecode(headerData);</span>
+<span class="nc" id="L177">                resultRMQ.setSerializeTypeCurrentRPC(type);</span>
+<span class="nc" id="L178">                return resultRMQ;</span>
+            default:
+                break;
+        }
+
+<span class="nc" id="L183">        return null;</span>
+    }
+
+    public static SerializeType getProtocolType(int source) {
+<span class="fc" id="L187">        return SerializeType.valueOf((byte) ((source &gt;&gt; 24) &amp; 0xFF));</span>
+    }
+
+    public static int createNewRequestId() {
+<span class="nc" id="L191">        return requestId.getAndIncrement();</span>
+    }
+
+    public static SerializeType getSerializeTypeConfigInThisServer() {
+<span class="nc" id="L195">        return serializeTypeConfigInThisServer;</span>
+    }
+
+    private static boolean isBlank(String str) {
+        int strLen;
+<span class="pc bpc" id="L200" title="3 of 4 branches missed.">        if (str == null || (strLen = str.length()) == 0) {</span>
+<span class="fc" id="L201">            return true;</span>
+        }
+<span class="nc bnc" id="L203" title="All 2 branches missed.">        for (int i = 0; i &lt; strLen; i++) {</span>
+<span class="nc bnc" id="L204" title="All 2 branches missed.">            if (!Character.isWhitespace(str.charAt(i))) {</span>
+<span class="nc" id="L205">                return false;</span>
+            }
+        }
+<span class="nc" id="L208">        return true;</span>
+    }
+
+    public static byte[] markProtocolType(int source, SerializeType type) {
+<span class="fc" id="L212">        byte[] result = new byte[4];</span>
+
+<span class="fc" id="L214">        result[0] = type.getCode();</span>
+<span class="fc" id="L215">        result[1] = (byte) ((source &gt;&gt; 16) &amp; 0xFF);</span>
+<span class="fc" id="L216">        result[2] = (byte) ((source &gt;&gt; 8) &amp; 0xFF);</span>
+<span class="fc" id="L217">        result[3] = (byte) (source &amp; 0xFF);</span>
+<span class="fc" id="L218">        return result;</span>
+    }
+
+    public void markResponseType() {
+<span class="fc" id="L222">        int bits = 1 &lt;&lt; RPC_TYPE;</span>
+<span class="fc" id="L223">        this.flag |= bits;</span>
+<span class="fc" id="L224">    }</span>
+
+    public CommandCustomHeader readCustomHeader() {
+<span class="nc" id="L227">        return customHeader;</span>
+    }
+
+    public void writeCustomHeader(CommandCustomHeader customHeader) {
+<span class="nc" id="L231">        this.customHeader = customHeader;</span>
+<span class="nc" id="L232">    }</span>
+
+    public CommandCustomHeader decodeCommandCustomHeader(
+        Class&lt;? extends CommandCustomHeader&gt; classHeader) throws RemotingCommandException {
+        CommandCustomHeader objectHeader;
+        try {
+<span class="fc" id="L238">            objectHeader = classHeader.newInstance();</span>
+<span class="nc" id="L239">        } catch (InstantiationException e) {</span>
+<span class="nc" id="L240">            return null;</span>
+<span class="nc" id="L241">        } catch (IllegalAccessException e) {</span>
+<span class="nc" id="L242">            return null;</span>
+<span class="fc" id="L243">        }</span>
+
+<span class="pc bpc" id="L245" title="1 of 2 branches missed.">        if (this.extFields != null) {</span>
+
+<span class="fc" id="L247">            Field[] fields = getClazzFields(classHeader);</span>
+<span class="fc bfc" id="L248" title="All 2 branches covered.">            for (Field field : fields) {</span>
+<span class="fc bfc" id="L249" title="All 2 branches covered.">                if (!Modifier.isStatic(field.getModifiers())) {</span>
+<span class="fc" id="L250">                    String fieldName = field.getName();</span>
+<span class="pc bpc" id="L251" title="1 of 2 branches missed.">                    if (!fieldName.startsWith(&quot;this&quot;)) {</span>
+                        try {
+<span class="fc" id="L253">                            String value = this.extFields.get(fieldName);</span>
+<span class="pc bpc" id="L254" title="1 of 2 branches missed.">                            if (null == value) {</span>
+<span class="nc bnc" id="L255" title="All 2 branches missed.">                                if (!isFieldNullable(field)) {</span>
+<span class="nc" id="L256">                                    throw new RemotingCommandException(&quot;the custom field &lt;&quot; + fieldName + &quot;&gt; is null&quot;);</span>
+                                }
+<span class="nc" id="L258">                                continue;</span>
+                            }
+
+<span class="fc" id="L261">                            field.setAccessible(true);</span>
+<span class="fc" id="L262">                            String type = getCanonicalName(field.getType());</span>
+                            Object valueParsed;
+
+<span class="fc bfc" id="L265" title="All 2 branches covered.">                            if (type.equals(STRING_CANONICAL_NAME)) {</span>
+<span class="fc" id="L266">                                valueParsed = value;</span>
+<span class="pc bpc" id="L267" title="1 of 4 branches missed.">                            } else if (type.equals(INTEGER_CANONICAL_NAME_1) || type.equals(INTEGER_CANONICAL_NAME_2)) {</span>
+<span class="fc" id="L268">                                valueParsed = Integer.parseInt(value);</span>
+<span class="pc bpc" id="L269" title="1 of 4 branches missed.">                            } else if (type.equals(LONG_CANONICAL_NAME_1) || type.equals(LONG_CANONICAL_NAME_2)) {</span>
+<span class="fc" id="L270">                                valueParsed = Long.parseLong(value);</span>
+<span class="pc bpc" id="L271" title="1 of 4 branches missed.">                            } else if (type.equals(BOOLEAN_CANONICAL_NAME_1) || type.equals(BOOLEAN_CANONICAL_NAME_2)) {</span>
+<span class="fc" id="L272">                                valueParsed = Boolean.parseBoolean(value);</span>
+<span class="pc bpc" id="L273" title="2 of 4 branches missed.">                            } else if (type.equals(DOUBLE_CANONICAL_NAME_1) || type.equals(DOUBLE_CANONICAL_NAME_2)) {</span>
+<span class="fc" id="L274">                                valueParsed = Double.parseDouble(value);</span>
+                            } else {
+<span class="nc" id="L276">                                throw new RemotingCommandException(&quot;the custom field &lt;&quot; + fieldName + &quot;&gt; type is not supported&quot;);</span>
+                            }
+
+<span class="fc" id="L279">                            field.set(objectHeader, valueParsed);</span>
+
+<span class="nc" id="L281">                        } catch (Throwable e) {</span>
+<span class="nc" id="L282">                            log.error(&quot;Failed field [{}] decoding&quot;, fieldName, e);</span>
+<span class="fc" id="L283">                        }</span>
+                    }
+                }
+            }
+
+<span class="fc" id="L288">            objectHeader.checkFields();</span>
+        }
+
+<span class="fc" id="L291">        return objectHeader;</span>
+    }
+
+    private Field[] getClazzFields(Class&lt;? extends CommandCustomHeader&gt; classHeader) {
+<span class="fc" id="L295">        Field[] field = CLASS_HASH_MAP.get(classHeader);</span>
+
+<span class="fc bfc" id="L297" title="All 2 branches covered.">        if (field == null) {</span>
+<span class="fc" id="L298">            field = classHeader.getDeclaredFields();</span>
+<span class="fc" id="L299">            synchronized (CLASS_HASH_MAP) {</span>
+<span class="fc" id="L300">                CLASS_HASH_MAP.put(classHeader, field);</span>
+<span class="fc" id="L301">            }</span>
+        }
+<span class="fc" id="L303">        return field;</span>
+    }
+
+    private boolean isFieldNullable(Field field) {
+<span class="pc bpc" id="L307" title="1 of 2 branches missed.">        if (!NULLABLE_FIELD_CACHE.containsKey(field)) {</span>
+<span class="fc" id="L308">            Annotation annotation = field.getAnnotation(CFNotNull.class);</span>
+<span class="fc" id="L309">            synchronized (NULLABLE_FIELD_CACHE) {</span>
+<span class="fc bfc" id="L310" title="All 2 branches covered.">                NULLABLE_FIELD_CACHE.put(field, annotation == null);</span>
+<span class="fc" id="L311">            }</span>
+        }
+<span class="fc" id="L313">        return NULLABLE_FIELD_CACHE.get(field);</span>
+    }
+
+    private String getCanonicalName(Class clazz) {
+<span class="fc" id="L317">        String name = CANONICAL_NAME_CACHE.get(clazz);</span>
+
+<span class="pc bpc" id="L319" title="1 of 2 branches missed.">        if (name == null) {</span>
+<span class="fc" id="L320">            name = clazz.getCanonicalName();</span>
+<span class="fc" id="L321">            synchronized (CANONICAL_NAME_CACHE) {</span>
+<span class="fc" id="L322">                CANONICAL_NAME_CACHE.put(clazz, name);</span>
+<span class="fc" id="L323">            }</span>
+        }
+<span class="fc" id="L325">        return name;</span>
+    }
+
+    public ByteBuffer encode() {
+        // 1&gt; header length size
+<span class="fc" id="L330">        int length = 4;</span>
+
+        // 2&gt; header data length
+<span class="fc" id="L333">        byte[] headerData = this.headerEncode();</span>
+<span class="fc" id="L334">        length += headerData.length;</span>
+
+        // 3&gt; body data length
+<span class="fc bfc" id="L337" title="All 2 branches covered.">        if (this.body != null) {</span>
+<span class="fc" id="L338">            length += body.length;</span>
+        }
+
+<span class="fc" id="L341">        ByteBuffer result = ByteBuffer.allocate(4 + length);</span>
+
+        // length
+<span class="fc" id="L344">        result.putInt(length);</span>
+
+        // header length
+<span class="fc" id="L347">        result.put(markProtocolType(headerData.length, serializeTypeCurrentRPC));</span>
+
+        // header data
+<span class="fc" id="L350">        result.put(headerData);</span>
+
+        // body data;
+<span class="fc bfc" id="L353" title="All 2 branches covered.">        if (this.body != null) {</span>
+<span class="fc" id="L354">            result.put(this.body);</span>
+        }
+
+<span class="fc" id="L357">        result.flip();</span>
+
+<span class="fc" id="L359">        return result;</span>
+    }
+
+    private byte[] headerEncode() {
+<span class="fc" id="L363">        this.makeCustomHeaderToNet();</span>
+<span class="pc bpc" id="L364" title="1 of 2 branches missed.">        if (SerializeType.ROCKETMQ == serializeTypeCurrentRPC) {</span>
+<span class="nc" id="L365">            return RocketMQSerializable.rocketMQProtocolEncode(this);</span>
+        } else {
+<span class="fc" id="L367">            return RemotingSerializable.encode(this);</span>
+        }
+    }
+
+    public void makeCustomHeaderToNet() {
+<span class="fc bfc" id="L372" title="All 2 branches covered.">        if (this.customHeader != null) {</span>
+<span class="fc" id="L373">            Field[] fields = getClazzFields(customHeader.getClass());</span>
+<span class="fc bfc" id="L374" title="All 2 branches covered.">            if (null == this.extFields) {</span>
+<span class="fc" id="L375">                this.extFields = new HashMap&lt;String, String&gt;();</span>
+            }
+
+<span class="fc bfc" id="L378" title="All 2 branches covered.">            for (Field field : fields) {</span>
+<span class="fc bfc" id="L379" title="All 2 branches covered.">                if (!Modifier.isStatic(field.getModifiers())) {</span>
+<span class="fc" id="L380">                    String name = field.getName();</span>
+<span class="pc bpc" id="L381" title="1 of 2 branches missed.">                    if (!name.startsWith(&quot;this&quot;)) {</span>
+<span class="fc" id="L382">                        Object value = null;</span>
+                        try {
+<span class="fc" id="L384">                            field.setAccessible(true);</span>
+<span class="fc" id="L385">                            value = field.get(this.customHeader);</span>
+<span class="nc" id="L386">                        } catch (Exception e) {</span>
+<span class="nc" id="L387">                            log.error(&quot;Failed to access field [{}]&quot;, name, e);</span>
+<span class="fc" id="L388">                        }</span>
+
+<span class="pc bpc" id="L390" title="1 of 2 branches missed.">                        if (value != null) {</span>
+<span class="fc" id="L391">                            this.extFields.put(name, value.toString());</span>
+                        }
+                    }
+                }
+            }
+        }
+<span class="fc" id="L397">    }</span>
+
+    public ByteBuffer encodeHeader() {
+<span class="pc bpc" id="L400" title="1 of 2 branches missed.">        return encodeHeader(this.body != null ? this.body.length : 0);</span>
+    }
+
+    public ByteBuffer encodeHeader(final int bodyLength) {
+        // 1&gt; header length size
+<span class="fc" id="L405">        int length = 4;</span>
+
+        // 2&gt; header data length
+        byte[] headerData;
+<span class="fc" id="L409">        headerData = this.headerEncode();</span>
+
+<span class="fc" id="L411">        length += headerData.length;</span>
+
+        // 3&gt; body data length
+<span class="fc" id="L414">        length += bodyLength;</span>
+
+<span class="fc" id="L416">        ByteBuffer result = ByteBuffer.allocate(4 + length - bodyLength);</span>
+
+        // length
+<span class="fc" id="L419">        result.putInt(length);</span>
+
+        // header length
+<span class="fc" id="L422">        result.put(markProtocolType(headerData.length, serializeTypeCurrentRPC));</span>
+
+        // header data
+<span class="fc" id="L425">        result.put(headerData);</span>
+
+<span class="fc" id="L427">        result.flip();</span>
+
+<span class="fc" id="L429">        return result;</span>
+    }
+
+    public void markOnewayRPC() {
+<span class="fc" id="L433">        int bits = 1 &lt;&lt; RPC_ONEWAY;</span>
+<span class="fc" id="L434">        this.flag |= bits;</span>
+<span class="fc" id="L435">    }</span>
+
+    @JSONField(serialize = false)
+    public boolean isOnewayRPC() {
+<span class="fc" id="L439">        int bits = 1 &lt;&lt; RPC_ONEWAY;</span>
+<span class="fc bfc" id="L440" title="All 2 branches covered.">        return (this.flag &amp; bits) == bits;</span>
+    }
+
+    public int getCode() {
+<span class="fc" id="L444">        return code;</span>
+    }
+
+    public void setCode(int code) {
+<span class="fc" id="L448">        this.code = code;</span>
+<span class="fc" id="L449">    }</span>
+
+    @JSONField(serialize = false)
+    public RemotingCommandType getType() {
+<span class="fc bfc" id="L453" title="All 2 branches covered.">        if (this.isResponseType()) {</span>
+<span class="fc" id="L454">            return RemotingCommandType.RESPONSE_COMMAND;</span>
+        }
+
+<span class="fc" id="L457">        return RemotingCommandType.REQUEST_COMMAND;</span>
+    }
+
+    @JSONField(serialize = false)
+    public boolean isResponseType() {
+<span class="fc" id="L462">        int bits = 1 &lt;&lt; RPC_TYPE;</span>
+<span class="fc bfc" id="L463" title="All 2 branches covered.">        return (this.flag &amp; bits) == bits;</span>
+    }
+
+    public LanguageCode getLanguage() {
+<span class="fc" id="L467">        return language;</span>
+    }
+
+    public void setLanguage(LanguageCode language) {
+<span class="fc" id="L471">        this.language = language;</span>
+<span class="fc" id="L472">    }</span>
+
+    public int getVersion() {
+<span class="fc" id="L475">        return version;</span>
+    }
+
+    public void setVersion(int version) {
+<span class="fc" id="L479">        this.version = version;</span>
+<span class="fc" id="L480">    }</span>
+
+    public int getOpaque() {
+<span class="fc" id="L483">        return opaque;</span>
+    }
+
+    public void setOpaque(int opaque) {
+<span class="fc" id="L487">        this.opaque = opaque;</span>
+<span class="fc" id="L488">    }</span>
+
+    public int getFlag() {
+<span class="fc" id="L491">        return flag;</span>
+    }
+
+    public void setFlag(int flag) {
+<span class="fc" id="L495">        this.flag = flag;</span>
+<span class="fc" id="L496">    }</span>
+
+    public String getRemark() {
+<span class="fc" id="L499">        return remark;</span>
+    }
+
+    public void setRemark(String remark) {
+<span class="fc" id="L503">        this.remark = remark;</span>
+<span class="fc" id="L504">    }</span>
+
+    public byte[] getBody() {
+<span class="fc" id="L507">        return body;</span>
+    }
+
+    public void setBody(byte[] body) {
+<span class="fc" id="L511">        this.body = body;</span>
+<span class="fc" id="L512">    }</span>
+
+    public HashMap&lt;String, String&gt; getExtFields() {
+<span class="fc" id="L515">        return extFields;</span>
+    }
+
+    public void setExtFields(HashMap&lt;String, String&gt; extFields) {
+<span class="fc" id="L519">        this.extFields = extFields;</span>
+<span class="fc" id="L520">    }</span>
+
+    public void addExtField(String key, String value) {
+<span class="pc bpc" id="L523" title="1 of 2 branches missed.">        if (null == extFields) {</span>
+<span class="fc" id="L524">            extFields = new HashMap&lt;String, String&gt;();</span>
+        }
+<span class="fc" id="L526">        extFields.put(key, value);</span>
+<span class="fc" id="L527">    }</span>
+
+    @Override
+    public String toString() {
+<span class="nc" id="L531">        return &quot;RemotingCommand [code=&quot; + code + &quot;, language=&quot; + language + &quot;, version=&quot; + version + &quot;, opaque=&quot; + opaque + &quot;, flag(B)=&quot;</span>
+<span class="nc" id="L532">            + Integer.toBinaryString(flag) + &quot;, remark=&quot; + remark + &quot;, extFields=&quot; + extFields + &quot;, serializeTypeCurrentRPC=&quot;</span>
+            + serializeTypeCurrentRPC + &quot;]&quot;;
+    }
+
+    public SerializeType getSerializeTypeCurrentRPC() {
+<span class="fc" id="L537">        return serializeTypeCurrentRPC;</span>
+    }
+
+    public void setSerializeTypeCurrentRPC(SerializeType serializeTypeCurrentRPC) {
+<span class="fc" id="L541">        this.serializeTypeCurrentRPC = serializeTypeCurrentRPC;</span>
+<span class="fc" id="L542">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

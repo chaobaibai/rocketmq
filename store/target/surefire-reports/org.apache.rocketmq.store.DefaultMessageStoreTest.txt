@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.rocketmq.store.DefaultMessageStoreTest
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.385 sec - in org.apache.rocketmq.store.DefaultMessageStoreTest

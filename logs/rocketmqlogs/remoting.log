@@ -1,0 +1,263 @@
+2021-10-31 15:05:52 INFO main - Server is running in TLS permissive mode
+2021-10-31 15:05:52 INFO main - Tls config file doesn't exist, skip it
+2021-10-31 15:05:52 INFO main - Log the final used tls related configuration
+2021-10-31 15:05:52 INFO main - tls.test.mode.enable = true
+2021-10-31 15:05:52 INFO main - tls.server.need.client.auth = none
+2021-10-31 15:05:52 INFO main - tls.server.keyPath = null
+2021-10-31 15:05:52 INFO main - tls.server.keyPassword = null
+2021-10-31 15:05:52 INFO main - tls.server.certPath = null
+2021-10-31 15:05:52 INFO main - tls.server.authClient = false
+2021-10-31 15:05:52 INFO main - tls.server.trustCertPath = null
+2021-10-31 15:05:52 INFO main - tls.client.keyPath = null
+2021-10-31 15:05:52 INFO main - tls.client.keyPassword = null
+2021-10-31 15:05:52 INFO main - tls.client.certPath = null
+2021-10-31 15:05:52 INFO main - tls.client.authServer = false
+2021-10-31 15:05:52 INFO main - tls.client.trustCertPath = null
+2021-10-31 15:05:52 INFO main - Using JDK SSL provider
+2021-10-31 15:05:53 INFO main - SSLContext created for server
+2021-10-31 15:05:53 INFO main - Server is running in TLS permissive mode
+2021-10-31 15:05:53 INFO main - Tls config file doesn't exist, skip it
+2021-10-31 15:05:53 INFO main - Log the final used tls related configuration
+2021-10-31 15:05:53 INFO main - tls.test.mode.enable = true
+2021-10-31 15:05:53 INFO main - tls.server.need.client.auth = none
+2021-10-31 15:05:53 INFO main - tls.server.keyPath = null
+2021-10-31 15:05:53 INFO main - tls.server.keyPassword = null
+2021-10-31 15:05:53 INFO main - tls.server.certPath = null
+2021-10-31 15:05:53 INFO main - tls.server.authClient = false
+2021-10-31 15:05:53 INFO main - tls.server.trustCertPath = null
+2021-10-31 15:05:53 INFO main - tls.client.keyPath = null
+2021-10-31 15:05:53 INFO main - tls.client.keyPassword = null
+2021-10-31 15:05:53 INFO main - tls.client.certPath = null
+2021-10-31 15:05:53 INFO main - tls.client.authServer = false
+2021-10-31 15:05:53 INFO main - tls.client.trustCertPath = null
+2021-10-31 15:05:53 INFO main - Using JDK SSL provider
+2021-10-31 15:05:53 INFO main - SSLContext created for server
+2021-10-31 15:05:54 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-10-31 15:05:54 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-10-31 15:18:08 INFO ShutdownHook - shutdown thread NettyEventExecutor interrupt false
+2021-10-31 15:18:09 INFO NettyEventExecutor - NettyEventExecutor service end
+2021-10-31 15:18:09 INFO ShutdownHook - join thread NettyEventExecutor elapsed time(ms) 825 90000
+2021-10-31 15:18:09 INFO ShutdownHook - shutdown thread NettyEventExecutor interrupt false
+2021-10-31 15:18:09 INFO NettyEventExecutor - NettyEventExecutor service end
+2021-10-31 15:18:09 INFO ShutdownHook - join thread NettyEventExecutor elapsed time(ms) 20 90000
+2021-10-31 15:18:10 INFO ShutdownHook - shutdown thread NettyEventExecutor interrupt false
+2021-10-31 15:18:10 INFO ShutdownHook - join thread NettyEventExecutor elapsed time(ms) 0 90000
+2021-10-31 15:18:15 INFO main - Server is running in TLS permissive mode
+2021-10-31 15:18:15 INFO main - Tls config file doesn't exist, skip it
+2021-10-31 15:18:15 INFO main - Log the final used tls related configuration
+2021-10-31 15:18:15 INFO main - tls.test.mode.enable = true
+2021-10-31 15:18:15 INFO main - tls.server.need.client.auth = none
+2021-10-31 15:18:15 INFO main - tls.server.keyPath = null
+2021-10-31 15:18:15 INFO main - tls.server.keyPassword = null
+2021-10-31 15:18:15 INFO main - tls.server.certPath = null
+2021-10-31 15:18:15 INFO main - tls.server.authClient = false
+2021-10-31 15:18:15 INFO main - tls.server.trustCertPath = null
+2021-10-31 15:18:15 INFO main - tls.client.keyPath = null
+2021-10-31 15:18:15 INFO main - tls.client.keyPassword = null
+2021-10-31 15:18:15 INFO main - tls.client.certPath = null
+2021-10-31 15:18:15 INFO main - tls.client.authServer = false
+2021-10-31 15:18:15 INFO main - tls.client.trustCertPath = null
+2021-10-31 15:18:15 INFO main - Using JDK SSL provider
+2021-10-31 15:18:16 INFO main - SSLContext created for server
+2021-10-31 15:18:16 INFO main - Server is running in TLS permissive mode
+2021-10-31 15:18:16 INFO main - Tls config file doesn't exist, skip it
+2021-10-31 15:18:16 INFO main - Log the final used tls related configuration
+2021-10-31 15:18:16 INFO main - tls.test.mode.enable = true
+2021-10-31 15:18:16 INFO main - tls.server.need.client.auth = none
+2021-10-31 15:18:16 INFO main - tls.server.keyPath = null
+2021-10-31 15:18:16 INFO main - tls.server.keyPassword = null
+2021-10-31 15:18:16 INFO main - tls.server.certPath = null
+2021-10-31 15:18:16 INFO main - tls.server.authClient = false
+2021-10-31 15:18:16 INFO main - tls.server.trustCertPath = null
+2021-10-31 15:18:16 INFO main - tls.client.keyPath = null
+2021-10-31 15:18:16 INFO main - tls.client.keyPassword = null
+2021-10-31 15:18:16 INFO main - tls.client.certPath = null
+2021-10-31 15:18:16 INFO main - tls.client.authServer = false
+2021-10-31 15:18:16 INFO main - tls.client.trustCertPath = null
+2021-10-31 15:18:16 INFO main - Using JDK SSL provider
+2021-10-31 15:18:16 INFO main - SSLContext created for server
+2021-10-31 15:18:17 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-10-31 15:18:17 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-10-31 15:19:51 INFO ShutdownHook - shutdown thread NettyEventExecutor interrupt false
+2021-10-31 15:19:53 INFO NettyEventExecutor - NettyEventExecutor service end
+2021-10-31 15:19:53 INFO ShutdownHook - join thread NettyEventExecutor elapsed time(ms) 1319 90000
+2021-10-31 15:19:53 INFO ShutdownHook - shutdown thread NettyEventExecutor interrupt false
+2021-10-31 15:19:53 INFO NettyEventExecutor - NettyEventExecutor service end
+2021-10-31 15:19:53 INFO ShutdownHook - join thread NettyEventExecutor elapsed time(ms) 3 90000
+2021-10-31 15:19:54 INFO ShutdownHook - shutdown thread NettyEventExecutor interrupt false
+2021-10-31 15:19:54 INFO ShutdownHook - join thread NettyEventExecutor elapsed time(ms) 0 90000
+2021-10-31 15:20:59 INFO main - Server is running in TLS permissive mode
+2021-10-31 15:20:59 INFO main - Tls config file doesn't exist, skip it
+2021-10-31 15:20:59 INFO main - Log the final used tls related configuration
+2021-10-31 15:20:59 INFO main - tls.test.mode.enable = true
+2021-10-31 15:20:59 INFO main - tls.server.need.client.auth = none
+2021-10-31 15:20:59 INFO main - tls.server.keyPath = null
+2021-10-31 15:20:59 INFO main - tls.server.keyPassword = null
+2021-10-31 15:20:59 INFO main - tls.server.certPath = null
+2021-10-31 15:20:59 INFO main - tls.server.authClient = false
+2021-10-31 15:20:59 INFO main - tls.server.trustCertPath = null
+2021-10-31 15:20:59 INFO main - tls.client.keyPath = null
+2021-10-31 15:20:59 INFO main - tls.client.keyPassword = null
+2021-10-31 15:20:59 INFO main - tls.client.certPath = null
+2021-10-31 15:20:59 INFO main - tls.client.authServer = false
+2021-10-31 15:20:59 INFO main - tls.client.trustCertPath = null
+2021-10-31 15:20:59 INFO main - Using JDK SSL provider
+2021-10-31 15:21:00 INFO main - SSLContext created for server
+2021-10-31 15:21:00 INFO main - Server is running in TLS permissive mode
+2021-10-31 15:21:00 INFO main - Tls config file doesn't exist, skip it
+2021-10-31 15:21:00 INFO main - Log the final used tls related configuration
+2021-10-31 15:21:00 INFO main - tls.test.mode.enable = true
+2021-10-31 15:21:00 INFO main - tls.server.need.client.auth = none
+2021-10-31 15:21:00 INFO main - tls.server.keyPath = null
+2021-10-31 15:21:00 INFO main - tls.server.keyPassword = null
+2021-10-31 15:21:00 INFO main - tls.server.certPath = null
+2021-10-31 15:21:00 INFO main - tls.server.authClient = false
+2021-10-31 15:21:00 INFO main - tls.server.trustCertPath = null
+2021-10-31 15:21:00 INFO main - tls.client.keyPath = null
+2021-10-31 15:21:00 INFO main - tls.client.keyPassword = null
+2021-10-31 15:21:00 INFO main - tls.client.certPath = null
+2021-10-31 15:21:00 INFO main - tls.client.authServer = false
+2021-10-31 15:21:00 INFO main - tls.client.trustCertPath = null
+2021-10-31 15:21:00 INFO main - Using JDK SSL provider
+2021-10-31 15:21:01 INFO main - SSLContext created for server
+2021-10-31 15:21:01 INFO main - name server address updated. NEW : [127.0.0.1:9876] , OLD: null
+2021-10-31 15:21:01 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-10-31 15:21:01 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-10-31 15:21:01 INFO brokerOutApi_thread_1 - createChannel: begin to connect remote host[127.0.0.1:9876] asynchronously
+2021-10-31 15:21:01 INFO NettyClientWorkerThread_1 - NETTY CLIENT PIPELINE: CONNECT  UNKNOWN => 127.0.0.1:9876
+2021-10-31 15:21:01 INFO brokerOutApi_thread_1 - createChannel: connect remote host[127.0.0.1:9876] success, AbstractBootstrap$PendingRegistrationPromise@4b2345fd(success)
+2021-10-31 15:21:13 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 192.168.18.123:58223
+2021-10-31 15:21:13 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[192.168.18.123:58223]
+2021-10-31 15:21:14 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[192.168.18.123:58223]
+2021-10-31 15:21:14 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[192.168.18.123:58223]
+2021-10-31 15:22:25 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 192.168.18.123:58241
+2021-10-31 15:22:25 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[192.168.18.123:58241]
+2021-10-31 15:24:08 WARN NettyServerCodecThread_2 - NETTY SERVER PIPELINE: exceptionCaught 192.168.18.123:58241
+2021-10-31 15:24:08 WARN NettyServerCodecThread_2 - NETTY SERVER PIPELINE: exceptionCaught exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_92]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_92]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_92]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_92]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_92]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-all-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) ~[netty-all-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-all-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-all-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-all-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.65.Final.jar:4.1.65.Final]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_92]
+2021-10-31 15:24:08 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[192.168.18.123:58241]
+2021-10-31 15:24:08 INFO NettyServerNIOSelector_3_2 - closeChannel: close the connection to remote address[192.168.18.123:58241] result: true
+2021-10-31 15:24:08 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[192.168.18.123:58241]
+2021-10-31 15:24:25 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 192.168.18.123:58257
+2021-10-31 15:24:25 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[192.168.18.123:58257]
+2021-10-31 15:24:26 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[192.168.18.123:58257]
+2021-10-31 15:24:26 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[192.168.18.123:58257]
+2021-10-31 15:24:35 INFO ShutdownHook - shutdown thread NettyEventExecutor interrupt false
+2021-10-31 15:24:38 INFO NettyEventExecutor - NettyEventExecutor service end
+2021-10-31 15:24:38 INFO ShutdownHook - join thread NettyEventExecutor elapsed time(ms) 2590 90000
+2021-10-31 15:24:38 INFO ShutdownHook - shutdown thread NettyEventExecutor interrupt false
+2021-10-31 15:24:40 INFO NettyEventExecutor - NettyEventExecutor service end
+2021-10-31 15:24:40 INFO ShutdownHook - join thread NettyEventExecutor elapsed time(ms) 2329 90000
+2021-10-31 15:24:41 INFO ShutdownHook - closeChannel: begin close the channel[127.0.0.1:9876] Found: true
+2021-10-31 15:24:41 INFO ShutdownHook - closeChannel: the channel[127.0.0.1:9876] was removed from channel table
+2021-10-31 15:24:41 INFO NettyClientWorkerThread_1 - NETTY CLIENT PIPELINE: CLOSE 127.0.0.1:9876
+2021-10-31 15:24:41 INFO NettyClientWorkerThread_1 - eventCloseChannel: the channel[null] has been removed from the channel table before
+2021-10-31 15:24:41 INFO ShutdownHook - shutdown thread NettyEventExecutor interrupt false
+2021-10-31 15:24:41 INFO ShutdownHook - join thread NettyEventExecutor elapsed time(ms) 0 90000
+2021-10-31 15:24:41 INFO NettyClientSelector_1 - closeChannel: close the connection to remote address[127.0.0.1:9876] result: true
+2021-10-31 15:24:44 INFO main - Server is running in TLS permissive mode
+2021-10-31 15:24:44 INFO main - Tls config file doesn't exist, skip it
+2021-10-31 15:24:44 INFO main - Log the final used tls related configuration
+2021-10-31 15:24:44 INFO main - tls.test.mode.enable = true
+2021-10-31 15:24:44 INFO main - tls.server.need.client.auth = none
+2021-10-31 15:24:44 INFO main - tls.server.keyPath = null
+2021-10-31 15:24:44 INFO main - tls.server.keyPassword = null
+2021-10-31 15:24:44 INFO main - tls.server.certPath = null
+2021-10-31 15:24:44 INFO main - tls.server.authClient = false
+2021-10-31 15:24:44 INFO main - tls.server.trustCertPath = null
+2021-10-31 15:24:44 INFO main - tls.client.keyPath = null
+2021-10-31 15:24:44 INFO main - tls.client.keyPassword = null
+2021-10-31 15:24:44 INFO main - tls.client.certPath = null
+2021-10-31 15:24:44 INFO main - tls.client.authServer = false
+2021-10-31 15:24:44 INFO main - tls.client.trustCertPath = null
+2021-10-31 15:24:44 INFO main - Using JDK SSL provider
+2021-10-31 15:24:44 INFO main - SSLContext created for server
+2021-10-31 15:24:44 INFO main - Server is running in TLS permissive mode
+2021-10-31 15:24:44 INFO main - Tls config file doesn't exist, skip it
+2021-10-31 15:24:44 INFO main - Log the final used tls related configuration
+2021-10-31 15:24:44 INFO main - tls.test.mode.enable = true
+2021-10-31 15:24:44 INFO main - tls.server.need.client.auth = none
+2021-10-31 15:24:44 INFO main - tls.server.keyPath = null
+2021-10-31 15:24:44 INFO main - tls.server.keyPassword = null
+2021-10-31 15:24:44 INFO main - tls.server.certPath = null
+2021-10-31 15:24:44 INFO main - tls.server.authClient = false
+2021-10-31 15:24:44 INFO main - tls.server.trustCertPath = null
+2021-10-31 15:24:44 INFO main - tls.client.keyPath = null
+2021-10-31 15:24:44 INFO main - tls.client.keyPassword = null
+2021-10-31 15:24:44 INFO main - tls.client.certPath = null
+2021-10-31 15:24:44 INFO main - tls.client.authServer = false
+2021-10-31 15:24:44 INFO main - tls.client.trustCertPath = null
+2021-10-31 15:24:44 INFO main - Using JDK SSL provider
+2021-10-31 15:24:45 INFO main - SSLContext created for server
+2021-10-31 15:24:45 INFO main - name server address updated. NEW : [127.0.0.1:9876] , OLD: null
+2021-10-31 15:24:45 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-10-31 15:24:45 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-10-31 15:24:45 INFO brokerOutApi_thread_1 - createChannel: begin to connect remote host[127.0.0.1:9876] asynchronously
+2021-10-31 15:24:45 INFO NettyClientWorkerThread_1 - NETTY CLIENT PIPELINE: CONNECT  UNKNOWN => 127.0.0.1:9876
+2021-10-31 15:24:45 INFO brokerOutApi_thread_1 - createChannel: connect remote host[127.0.0.1:9876] success, AbstractBootstrap$PendingRegistrationPromise@59402b47(success)
+2021-10-31 15:25:09 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 192.168.18.123:58294
+2021-10-31 15:25:09 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[192.168.18.123:58294]
+2021-10-31 15:25:10 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[192.168.18.123:58294]
+2021-10-31 15:25:10 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[192.168.18.123:58294]
+2021-10-31 15:26:15 INFO ShutdownHook - shutdown thread NettyEventExecutor interrupt false
+2021-10-31 15:27:53 INFO main - Server is running in TLS permissive mode
+2021-10-31 15:27:53 INFO main - Tls config file doesn't exist, skip it
+2021-10-31 15:27:53 INFO main - Log the final used tls related configuration
+2021-10-31 15:27:53 INFO main - tls.test.mode.enable = true
+2021-10-31 15:27:53 INFO main - tls.server.need.client.auth = none
+2021-10-31 15:27:53 INFO main - tls.server.keyPath = null
+2021-10-31 15:27:53 INFO main - tls.server.keyPassword = null
+2021-10-31 15:27:53 INFO main - tls.server.certPath = null
+2021-10-31 15:27:53 INFO main - tls.server.authClient = false
+2021-10-31 15:27:53 INFO main - tls.server.trustCertPath = null
+2021-10-31 15:27:53 INFO main - tls.client.keyPath = null
+2021-10-31 15:27:53 INFO main - tls.client.keyPassword = null
+2021-10-31 15:27:53 INFO main - tls.client.certPath = null
+2021-10-31 15:27:53 INFO main - tls.client.authServer = false
+2021-10-31 15:27:53 INFO main - tls.client.trustCertPath = null
+2021-10-31 15:27:53 INFO main - Using JDK SSL provider
+2021-10-31 15:27:54 INFO main - SSLContext created for server
+2021-10-31 15:27:54 INFO main - Server is running in TLS permissive mode
+2021-10-31 15:27:54 INFO main - Tls config file doesn't exist, skip it
+2021-10-31 15:27:54 INFO main - Log the final used tls related configuration
+2021-10-31 15:27:54 INFO main - tls.test.mode.enable = true
+2021-10-31 15:27:54 INFO main - tls.server.need.client.auth = none
+2021-10-31 15:27:54 INFO main - tls.server.keyPath = null
+2021-10-31 15:27:54 INFO main - tls.server.keyPassword = null
+2021-10-31 15:27:54 INFO main - tls.server.certPath = null
+2021-10-31 15:27:54 INFO main - tls.server.authClient = false
+2021-10-31 15:27:54 INFO main - tls.server.trustCertPath = null
+2021-10-31 15:27:54 INFO main - tls.client.keyPath = null
+2021-10-31 15:27:54 INFO main - tls.client.keyPassword = null
+2021-10-31 15:27:54 INFO main - tls.client.certPath = null
+2021-10-31 15:27:54 INFO main - tls.client.authServer = false
+2021-10-31 15:27:54 INFO main - tls.client.trustCertPath = null
+2021-10-31 15:27:54 INFO main - Using JDK SSL provider
+2021-10-31 15:27:54 INFO main - SSLContext created for server
+2021-10-31 15:27:54 INFO main - name server address updated. NEW : [127.0.0.1:9876] , OLD: null
+2021-10-31 15:27:55 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-10-31 15:27:55 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-10-31 15:27:55 INFO brokerOutApi_thread_1 - createChannel: begin to connect remote host[127.0.0.1:9876] asynchronously
+2021-10-31 15:27:55 INFO NettyClientWorkerThread_1 - NETTY CLIENT PIPELINE: CONNECT  UNKNOWN => 127.0.0.1:9876
+2021-10-31 15:27:55 INFO brokerOutApi_thread_1 - createChannel: connect remote host[127.0.0.1:9876] success, AbstractBootstrap$PendingRegistrationPromise@3ec48360(success)
+2021-10-31 15:28:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 192.168.18.123:58356
+2021-10-31 15:28:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[192.168.18.123:58356]
+2021-10-31 15:28:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[192.168.18.123:58356]
+2021-10-31 15:28:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[192.168.18.123:58356]
+2021-10-31 15:28:33 INFO ShutdownHook - shutdown thread NettyEventExecutor interrupt false

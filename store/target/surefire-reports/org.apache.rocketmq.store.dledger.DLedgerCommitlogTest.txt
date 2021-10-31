@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.rocketmq.store.dledger.DLedgerCommitlogTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 44.808 sec <<< FAILURE! - in org.apache.rocketmq.store.dledger.DLedgerCommitlogTest
+testTruncateCQ(org.apache.rocketmq.store.dledger.DLedgerCommitlogTest)  Time elapsed: 6.923 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<20> but was:<24>
+	at org.apache.rocketmq.store.dledger.DLedgerCommitlogTest.testTruncateCQ(DLedgerCommitlogTest.java:76)
+

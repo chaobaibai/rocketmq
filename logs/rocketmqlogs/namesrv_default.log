@@ -1,0 +1,10 @@
+2021-10-31 15:05:17 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7b02881e
+2021-10-31 15:05:17 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@a1cdc6d
+2021-10-31 15:05:17 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@175b9425
+2021-10-31 15:05:17 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3098cf3b
+2021-10-31 15:05:18 WARN main - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x624bace3]'
+2021-10-31 15:27:49 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7b02881e
+2021-10-31 15:27:49 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@a1cdc6d
+2021-10-31 15:27:49 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@175b9425
+2021-10-31 15:27:49 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3098cf3b
+2021-10-31 15:27:50 WARN main - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x51e4dfa3]'

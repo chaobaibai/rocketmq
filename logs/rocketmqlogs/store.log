@@ -1,0 +1,191 @@
+2021-10-31 15:05:52 INFO AllocateMappedFileService - AllocateMappedFileService service started
+2021-10-31 15:05:52 INFO main - last shutdown normally
+2021-10-31 15:05:52 WARN main - C:\Users\PC\store\commitlog\00000000000000000000	10485760 length not matched message store config value, ignore it
+2021-10-31 15:05:52 INFO main - load commit log OK
+2021-10-31 15:05:52 WARN main - C:\Users\PC\store\consumequeue\recoverTopic\0\00000000000000000000	10485760 length not matched message store config value, ignore it
+2021-10-31 15:05:52 INFO main - load consume queue recoverTopic-0 OK
+2021-10-31 15:05:52 INFO main - load logics queue all over, OK
+2021-10-31 15:05:52 INFO main - store checkpoint file exists, C:\Users\PC\store\checkpoint
+2021-10-31 15:05:52 INFO main - store checkpoint file physicMsgTimestamp 1635663699474, 20211031150139474
+2021-10-31 15:05:52 INFO main - store checkpoint file logicsMsgTimestamp 1635663699474, 20211031150139474
+2021-10-31 15:05:52 INFO main - store checkpoint file indexMsgTimestamp 0, 19700101080000000
+2021-10-31 15:05:52 INFO main - load index file OK, C:\Users\PC\store\index\20211031150127257
+2021-10-31 15:05:52 WARN main - The commitlog files are deleted, and delete the consume queue files
+2021-10-31 15:05:52 INFO main - load over, and the max phy offset = 0
+2021-10-31 15:05:53 INFO main - [SetReputOffset] maxPhysicalPosInLogicQueue=0 clMinOffset=-1 clMaxOffset=0 clConfirmedOffset=-1
+2021-10-31 15:05:53 INFO ReputMessageService - ReputMessageService service started
+2021-10-31 15:05:53 INFO AcceptSocketService - AcceptSocketService service started
+2021-10-31 15:05:53 INFO GroupTransferService - GroupTransferService service started
+2021-10-31 15:05:53 INFO HAClient - HAClient service started
+2021-10-31 15:05:53 INFO FlushConsumeQueueService - FlushConsumeQueueService service started
+2021-10-31 15:05:53 INFO FlushRealTimeService - FlushRealTimeService service started
+2021-10-31 15:05:53 INFO StoreStatsService - StoreStatsService service started
+2021-10-31 15:05:53 INFO main - C:\Users\PC\store\abort create OK
+2021-10-31 15:06:52 INFO StoreStatsService - [STORETPS] put_tps  get_found_tps  get_miss_tps  get_transfered_tps 
+2021-10-31 15:06:52 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:07:52 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0331702462890787 get_transfered_tps 0.0
+2021-10-31 15:07:52 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:08:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324965503482902 get_transfered_tps 0.0
+2021-10-31 15:08:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:09:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03318951211417192 get_transfered_tps 0.0
+2021-10-31 15:09:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:10:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033221487658217336 get_transfered_tps 0.0
+2021-10-31 15:10:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:11:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033260160979179144 get_transfered_tps 0.0
+2021-10-31 15:11:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:12:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321541859731287 get_transfered_tps 0.0
+2021-10-31 15:12:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:13:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.06637351696673027 get_transfered_tps 0.0
+2021-10-31 15:13:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:14:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320714617785747 get_transfered_tps 0.0
+2021-10-31 15:14:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:15:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03319942896982172 get_transfered_tps 0.0
+2021-10-31 15:15:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:16:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03319998008001195 get_transfered_tps 0.0
+2021-10-31 15:16:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:17:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03318841060701603 get_transfered_tps 0.0
+2021-10-31 15:17:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:18:10 INFO HAClient - HAClient service end
+2021-10-31 15:18:10 INFO GroupTransferService - GroupTransferService service end
+2021-10-31 15:18:10 INFO StoreStatsService - StoreStatsService service end
+2021-10-31 15:18:10 INFO FlushRealTimeService - FlushRealTimeService service shutdown, retry 1 times OK
+2021-10-31 15:18:10 INFO FlushRealTimeService - FlushRealTimeService service end
+2021-10-31 15:18:10 INFO ReputMessageService - ReputMessageService service end
+2021-10-31 15:18:10 INFO FlushConsumeQueueService - FlushConsumeQueueService service end
+2021-10-31 15:18:10 WARN AllocateMappedFileService - AllocateMappedFileService interrupted, possibly by shutdown.
+2021-10-31 15:18:10 INFO AllocateMappedFileService - AllocateMappedFileService service end
+2021-10-31 15:18:10 INFO ShutdownHook - C:\Users\PC\store\abort delete OK
+2021-10-31 15:18:10 WARN TransactionalMessageCheckService - message store has shutdown, so getMessage is forbidden
+2021-10-31 15:18:15 INFO AllocateMappedFileService - AllocateMappedFileService service started
+2021-10-31 15:18:15 INFO main - last shutdown normally
+2021-10-31 15:18:15 WARN main - C:\Users\PC\store\commitlog\00000000000000000000	10485760 length not matched message store config value, ignore it
+2021-10-31 15:18:15 INFO main - load commit log OK
+2021-10-31 15:18:15 WARN main - C:\Users\PC\store\consumequeue\recoverTopic\0\00000000000000000000	10485760 length not matched message store config value, ignore it
+2021-10-31 15:18:15 INFO main - load consume queue recoverTopic-0 OK
+2021-10-31 15:18:15 INFO main - load logics queue all over, OK
+2021-10-31 15:18:15 INFO main - store checkpoint file exists, C:\Users\PC\store\checkpoint
+2021-10-31 15:18:15 INFO main - store checkpoint file physicMsgTimestamp 1635663699474, 20211031150139474
+2021-10-31 15:18:15 INFO main - store checkpoint file logicsMsgTimestamp 1635663699474, 20211031150139474
+2021-10-31 15:18:15 INFO main - store checkpoint file indexMsgTimestamp 0, 19700101080000000
+2021-10-31 15:18:15 INFO main - load index file OK, C:\Users\PC\store\index\20211031150127257
+2021-10-31 15:18:15 WARN main - The commitlog files are deleted, and delete the consume queue files
+2021-10-31 15:18:15 INFO main - load over, and the max phy offset = 0
+2021-10-31 15:18:16 INFO main - [SetReputOffset] maxPhysicalPosInLogicQueue=0 clMinOffset=-1 clMaxOffset=0 clConfirmedOffset=-1
+2021-10-31 15:18:16 INFO ReputMessageService - ReputMessageService service started
+2021-10-31 15:18:16 INFO AcceptSocketService - AcceptSocketService service started
+2021-10-31 15:18:16 INFO HAClient - HAClient service started
+2021-10-31 15:18:16 INFO GroupTransferService - GroupTransferService service started
+2021-10-31 15:18:16 INFO FlushConsumeQueueService - FlushConsumeQueueService service started
+2021-10-31 15:18:16 INFO FlushRealTimeService - FlushRealTimeService service started
+2021-10-31 15:18:16 INFO StoreStatsService - StoreStatsService service started
+2021-10-31 15:18:16 INFO main - C:\Users\PC\store\abort create OK
+2021-10-31 15:19:15 INFO StoreStatsService - [STORETPS] put_tps  get_found_tps  get_miss_tps  get_transfered_tps 
+2021-10-31 15:19:15 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:19:54 INFO HAClient - HAClient service end
+2021-10-31 15:19:54 INFO GroupTransferService - GroupTransferService service end
+2021-10-31 15:19:54 INFO StoreStatsService - StoreStatsService service end
+2021-10-31 15:19:54 INFO FlushRealTimeService - FlushRealTimeService service shutdown, retry 1 times OK
+2021-10-31 15:19:54 INFO FlushRealTimeService - FlushRealTimeService service end
+2021-10-31 15:19:54 INFO ReputMessageService - ReputMessageService service end
+2021-10-31 15:19:54 INFO FlushConsumeQueueService - FlushConsumeQueueService service end
+2021-10-31 15:19:54 WARN AllocateMappedFileService - AllocateMappedFileService interrupted, possibly by shutdown.
+2021-10-31 15:19:54 INFO AllocateMappedFileService - AllocateMappedFileService service end
+2021-10-31 15:19:54 INFO ShutdownHook - C:\Users\PC\store\abort delete OK
+2021-10-31 15:19:54 WARN TransactionalMessageCheckService - message store has shutdown, so getMessage is forbidden
+2021-10-31 15:20:59 INFO AllocateMappedFileService - AllocateMappedFileService service started
+2021-10-31 15:20:59 INFO main - last shutdown normally
+2021-10-31 15:20:59 WARN main - C:\Users\PC\store\commitlog\00000000000000000000	10485760 length not matched message store config value, ignore it
+2021-10-31 15:20:59 INFO main - load commit log OK
+2021-10-31 15:20:59 WARN main - C:\Users\PC\store\consumequeue\recoverTopic\0\00000000000000000000	10485760 length not matched message store config value, ignore it
+2021-10-31 15:20:59 INFO main - load consume queue recoverTopic-0 OK
+2021-10-31 15:20:59 INFO main - load logics queue all over, OK
+2021-10-31 15:20:59 INFO main - store checkpoint file exists, C:\Users\PC\store\checkpoint
+2021-10-31 15:20:59 INFO main - store checkpoint file physicMsgTimestamp 1635663699474, 20211031150139474
+2021-10-31 15:20:59 INFO main - store checkpoint file logicsMsgTimestamp 1635663699474, 20211031150139474
+2021-10-31 15:20:59 INFO main - store checkpoint file indexMsgTimestamp 0, 19700101080000000
+2021-10-31 15:20:59 INFO main - load index file OK, C:\Users\PC\store\index\20211031150127257
+2021-10-31 15:20:59 WARN main - The commitlog files are deleted, and delete the consume queue files
+2021-10-31 15:20:59 INFO main - load over, and the max phy offset = 0
+2021-10-31 15:21:01 INFO main - [SetReputOffset] maxPhysicalPosInLogicQueue=0 clMinOffset=-1 clMaxOffset=0 clConfirmedOffset=-1
+2021-10-31 15:21:01 INFO ReputMessageService - ReputMessageService service started
+2021-10-31 15:21:01 INFO AcceptSocketService - AcceptSocketService service started
+2021-10-31 15:21:01 INFO GroupTransferService - GroupTransferService service started
+2021-10-31 15:21:01 INFO HAClient - HAClient service started
+2021-10-31 15:21:01 INFO FlushConsumeQueueService - FlushConsumeQueueService service started
+2021-10-31 15:21:01 INFO main - C:\Users\PC\store\abort create OK
+2021-10-31 15:21:01 INFO FlushRealTimeService - FlushRealTimeService service started
+2021-10-31 15:21:01 INFO StoreStatsService - StoreStatsService service started
+2021-10-31 15:21:13 INFO ReputMessageService - C:\Users\PC\store\consumequeue\TopicTest\1 mkdir OK
+2021-10-31 15:21:13 INFO ReputMessageService - C:\Users\PC\store\consumequeue\TopicTest\2 mkdir OK
+2021-10-31 15:21:13 INFO ReputMessageService - C:\Users\PC\store\consumequeue\TopicTest\3 mkdir OK
+2021-10-31 15:21:13 INFO ReputMessageService - C:\Users\PC\store\consumequeue\TopicTest\0 mkdir OK
+2021-10-31 15:22:00 INFO StoreStatsService - [STORETPS] put_tps  get_found_tps  get_miss_tps  get_transfered_tps 
+2021-10-31 15:22:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 1000, PutMessageDistributeTime [<=0ms]:961 [0~10ms]:38 [10~50ms]:1 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:23:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.5314113954531112 get_miss_tps 0.44837836491356264 get_transfered_tps 16.606606107909727
+2021-10-31 15:23:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:24:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6971301475592145 get_transfered_tps 0.0
+2021-10-31 15:24:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:24:41 INFO HAClient - HAClient service end
+2021-10-31 15:24:41 INFO GroupTransferService - GroupTransferService service end
+2021-10-31 15:24:41 INFO StoreStatsService - StoreStatsService service end
+2021-10-31 15:24:41 INFO FlushRealTimeService - FlushRealTimeService service shutdown, retry 1 times OK
+2021-10-31 15:24:41 INFO FlushRealTimeService - FlushRealTimeService service end
+2021-10-31 15:24:41 INFO ReputMessageService - ReputMessageService service end
+2021-10-31 15:24:41 INFO FlushConsumeQueueService - FlushConsumeQueueService service end
+2021-10-31 15:24:41 WARN AllocateMappedFileService - AllocateMappedFileService interrupted, possibly by shutdown.
+2021-10-31 15:24:41 INFO AllocateMappedFileService - AllocateMappedFileService service end
+2021-10-31 15:24:41 INFO ShutdownHook - delete pre allocated maped file, C:\Users\PC\store\commitlog\00000000001073741824
+2021-10-31 15:24:41 INFO ShutdownHook - unmap file[REF:0] C:\Users\PC\store\commitlog\00000000001073741824 OK
+2021-10-31 15:24:41 INFO ShutdownHook - close file channel C:\Users\PC\store\commitlog\00000000001073741824 OK
+2021-10-31 15:24:41 INFO ShutdownHook - delete file[REF:0] C:\Users\PC\store\commitlog\00000000001073741824 OK, W:0 M:0, 1
+2021-10-31 15:24:41 INFO ShutdownHook - C:\Users\PC\store\abort delete OK
+2021-10-31 15:24:42 WARN TransactionalMessageCheckService - message store has shutdown, so getMessage is forbidden
+2021-10-31 15:24:44 INFO AllocateMappedFileService - AllocateMappedFileService service started
+2021-10-31 15:24:44 INFO main - E:\RocketMQ\data\rocketmq-all-4.9.2\dataDir mkdir OK
+2021-10-31 15:24:44 INFO main - E:\RocketMQ\data\rocketmq-all-4.9.2\dataDir\commitlog mkdir OK
+2021-10-31 15:24:44 INFO main - E:\RocketMQ\data\rocketmq-all-4.9.2\dataDir\consumequeue mkdir OK
+2021-10-31 15:24:44 INFO main - last shutdown normally
+2021-10-31 15:24:44 INFO main - load commit log OK
+2021-10-31 15:24:44 INFO main - load logics queue all over, OK
+2021-10-31 15:24:44 INFO main - store checkpoint file not exists, E:\RocketMQ\data\rocketmq-all-4.9.2\dataDir\checkpoint
+2021-10-31 15:24:44 WARN main - The commitlog files are deleted, and delete the consume queue files
+2021-10-31 15:24:44 INFO main - load over, and the max phy offset = 0
+2021-10-31 15:24:45 INFO main - [SetReputOffset] maxPhysicalPosInLogicQueue=0 clMinOffset=-1 clMaxOffset=0 clConfirmedOffset=-1
+2021-10-31 15:24:45 INFO ReputMessageService - ReputMessageService service started
+2021-10-31 15:24:45 INFO AcceptSocketService - AcceptSocketService service started
+2021-10-31 15:24:45 INFO GroupTransferService - GroupTransferService service started
+2021-10-31 15:24:45 INFO HAClient - HAClient service started
+2021-10-31 15:24:45 INFO FlushConsumeQueueService - FlushConsumeQueueService service started
+2021-10-31 15:24:45 INFO FlushRealTimeService - FlushRealTimeService service started
+2021-10-31 15:24:45 INFO StoreStatsService - StoreStatsService service started
+2021-10-31 15:24:45 INFO main - E:\RocketMQ\data\rocketmq-all-4.9.2\dataDir\abort create OK
+2021-10-31 15:25:09 INFO ReputMessageService - E:\RocketMQ\data\rocketmq-all-4.9.2\dataDir\consumequeue\TopicTest\2 mkdir OK
+2021-10-31 15:25:09 INFO ReputMessageService - E:\RocketMQ\data\rocketmq-all-4.9.2\dataDir\index mkdir OK
+2021-10-31 15:25:09 INFO ReputMessageService - E:\RocketMQ\data\rocketmq-all-4.9.2\dataDir\consumequeue\TopicTest\3 mkdir OK
+2021-10-31 15:25:09 INFO ReputMessageService - E:\RocketMQ\data\rocketmq-all-4.9.2\dataDir\consumequeue\TopicTest\0 mkdir OK
+2021-10-31 15:25:09 INFO ReputMessageService - E:\RocketMQ\data\rocketmq-all-4.9.2\dataDir\consumequeue\TopicTest\1 mkdir OK
+2021-10-31 15:25:44 INFO StoreStatsService - [STORETPS] put_tps  get_found_tps  get_miss_tps  get_transfered_tps 
+2021-10-31 15:25:44 INFO StoreStatsService - [PAGECACHERT] TotalPut 1000, PutMessageDistributeTime [<=0ms]:932 [0~10ms]:67 [10~50ms]:1 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2021-10-31 15:27:53 INFO AllocateMappedFileService - AllocateMappedFileService service started
+2021-10-31 15:27:53 INFO main - D:\workspace\rocketmq-all-4.9.2\dataDir\commitlog mkdir OK
+2021-10-31 15:27:53 INFO main - D:\workspace\rocketmq-all-4.9.2\dataDir\consumequeue mkdir OK
+2021-10-31 15:27:53 INFO main - last shutdown normally
+2021-10-31 15:27:53 INFO main - load commit log OK
+2021-10-31 15:27:53 INFO main - load logics queue all over, OK
+2021-10-31 15:27:53 INFO main - store checkpoint file not exists, D:\workspace\rocketmq-all-4.9.2\dataDir\checkpoint
+2021-10-31 15:27:53 WARN main - The commitlog files are deleted, and delete the consume queue files
+2021-10-31 15:27:53 INFO main - load over, and the max phy offset = 0
+2021-10-31 15:27:54 INFO main - [SetReputOffset] maxPhysicalPosInLogicQueue=0 clMinOffset=-1 clMaxOffset=0 clConfirmedOffset=-1
+2021-10-31 15:27:54 INFO ReputMessageService - ReputMessageService service started
+2021-10-31 15:27:54 INFO AcceptSocketService - AcceptSocketService service started
+2021-10-31 15:27:54 INFO HAClient - HAClient service started
+2021-10-31 15:27:54 INFO GroupTransferService - GroupTransferService service started
+2021-10-31 15:27:54 INFO FlushConsumeQueueService - FlushConsumeQueueService service started
+2021-10-31 15:27:54 INFO FlushRealTimeService - FlushRealTimeService service started
+2021-10-31 15:27:54 INFO StoreStatsService - StoreStatsService service started
+2021-10-31 15:27:54 INFO main - D:\workspace\rocketmq-all-4.9.2\dataDir\abort create OK
+2021-10-31 15:28:00 INFO ReputMessageService - D:\workspace\rocketmq-all-4.9.2\dataDir\consumequeue\TopicTest\3 mkdir OK
+2021-10-31 15:28:00 INFO ReputMessageService - D:\workspace\rocketmq-all-4.9.2\dataDir\index mkdir OK
+2021-10-31 15:28:00 INFO ReputMessageService - D:\workspace\rocketmq-all-4.9.2\dataDir\consumequeue\TopicTest\0 mkdir OK
+2021-10-31 15:28:00 INFO ReputMessageService - D:\workspace\rocketmq-all-4.9.2\dataDir\consumequeue\TopicTest\1 mkdir OK
+2021-10-31 15:28:00 INFO ReputMessageService - D:\workspace\rocketmq-all-4.9.2\dataDir\consumequeue\TopicTest\2 mkdir OK

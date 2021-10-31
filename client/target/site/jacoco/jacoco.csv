@@ -1,0 +1,150 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+rocketmq-client 4.9.2,org.apache.rocketmq.client.common,ThreadLocalIndex,0,58,0,2,0,11,0,4,0,3
+rocketmq-client 4.9.2,org.apache.rocketmq.client.common,ClientErrorCode,3,0,0,0,1,0,1,0,1,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,PullMessageService,37,114,3,5,10,32,4,9,2,7
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,RebalancePushImpl,216,181,27,9,63,41,20,10,4,7
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,ProcessQueue,314,568,30,32,74,141,32,32,11,22
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,DefaultLitePullConsumerImpl.new ThreadFactory() {...},0,12,0,0,0,2,0,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,DefaultLitePullConsumerImpl.new Runnable() {...},7,11,0,0,2,4,0,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,DefaultLitePullConsumerImpl.MessageQueueListenerImpl,0,39,1,2,0,10,1,3,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,AssignedMessageQueue,85,265,25,23,26,68,21,21,1,17
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,DefaultLitePullConsumerImpl.SubscriptionType,0,34,0,0,0,2,0,1,0,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,RebalanceLitePullImpl,68,151,8,14,26,42,9,12,1,8
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,PullRequest,85,63,22,0,23,18,13,12,2,12
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,RebalanceImpl,605,465,65,41,138,118,47,31,7,17
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,ConsumeMessageOrderlyService.new Runnable() {...},10,0,0,0,3,0,2,0,2,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,DefaultMQPullConsumerImpl,972,521,80,32,210,129,100,23,42,23
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,DefaultLitePullConsumerImpl.ConsumeRequest,0,24,0,0,0,8,0,4,0,4
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,DefaultLitePullConsumerImpl.PullTaskImpl,138,385,11,38,16,69,12,19,1,5
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,AssignedMessageQueue.MessageQueueState,11,55,0,0,5,21,3,10,3,10
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,ConsumeMessageConcurrentlyService,317,274,32,13,75,59,28,12,7,9
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,DefaultMQPushConsumerImpl.1.new Runnable() {...},57,0,0,0,10,0,2,0,2,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,RebalancePullImpl,44,18,2,0,16,5,8,2,7,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,ConsumeMessageOrderlyService.new Runnable() {...},38,0,2,0,6,0,3,0,2,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,ConsumeMessageOrderlyService.new Runnable() {...},10,12,0,0,2,1,1,1,1,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,RebalanceService,0,53,0,2,0,13,0,5,0,4
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,RebalancePushImpl.new Runnable() {...},25,0,0,0,4,0,2,0,2,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,DefaultMQPushConsumerImpl.new PullCallback() {...},78,163,11,7,16,27,11,2,1,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,PullAPIWrapper,228,248,34,18,48,69,28,12,6,8
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,ConsumeMessageOrderlyService,336,335,46,20,80,89,42,16,10,11
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,ConsumeMessageConcurrentlyService.ConsumeRequest,56,245,8,22,11,55,8,12,0,5
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,DefaultLitePullConsumerImpl,444,1479,87,126,107,359,80,99,10,61
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,DefaultMQPushConsumerImpl,1288,1160,117,94,250,269,129,53,35,39
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,ConsumeMessageOrderlyService.ConsumeRequest,218,212,36,20,50,49,28,4,0,4
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,PullMessageService.new ThreadFactory() {...},0,12,0,0,0,2,0,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,PullMessageService.new Runnable() {...},0,15,0,0,0,3,0,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,ConsumeMessageConcurrentlyService.new Runnable() {...},26,0,0,0,3,0,2,0,2,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,ConsumeMessageConcurrentlyService.new Runnable() {...},4,6,0,0,2,1,1,1,1,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,PullResultExt,0,24,0,0,0,8,0,4,0,4
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,ConsumeMessageConcurrentlyService.new Runnable() {...},8,9,0,0,2,1,1,1,1,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,DefaultMQPullConsumerImpl.new PullCallback() {...},5,35,0,0,2,5,1,2,1,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.consumer,MessageQueueLock,2,30,1,3,1,8,1,3,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer,MQPullConsumerScheduleService,238,0,14,0,55,0,21,0,14,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer,MQPullConsumerScheduleService.PullTaskImpl,100,0,6,0,29,0,8,0,5,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer,DefaultLitePullConsumer,119,390,3,11,40,123,21,62,19,57
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer,MessageSelector,27,0,0,0,8,0,5,0,5,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer,DefaultMQPullConsumer,327,124,2,0,74,37,41,18,40,18
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer,MQPullConsumerScheduleService.MessageQueueListenerImpl,29,0,3,0,9,0,4,0,2,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer,DefaultMQPushConsumer,310,435,4,8,88,114,45,49,42,46
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer,PullTaskContext,20,0,0,0,8,0,5,0,5,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer,PullResult,38,37,2,0,2,14,2,7,1,7
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer,PullStatus,0,44,0,0,0,5,0,1,0,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.utils,MessageUtil,3,67,0,4,1,18,1,4,1,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.producer,LocalTransactionState,0,34,0,0,0,4,0,1,0,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.producer,RequestResponseFuture,30,101,2,6,12,30,11,12,9,10
+rocketmq-client 4.9.2,org.apache.rocketmq.client.producer,DefaultMQProducer,398,542,1,11,89,123,48,45,47,40
+rocketmq-client 4.9.2,org.apache.rocketmq.client.producer,RequestFutureTable,8,80,0,6,3,22,1,7,1,4
+rocketmq-client 4.9.2,org.apache.rocketmq.client.producer,SendResult,67,83,0,0,12,34,4,18,4,18
+rocketmq-client 4.9.2,org.apache.rocketmq.client.producer,TransactionMQProducer,77,87,3,1,22,25,12,12,10,12
+rocketmq-client 4.9.2,org.apache.rocketmq.client.producer,SendStatus,0,44,0,0,0,5,0,1,0,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.producer,TransactionSendResult,3,7,0,0,1,4,1,2,1,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.exception,RequestTimeoutException,26,22,0,0,10,4,5,1,5,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.exception,MQBrokerException,35,39,0,2,8,5,4,2,4,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.exception,MQClientException,4,46,0,0,2,12,1,5,1,5
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.factory,MQClientInstance,1167,1581,174,153,260,386,130,92,15,42
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.factory,MQClientInstance.new Runnable() {...},7,11,0,0,2,4,0,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.factory,MQClientInstance.new Runnable() {...},7,11,0,0,2,4,0,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.factory,MQClientInstance.new Runnable() {...},0,18,0,0,0,6,0,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.factory,MQClientInstance.new Runnable() {...},7,14,0,0,2,5,0,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.factory,MQClientInstance.new ThreadFactory() {...},0,12,0,0,0,2,0,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.factory,MQClientInstance.new Runnable() {...},7,13,0,0,2,4,0,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace.hook,ConsumeMessageOpenTracingHookImpl,8,160,9,13,5,34,9,6,0,4
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace.hook,SendMessageOpenTracingHookImpl,8,145,6,6,5,31,6,4,0,4
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace.hook,ConsumeMessageTraceHookImpl,9,201,14,16,5,50,13,6,0,4
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace.hook,EndTransactionTraceHookImpl,112,8,8,0,26,4,5,2,1,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace.hook,SendMessageTraceHookImpl,7,169,9,9,5,36,9,4,0,4
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace.hook,EndTransactionOpenTracingHookImpl,1,103,2,2,1,25,2,3,0,3
+rocketmq-client 4.9.2,org.apache.rocketmq.client,ClientConfig,153,397,12,12,48,89,25,31,16,28
+rocketmq-client 4.9.2,org.apache.rocketmq.client,Validators,77,138,10,18,15,31,11,12,2,7
+rocketmq-client 4.9.2,org.apache.rocketmq.client,MQHelper,100,0,10,0,26,0,8,0,3,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client,QueryResult,32,0,0,0,7,0,4,0,4,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client,AccessChannel,0,24,0,0,0,3,0,1,0,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.listener,ConsumeReturnType,0,54,0,0,0,6,0,1,0,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.listener,ConsumeOrderlyContext,11,18,0,0,5,7,3,3,3,3
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.listener,ConsumeOrderlyStatus,0,44,0,0,0,5,0,1,0,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.listener,ConsumeConcurrentlyStatus,0,24,0,0,0,3,0,1,0,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.listener,ConsumeConcurrentlyContext,8,21,0,0,4,8,2,4,2,4
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.store,OffsetSerializeWrapper,0,15,0,0,0,5,0,3,0,3
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.store,ReadOffsetType,0,34,0,0,0,4,0,1,0,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.store,RemoteBrokerOffsetStore,158,344,22,29,25,86,19,19,1,11
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.store,LocalFileOffsetStore,121,278,22,31,31,71,20,19,2,10
+rocketmq-client 4.9.2,org.apache.rocketmq.client.stat,ConsumerStatsManager,174,131,14,0,30,18,15,7,8,7
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.producer,TopicPublishInfo,49,137,9,9,13,30,12,13,5,11
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.producer,DefaultMQProducerImpl.new SendCallback() {...},27,0,0,0,6,0,3,0,3,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.producer,DefaultMQProducerImpl,1328,1619,115,126,298,393,130,85,38,52
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.producer,DefaultMQProducerImpl.new SendCallback() {...},27,0,0,0,7,0,3,0,3,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.producer,DefaultMQProducerImpl.new SendCallback() {...},27,0,0,0,6,0,3,0,3,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.producer,DefaultMQProducerImpl.new SendCallback() {...},27,0,0,0,7,0,3,0,3,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.producer,DefaultMQProducerImpl.new Runnable() {...},14,60,1,1,3,9,1,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.producer,DefaultMQProducerImpl.new Runnable() {...},14,78,1,3,3,13,1,3,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.producer,DefaultMQProducerImpl.new SendCallback() {...},15,12,0,0,5,1,2,1,2,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.producer,DefaultMQProducerImpl.new SendCallback() {...},18,9,0,0,6,1,2,1,2,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.producer,DefaultMQProducerImpl.new Runnable() {...},7,9,0,0,2,4,0,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.producer,DefaultMQProducerImpl.new ThreadFactory() {...},0,27,0,0,0,3,0,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.producer,DefaultMQProducerImpl.new Runnable() {...},7,49,1,1,1,8,1,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.producer,DefaultMQProducerImpl.new Runnable() {...},219,0,16,0,52,0,12,0,3,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl.producer,DefaultMQProducerImpl.new ThreadFactory() {...},0,12,0,0,0,2,0,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.latency,LatencyFaultToleranceImpl,35,119,3,9,6,32,4,8,1,5
+rocketmq-client 4.9.2,org.apache.rocketmq.client.latency,LatencyFaultToleranceImpl.FaultItem,140,52,24,6,26,14,18,8,5,6
+rocketmq-client 4.9.2,org.apache.rocketmq.client.latency,MQFaultStrategy,139,89,18,2,36,10,17,4,7,4
+rocketmq-client 4.9.2,org.apache.rocketmq.client.hook,FilterMessageContext,65,0,0,0,17,0,12,0,12,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.hook,EndTransactionContext,0,52,0,0,0,22,0,15,0,15
+rocketmq-client 4.9.2,org.apache.rocketmq.client.hook,CheckForbiddenContext,133,0,0,0,33,0,22,0,22,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.hook,SendMessageContext,23,74,0,0,9,32,7,20,7,20
+rocketmq-client 4.9.2,org.apache.rocketmq.client.hook,ConsumeMessageContext,9,50,0,0,3,22,3,14,3,14
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.rebalance,AllocateMessageQueueByMachineRoom,108,0,12,0,24,0,11,0,5,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.rebalance,AllocateMessageQueueAveragely,35,110,7,19,5,18,7,9,0,3
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.rebalance,AllocateMachineRoomNearby,80,199,12,26,10,39,13,9,1,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.rebalance,AllocateMessageQueueByConfig,15,0,0,0,6,0,5,0,5,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.rebalance,AllocateMessageQueueAveragelyByCircle,93,0,18,0,18,0,12,0,3,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.rebalance,AllocateMessageQueueConsistentHash,24,148,6,20,3,33,7,11,1,4
+rocketmq-client 4.9.2,org.apache.rocketmq.client.consumer.rebalance,AllocateMessageQueueConsistentHash.ClientNode,0,9,0,0,0,4,0,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace,AsyncTraceDispatcher.new Runnable() {...},0,23,1,1,0,7,1,2,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace,AsyncTraceDispatcher.AsyncRunnable,1,77,1,9,1,18,1,6,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace,TraceType,0,44,0,0,0,5,0,1,0,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace,AsyncTraceDispatcher,32,321,9,11,10,76,11,18,2,17
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace,TraceView,45,158,3,7,16,51,16,17,13,15
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace,TraceConstants,3,0,0,0,1,0,1,0,1,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace,TraceDispatcher.Type,0,24,0,0,0,3,0,1,0,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace,TraceDataEncoder,173,593,15,26,36,115,14,11,1,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace,TraceTransferBean,4,18,0,0,2,6,1,4,1,4
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace,TraceBean,7,119,0,0,3,48,2,28,2,28
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace,TraceDispatcherType,24,0,0,0,3,0,1,0,1,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace,TraceContext,89,90,6,0,12,36,7,19,4,19
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace,AsyncTraceDispatcher.AsyncAppenderRequest,43,299,10,26,10,67,9,15,0,6
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace,AsyncTraceDispatcher.AsyncAppenderRequest.new MessageQueueSelector() {...},2,52,2,4,1,11,2,3,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.trace,AsyncTraceDispatcher.AsyncAppenderRequest.new SendCallback() {...},1,16,0,0,1,3,1,2,1,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.log,ClientLogger,6,122,1,1,2,31,2,4,1,4
+rocketmq-client 4.9.2,org.apache.rocketmq.client.log,ClientLogger.AppenderProxy,8,15,2,2,3,5,2,3,1,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.producer.selector,SelectMessageQueueByRandom,20,0,0,0,4,0,2,0,2,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.producer.selector,SelectMessageQueueByHash,0,19,0,2,0,5,0,3,0,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.producer.selector,SelectMessageQueueByMachineRoom,12,0,0,0,5,0,4,0,4,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl,ClientRemotingProcessor,514,9,40,0,133,4,33,1,10,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl,MQAdminImpl,926,48,94,2,181,11,62,3,15,2
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl,MQClientManager,7,71,1,3,2,20,1,7,0,6
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl,FindBrokerResult,3,30,0,0,1,12,1,4,1,4
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl,MQClientAPIImpl.new InvokeCallback() {...},225,110,16,6,23,15,11,3,0,3
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl,MQClientAPIImpl.new InvokeCallback() {...},142,0,12,0,16,0,9,0,3,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl,MQAdminImpl.new InvokeCallback() {...},87,0,4,0,23,0,4,0,2,0
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl,CommunicationMode,0,34,0,0,0,4,0,1,0,1
+rocketmq-client 4.9.2,org.apache.rocketmq.client.impl,MQClientAPIImpl,3662,580,497,40,754,131,341,25,75,17

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PullMessageRequestHeader.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">rocketmq-common 4.9.2</a> &gt; <a href="index.source.html" class="el_package">org.apache.rocketmq.common.protocol.header</a> &gt; <span class="el_source">PullMessageRequestHeader.java</span></div><h1>PullMessageRequestHeader.java</h1><pre class="source lang-java linenums">/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * $Id: PullMessageRequestHeader.java 1835 2013-05-16 02:00:50Z vintagewang@apache.org $
+ */
+package org.apache.rocketmq.common.protocol.header;
+
+import org.apache.rocketmq.remoting.CommandCustomHeader;
+import org.apache.rocketmq.remoting.annotation.CFNotNull;
+import org.apache.rocketmq.remoting.annotation.CFNullable;
+import org.apache.rocketmq.remoting.exception.RemotingCommandException;
+
+<span class="nc" id="L28">public class PullMessageRequestHeader implements CommandCustomHeader {</span>
+    @CFNotNull
+    private String consumerGroup;
+    @CFNotNull
+    private String topic;
+    @CFNotNull
+    private Integer queueId;
+    @CFNotNull
+    private Long queueOffset;
+    @CFNotNull
+    private Integer maxMsgNums;
+    @CFNotNull
+    private Integer sysFlag;
+    @CFNotNull
+    private Long commitOffset;
+    @CFNotNull
+    private Long suspendTimeoutMillis;
+    @CFNullable
+    private String subscription;
+    @CFNotNull
+    private Long subVersion;
+    private String expressionType;
+
+    @Override
+    public void checkFields() throws RemotingCommandException {
+<span class="nc" id="L53">    }</span>
+
+    public String getConsumerGroup() {
+<span class="nc" id="L56">        return consumerGroup;</span>
+    }
+
+    public void setConsumerGroup(String consumerGroup) {
+<span class="nc" id="L60">        this.consumerGroup = consumerGroup;</span>
+<span class="nc" id="L61">    }</span>
+
+    public String getTopic() {
+<span class="nc" id="L64">        return topic;</span>
+    }
+
+    public void setTopic(String topic) {
+<span class="nc" id="L68">        this.topic = topic;</span>
+<span class="nc" id="L69">    }</span>
+
+    public Integer getQueueId() {
+<span class="nc" id="L72">        return queueId;</span>
+    }
+
+    public void setQueueId(Integer queueId) {
+<span class="nc" id="L76">        this.queueId = queueId;</span>
+<span class="nc" id="L77">    }</span>
+
+    public Long getQueueOffset() {
+<span class="nc" id="L80">        return queueOffset;</span>
+    }
+
+    public void setQueueOffset(Long queueOffset) {
+<span class="nc" id="L84">        this.queueOffset = queueOffset;</span>
+<span class="nc" id="L85">    }</span>
+
+    public Integer getMaxMsgNums() {
+<span class="nc" id="L88">        return maxMsgNums;</span>
+    }
+
+    public void setMaxMsgNums(Integer maxMsgNums) {
+<span class="nc" id="L92">        this.maxMsgNums = maxMsgNums;</span>
+<span class="nc" id="L93">    }</span>
+
+    public Integer getSysFlag() {
+<span class="nc" id="L96">        return sysFlag;</span>
+    }
+
+    public void setSysFlag(Integer sysFlag) {
+<span class="nc" id="L100">        this.sysFlag = sysFlag;</span>
+<span class="nc" id="L101">    }</span>
+
+    public Long getCommitOffset() {
+<span class="nc" id="L104">        return commitOffset;</span>
+    }
+
+    public void setCommitOffset(Long commitOffset) {
+<span class="nc" id="L108">        this.commitOffset = commitOffset;</span>
+<span class="nc" id="L109">    }</span>
+
+    public Long getSuspendTimeoutMillis() {
+<span class="nc" id="L112">        return suspendTimeoutMillis;</span>
+    }
+
+    public void setSuspendTimeoutMillis(Long suspendTimeoutMillis) {
+<span class="nc" id="L116">        this.suspendTimeoutMillis = suspendTimeoutMillis;</span>
+<span class="nc" id="L117">    }</span>
+
+    public String getSubscription() {
+<span class="nc" id="L120">        return subscription;</span>
+    }
+
+    public void setSubscription(String subscription) {
+<span class="nc" id="L124">        this.subscription = subscription;</span>
+<span class="nc" id="L125">    }</span>
+
+    public Long getSubVersion() {
+<span class="nc" id="L128">        return subVersion;</span>
+    }
+
+    public void setSubVersion(Long subVersion) {
+<span class="nc" id="L132">        this.subVersion = subVersion;</span>
+<span class="nc" id="L133">    }</span>
+
+    public String getExpressionType() {
+<span class="nc" id="L136">        return expressionType;</span>
+    }
+
+    public void setExpressionType(String expressionType) {
+<span class="nc" id="L140">        this.expressionType = expressionType;</span>
+<span class="nc" id="L141">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
